@@ -20,10 +20,10 @@ News Bias is a web app that will highlight ownership, key stakeholders, reach, a
 
 There are two main parts to the web app: Search and Fact Check.
 
-### Search
+### 2.1 Search
 Users can enter a web address (whole site or specific article) to search for the details of that news outlet.  They will be presented with ownership, key stakeholders and reach data for that news site.  A crowdsourced trust rating is also shown and users have the option to contribute to the trust rating.  If the site has no data, users can submit for it to be added to our database.
 
-### Fact Check
+### 2.2 Fact Check
 User can submit a quote and a link to an article to be fact checked by a team of vetted volunteers.  Results are displayed publically and requester is emailed. 
 
 **Possible guidelines/parameters for fact check**
@@ -32,11 +32,11 @@ User can submit a quote and a link to an article to be fact checked by a team of
 * Is the headline reflective of the article’s content (i.e. is it clickbait?)
 * How sensational is the tone (Heavily sensationalised and exaggerated / Somewhat sensationalised and exaggerated / Generally not sensationalised)
 
-### Strech goals
+### 2.3 Strech goals
 * A further breakdown of the trust rating by non-identifiable demographics, e.g. 34% conservatives vs 65% liberals find a source trustworthy.
 * Chrome extension for users to check sites as they encounter them without having to navigate to a seperate site
 
-### Audience
+### 2.4 Audience
 Our solution is aimed at people who are interested in who owns their news and how that might affect the bias of the news they read regularly
 
 
@@ -61,7 +61,7 @@ All of the logistic responsibilities will be equally shared to all of the team m
 
 Decisions will be made collaboratively.  If no consensus is reached, decisions will be voted on.  In the event of an even split, the person responsible for each section will have final say.
 
-### 3.3 Conflict resolution and poor performance
+### 3.3 Conflict resolution
 
 In the event of group conflict, we will:
 * Admit there is a conflict that needs to be resolved
@@ -69,59 +69,62 @@ In the event of group conflict, we will:
 * Mediate an agreeable resolution after understanding the problem and move on if conflict is solved.
 * If problem is still present, we will inform tutors to seek advice.
 
-**Underperformance**
+#### 3.3.1 Underperformance
 The whole group will discuss and evaluate the underperforming person’s role, and responsibilities to possibly be reallocated. In the circumstance that members still do not participate equally after multiple discussions the course coordinator will be informed.  All team members acknowledge that this may result in individual grade being reduced.
 
 
-## 4. Communications
-
-A private group community has been set-up on Facebook for group communication.  A shared Google Drive folder has been set-up to work collaboratively on documents. 
+## 4. Communications 
 
 Our GitHub repository for storing and collaborating on code https://github.com/deco3500/newsbias
 
-Meeting times
+### 4.1 Meeting times and communication
 We will be meeting during the workshop session (Wednesday 4pm).  In addition to the course requirement to attend, it is a group expectation that all group members will attend these every week.  Additional meetings will be scheduled as needed.
 
-Where and when will your team meet and how will you all communicate?
-Where will files be stored and shared? 
-What are the file naming conventions? 
-Identify the social platform/s your team has adopted and explain the choice. How will it facilitate communication and / or file sharing? 
+#### 4.1.1 Facebook 
+A private group community has been set-up on Facebook for group communication.  This was chosen as all group members are regularly active on Facebook which allows for quick responses.  As not to rely on Facebook's 'Seen by ...' function, group members have agreed to 'Like' posts to indicate they have read and understood it.  
+
+#### 4.1.2 Google Drive
+A shared Google Drive folder has been set-up to work collaboratively on documents.  All group members already have active Google Accounts.  Using Google Drive allows multiple group members to work on documents (e.g. proposal, task list) simultaneously.
+
+### 4.2 File naming conventions
+
+Files will be named using descriptive terms in camel case, e.g. trustRatingController.js.  This makes files easy to asses at first glance and easy to read.
 
 
 ## 5. Plan
 
-* Outline the work to be done and what will be produced as a result. *
+*Outline the work to be done and what will be produced as a result.*
 
 ### 5.1 Project Phases
 
-####Research
+#### 5.1.1 Research
 * news ownership information available
 * technical development environment
 
-#### Design
+#### 5.1.2 Design
 * wireframes
 * UI design
 * UI testing
 
-#### Construction
+#### 5.1.3 Construction
 * front end development
 * back end development
 
-####Prototypes
+#### 5.1.4 Prototypes
 Both a low and high fidelity prototype will be produced.  
 
-**High Fidelity: Search**
+##### 5.1.4.1 High Fidelity: Search
 The 'Search' feature will be a high fidelity prototype that users can search news sites/articles and see results.  A database of news sites will be developed,initially with a small amount of data with a view to make this as robust as possible for final prototype. The crowd-sourced trust rating will also be functional.  We plan to use AngularJS to complete this aspect.  There will also be a form to submit sites not yet listed
 
-**Low Fidelity: Fact Check**
+##### 5.1.4.2 Low Fidelity: Fact Check
 Users will be able to see how to submit article, how to become a volunteer and view sample results page. No actual volunteer fact checkers will be developed for this prototype.  
 
-**Approach**
+##### 5.1.4.3 Approach
 We plan to use a mobile-first approach in designing and developing this web app using responsive technologies like the [W3 CSS grid layout](http://www.w3schools.com/w3css/).
 
 
 
-### Deliverable breakdown
+### 5.2 Deliverable breakdown
 
 Week | Due | Key Deliverable
 --- | --- | ---
@@ -133,7 +136,7 @@ Week | Due | Key Deliverable
 *Week 12* | Wed 19 Oct, Workshop 4-6pm | Project Prototype Interim Sprint <ul><li>presentation of prototype</li><li>technical update on front/back end development</li><li>continue development this week</li></ul>
 *Week 13* | Wed 26 Oct, Workshop 4-6pm | Final Project Prototype Presentation
 
-### Resources
+### 5.3 Resources
 
 * Team member time & skills
 * Web hosting for app
@@ -141,18 +144,20 @@ Week | Due | Key Deliverable
  
 
 ## 6. Tags
-**Social and Mobile**
+
+### 6.1 Social and Mobile
 * tag1
 * tag2
 * tag3
 * tag4
 * tag5
 
-**Journalism and News** 
+### 6.2 Journalism and News
+
 * Bias
 * tag2
 
-## Bibliography
+## 7. Bibliography
 
 *'Media Interests' snapshot | ACMA*. (2016). *Acma.gov.au*. Retrieved 4 September 2016, from http://acma.gov.au/theACMA/media-interests-snapshot
 
