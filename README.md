@@ -9,7 +9,7 @@ Tags
 
 ## 1. Introduction
 
-*What is your project and what dilemma does it aim to address.  It should outline a news dilemma and how your project will address it. Identify the target users/audience and what makes your idea different from existing solutions. Outline the work to be done and what will be produced as a result.*
+*What is your project and what dilemma does it aim to address.  It should outline a news dilemma and how your project will address it.*
 
 In March 2016, the Government tabled changes to media ownership rules set out in the Broadcasting Services Act 1992 (Cth). The changes proposed to repeal the “2/3 cross media ownership” and “75% reach” rules respectively, citing a need for “traditional” platforms (Commercial Television/Radio, most Newspapers), to have greater flexibility to respond to increased pressure from “new” forms of media (i.e. online).
 
@@ -18,37 +18,33 @@ Although these changes do not specifically apply to online publications, they re
 The data provided by the ACMA is useful, but lacks granularity and is only available from a “top-down” perspective. There is no functionality for a user who wants to interrogate a specific publication or website (i.e. search from the “bottom-up”).
 
 
+
 ## 2. Concept
 
-* News Bias is a web app that…
+* Identify the target users/audience and what makes your idea different from existing solutions.*
 
-outline the idea and the rationale behind it. Define the project aims and audience and identify how your idea is different from / improves upon other current offerings. *
+News Bias is a web app that will highlight ownership, key stakeholders, reach, and a crowdsourced trust rating for news web sites that users search for. 
 
-Our web-app will highlight ownership, key stakeholders, reach, and a crowdsourced trust rating for news web sites that users search for. 
+There are two main parts to the web app: Search and Fact Check.
 
-Use Case:
-SEARCH
--Users enter a web address (whole site or specific article)
--ownership, key stakeholders and reach for that news site is provided
--crowdsourced trust rating is shown
--users have the option to contribute to the trust rating
--may add other data to breakdown trust rating (i.e 34% conservatives vs 65% liberals find a source trustworthy.)
--if site has no data, submit it to be added
+### Search
+Users can enter a web address (whole site or specific article) to search for the details of that news outlet.  They will be presented with ownership, key stakeholders and reach data for that news site.  A crowdsourced trust rating is also shown and users have the option to contribute to the trust rating.  If the site has no data, users can submit for it to be added to our database.
 
-2)	FACT CHECK
--submit a quote and a link to an article to be fact checked by volunteers
--results are displayed publically and requester is email
+### Fact Check
+User can submit a quote and a link to an article to be fact checked by a team of vetted volunteers.  Results are displayed publically and requester is emailed. 
 
+**Possible guidelines/parameters for fact check**
+*Is the content factually correct (All aspects / most aspects / few aspects / no aspects)
+*Have aspects been presented in an even and balanced manner (Both sides evenly considered / Some degree of bias / Large degree of bias)
+*Is the headline reflective of the article’s content (i.e. is it clickbait?)
+*How sensational is the tone (Heavily sensationalised and exaggerated / Somewhat sensationalised and exaggerated / Generally not sensationalised)
 
-Guidelines/Parameters volunteers might check against (score for each category?):
-Is the content factually correct 
-(All aspects / most aspects / few aspects / no aspects)
-Have aspects been presented in an even and balanced manner 
-(Both sides evenly considered / Some degree of bias / Large degree of bias)
-Is the headline reflective of the article’s content 
-(i.e. is it clickbait?)
-How sensational is the tone 
-(Heavily sensationalised and exaggerated / Somewhat sensationalised and exaggerated / Generally not sensationalised)
+### Strech goals
+*A further breakdown of the trust rating by non-identifiable demographics, e.g. 34% conservatives vs 65% liberals find a source trustworthy.
+*Chrome extension for users to check sites as they encounter them without having to navigate to a seperate site
+
+### Audience
+Our solution is aimed at people who are interested in who owns their news and how that might affect the bias of the news they read regularly
 
 
 ## 3. Team
@@ -58,29 +54,30 @@ How sensational is the tone
 **All team members will contribute to all aspects of the assessment.**  Team roles are to facilitate the different aspects of our project and follow up with other team members on their areas of responsibility. 
 
 
-Name | Details | Github | Course Code | Roles | Responsibilities
+Name | Details| Course Code | Roles | Responsibilities
 --- | --- | --- | --- | --- | ---
-Lilly Borchardt | <ul><li>Lilly.borchardt@gmail.com</li><li>40652218</li></ul> | lollyborch | DECO7350 | Team Co-ordinator | <ul><li>Keep team on track for meeting project goals</li><li>Front and back end support</li><ul>
-Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>4297656</li></ul> | chrispala | -- | Content and Communication | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
-Xu Liu (Leo) | <ul><li>liuxu1992422@gmail.com</li><li>43677191</li></ul> | leoliuxu | DECO3500 | Design | <ul><li>Wireframing, interface design</li><li>Front end support</li><ul>
-Foo Cheok Kok (Kirill) | <ul><li>kfc1346@gmail.com </li><li>43845570</li></ul> | kirillmomo | DECO3500 | Development | <ul><li>Front and back end</li>
+Lilly Borchardt | <ul><li>Lilly.borchardt@gmail.com</li><li>40652218</li><li>Github: lollyborch</li></ul> | DECO7350 | Team Co-ordinator | <ul><li>Keep team on track for meeting project goals</li><li>Front and back end support</li><ul>
+Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>4297656</li><li>Github: chrispala</li></ul> -- | Content and Communication | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
+Xu Liu (Leo) | <ul><li>liuxu1992422@gmail.com</li><li>43677191</li><li>Github: leoliuxu</li></ul> | DECO3500 | Design | <ul><li>Wireframing, interface design</li><li>Front end support</li><ul>
+Foo Cheok Kok (Kirill) | <ul><li>kfc1346@gmail.com </li><li>43845570</li><li>Github: kirillmomo</li></ul> | DECO3500 | Development | <ul><li>Front and back end</li>
 
 Logistics including equipment, meetings, transport will be shared by all team members.  Each team member is responsible for thier own transport to workshops and meetings, and development environment. 
 All of the logistic responsibilities will be equally shared to all of the team member.
 
 ### 3.2 Decision Making
 
-Decisions will be made collaboratively.  In the event where we do not reach consensus, decisions will be put to a vote.
+Decisions will be made collaboratively.  If no consensus is reached, decisions will be voted on.  In the event of an even split, the person responsible for each section will have final say.
 
-### 3.3 Conflict Resolution and Poor performance
+### 3.3 Conflict resolution and poor performance
 
-If conflict arises, we will proceed the following:
-Admit that conflict is present and it needs to be resolved, by approaching the team members involved we will understand the problem from all perspectives.
-Reach for an agreement after understanding the problem and move on if conflict is solved.
-If problem is still present, we will inform tutors and seek advice.
+In the event of group conflict, we will:
+*Admit there is a conflict that needs to be resolved
+*Approach team members involved to understand problem from all perspectives
+*Mediate an agreeable resolution after understanding the problem and move on if conflict is solved.
+*If problem is still present, we will inform tutors to seek advice.
 
-Underperformance
-Discussion with the whole group to re-evaluate the underperforming person’s role, responsibilities could be reallocated. In the circumstance that members still do not participate equally after multiple discussions the course coordinator will be informed and grade may be reduced.
+**Underperformance**
+The whole group will discuss and evaluate the underperforming person’s role, and responsibilities to possibly be reallocated. In the circumstance that members still do not participate equally after multiple discussions the course coordinator will be informed.  All team members acknowledge that this may result in individual grade being reduced.
 
 
 ## 4. Communications
@@ -100,6 +97,8 @@ Identify the social platform/s your team has adopted and explain the choice. How
 
 ## 5. Plan
 
+* Outline the work to be done and what will be produced as a result. *
+
 ### 5.1 Project Phases
 
 ####Research
@@ -115,25 +114,21 @@ Identify the social platform/s your team has adopted and explain the choice. How
 * front end development
 * back end development
 
+####Prototypes
+Both a low and high fidelity prototype will be produced.  
 
-Two parts: low and high fidelity prototype
+**High Fidelity: Search**
+The 'Search' feature will be a high fidelity prototype that users can search news sites/articles and see results.  A database of news sites will be developed,initially with a small amount of data with a view to make this as robust as possible for final prototype. The crowd-sourced trust rating will also be functional.  We plan to use AngularJS to complete this aspect.  There will also be a form to submit sites not yet listed
 
-Overall:
-http://www.w3schools.com/w3css/ for responsive grid layout
+**Low Fidelity: Fact Check**
+Users will be able to see how to submit article, how to become a volunteer and view sample results page. No actual volunteer fact checkers will be developed for this prototype.  
 
-High Fidelity: Search
-Database of news sites that are checked against, initially small amount of data, see how much we can get
-Use AngularJS to do crowdsourced rating
-Form to submit sites not yet listed
+**Approach**
+We plan to use a mobile-first approach in designing and developing this web app using responsive technologies like the [W3 CSS grid layout](http://www.w3schools.com/w3css/).
 
-Low Fidelity: Fact Check
--Show how to submit article, how to become a volunteer and sample results page
--No actual volunteer fact checkers, 
 
 
 ### Deliverable breakdown
-
-Project phases e.g. research; requirements; design; construction;
 
 Week | Due | Key Deliverable
 --- | --- | ---
