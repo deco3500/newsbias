@@ -60,14 +60,10 @@ How sensational is the tone
 
 Name | Details | Github | Course Code | Roles | Responsibilities
 --- | --- | --- | --- | --- | ---
-Lilly Borchardt | <ul><li>Lilly.borchardt@gmail.com</li><li>40652218</li></ul> | lollyborch | DECO7350 | Team Co-ordinator
- | <ul><li>Keep team on track for meeting project goals</li><li>Front and back end support</li><ul>
-Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>4297656</li></ul> | chrispala | -- | Content and Communication
- | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
-Xu Liu (Leo) | <ul><li>liuxu1992422@gmail.com</li><li>43677191</li></ul> | leoliuxu | DECO3500 | Design
- | <ul><li>Wireframing, interface design</li><li>Front end support</li><ul>
-Foo Cheok Kok (Kirill) | <ul><li>kfc1346@gmail.com </li><li>43845570</li></ul> | kirillmomo | DECO3500 | Development
- | <ul><li>Front and back end</li>
+Lilly Borchardt | <ul><li>Lilly.borchardt@gmail.com</li><li>40652218</li></ul> | lollyborch | DECO7350 | Team Co-ordinator | <ul><li>Keep team on track for meeting project goals</li><li>Front and back end support</li><ul>
+Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>4297656</li></ul> | chrispala | -- | Content and Communication | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
+Xu Liu (Leo) | <ul><li>liuxu1992422@gmail.com</li><li>43677191</li></ul> | leoliuxu | DECO3500 | Design | <ul><li>Wireframing, interface design</li><li>Front end support</li><ul>
+Foo Cheok Kok (Kirill) | <ul><li>kfc1346@gmail.com </li><li>43845570</li></ul> | kirillmomo | DECO3500 | Development | <ul><li>Front and back end</li>
 
 Logistics including equipment, meetings, transport will be shared by all team members.  Each team member is responsible for thier own transport to workshops and meetings, and development environment. 
 All of the logistic responsibilities will be equally shared to all of the team member.
