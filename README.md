@@ -129,7 +129,7 @@ We plan to use a mobile-first approach in designing and developing this web app 
 Week | Due | Key Deliverable
 --- | --- | ---
 *Week 7* | Mon 5 Sept, Blackboard 11.59pm | Project Proposal Report (this document)
-*Week 8* | Wed 14 Sept, Workshop 4-6pm | Project Prototype Interim Sprint <ul><li>presentation of research phase<ul><li>technical framework details</li><li>data gathered/available</li></ul></li><li>design update<ul><li>wireframes</li><li>UQ designs</li></ul></li></ul>
+*Week 8* | Wed 14 Sept, Workshop 4-6pm | Project Prototype Interim Sprint <ul><li>presentation of research phase<ul><li>technical framework details</li><li>data gathered/available</li></ul></li><li>design update<ul><li>wireframes</li><li>UI designs</li></ul></li></ul>
 *Week 9* |--- | <ul><li>continue working on design phase</li><li>start front end development </li></ul>
 *Week 10* | Wed 5 Oct, Workshop 4-6pm | Project Prototype Interim Sprint <ul><li>presentation of prototype to be tested with users</li><li>detail of use case scenario</li></ul>
 *Week 11* | --- | <ul><li>usability testing with users</li><li>iteration of feedback into app</li><li>continuation of front end development</li></ul>
