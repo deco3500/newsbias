@@ -1,12 +1,5 @@
 # newsbias
 
-Introduction
-Concept
-Team
-Communications
-Plan
-Tags
-
 ## 1. Introduction
 
 *What is your project and what dilemma does it aim to address.  It should outline a news dilemma and how your project will address it.*
@@ -21,7 +14,7 @@ The data provided by the ACMA is useful, but lacks granularity and is only avail
 
 ## 2. Concept
 
-* Identify the target users/audience and what makes your idea different from existing solutions.*
+*Identify the target users/audience and what makes your idea different from existing solutions.*
 
 News Bias is a web app that will highlight ownership, key stakeholders, reach, and a crowdsourced trust rating for news web sites that users search for. 
 
@@ -34,14 +27,14 @@ Users can enter a web address (whole site or specific article) to search for the
 User can submit a quote and a link to an article to be fact checked by a team of vetted volunteers.  Results are displayed publically and requester is emailed. 
 
 **Possible guidelines/parameters for fact check**
-*Is the content factually correct (All aspects / most aspects / few aspects / no aspects)
-*Have aspects been presented in an even and balanced manner (Both sides evenly considered / Some degree of bias / Large degree of bias)
-*Is the headline reflective of the article’s content (i.e. is it clickbait?)
-*How sensational is the tone (Heavily sensationalised and exaggerated / Somewhat sensationalised and exaggerated / Generally not sensationalised)
+* Is the content factually correct (All aspects / most aspects / few aspects / no aspects)
+* Have aspects been presented in an even and balanced manner (Both sides evenly considered / Some degree of bias / Large degree of bias)
+* Is the headline reflective of the article’s content (i.e. is it clickbait?)
+* How sensational is the tone (Heavily sensationalised and exaggerated / Somewhat sensationalised and exaggerated / Generally not sensationalised)
 
 ### Strech goals
-*A further breakdown of the trust rating by non-identifiable demographics, e.g. 34% conservatives vs 65% liberals find a source trustworthy.
-*Chrome extension for users to check sites as they encounter them without having to navigate to a seperate site
+* A further breakdown of the trust rating by non-identifiable demographics, e.g. 34% conservatives vs 65% liberals find a source trustworthy.
+* Chrome extension for users to check sites as they encounter them without having to navigate to a seperate site
 
 ### Audience
 Our solution is aimed at people who are interested in who owns their news and how that might affect the bias of the news they read regularly
@@ -54,12 +47,12 @@ Our solution is aimed at people who are interested in who owns their news and ho
 **All team members will contribute to all aspects of the assessment.**  Team roles are to facilitate the different aspects of our project and follow up with other team members on their areas of responsibility. 
 
 
-Name | Details| Course Code | Roles | Responsibilities
---- | --- | --- | --- | --- | ---
-Lilly Borchardt | <ul><li>Lilly.borchardt@gmail.com</li><li>40652218</li><li>Github: lollyborch</li></ul> | DECO7350 | Team Co-ordinator | <ul><li>Keep team on track for meeting project goals</li><li>Front and back end support</li><ul>
-Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>4297656</li><li>Github: chrispala</li></ul> -- | Content and Communication | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
-Xu Liu (Leo) | <ul><li>liuxu1992422@gmail.com</li><li>43677191</li><li>Github: leoliuxu</li></ul> | DECO3500 | Design | <ul><li>Wireframing, interface design</li><li>Front end support</li><ul>
-Foo Cheok Kok (Kirill) | <ul><li>kfc1346@gmail.com </li><li>43845570</li><li>Github: kirillmomo</li></ul> | DECO3500 | Development | <ul><li>Front and back end</li>
+Name | Details | Roles | Responsibilities
+--- | --- | --- | --- 
+Lilly Borchardt | <ul><li>Lilly.borchardt@gmail.com</li><li>40652218</li><li>Github: lollyborch</li><li>DECO7350</li></ul> | Team Co-ordinator | <ul><li>Keep team on track for meeting project goals</li><li>Front and back end support</li><ul>
+Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>4297656</li><li>Github: chrispala</li><li>DECO7350</li></ul> | Content and Communication | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
+Xu Liu (Leo) | <ul><li>liuxu1992422@gmail.com</li><li>43677191</li><li>Github: leoliuxu</li><li>DECO3500</li></ul> | Design | <ul><li>Wireframing, interface design</li><li>Front end support</li><ul>
+Foo Cheok Kok (Kirill) | <ul><li>kfc1346@gmail.com </li><li>43845570</li><li>Github: kirillmomo</li><li>DECO3500</li></ul> | Development | <ul><li>Front and back end</li>
 
 Logistics including equipment, meetings, transport will be shared by all team members.  Each team member is responsible for thier own transport to workshops and meetings, and development environment. 
 All of the logistic responsibilities will be equally shared to all of the team member.
@@ -71,10 +64,10 @@ Decisions will be made collaboratively.  If no consensus is reached, decisions w
 ### 3.3 Conflict resolution and poor performance
 
 In the event of group conflict, we will:
-*Admit there is a conflict that needs to be resolved
-*Approach team members involved to understand problem from all perspectives
-*Mediate an agreeable resolution after understanding the problem and move on if conflict is solved.
-*If problem is still present, we will inform tutors to seek advice.
+* Admit there is a conflict that needs to be resolved
+* Approach team members involved to understand problem from all perspectives
+* Mediate an agreeable resolution after understanding the problem and move on if conflict is solved.
+* If problem is still present, we will inform tutors to seek advice.
 
 **Underperformance**
 The whole group will discuss and evaluate the underperforming person’s role, and responsibilities to possibly be reallocated. In the circumstance that members still do not participate equally after multiple discussions the course coordinator will be informed.  All team members acknowledge that this may result in individual grade being reduced.
@@ -149,15 +142,15 @@ Week | Due | Key Deliverable
 
 ## 6. Tags
 **Social and Mobile**
-*
-*
-*
-*
-*
+* tag1
+* tag2
+* tag3
+* tag4
+* tag5
 
 **Journalism and News** 
 * Bias
-*
+* tag2
 
 ## Bibliography
 
