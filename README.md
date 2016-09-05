@@ -108,7 +108,7 @@ Files will be named using descriptive terms in camel case, e.g. trustRatingContr
 
 #### 5.1.1 Research and Requirements
 * research problem space including academic and non-academic sources
-* review similar approaches (including [Crickey bias-o-meter](https://www.crikey.com.au/2007/06/26/crikey-bias-o-meter-the-newspapers/), [The Conversation author information](https://theconversation.com/students-are-not-hard-wired-to-learn-in-different-ways-we-need-to-stop-using-unproven-harmful-methods-63715), [ABC Fact Check](http://www.abc.net.au/news/factcheck/) )
+* review similar approaches (including [Crickey bias-o-meter](https://www.crikey.com.au/2007/06/26/crikey-bias-o-meter-the-newspapers/), [The Conversation author information](https://theconversation.com/students-are-not-hard-wired-to-learn-in-different-ways-we-need-to-stop-using-unproven-harmful-methods-63715), [ABC Fact Check](http://www.abc.net.au/news/factcheck/))
 * source news ownership information available to use in the prototype
 * confirm technical requirements and development environment
 
