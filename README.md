@@ -165,11 +165,10 @@ Week | Due | Key Deliverable
 
 ## 7. Bibliography
 
-References
 
-* ACMA,. (2016). 'Media Interests' snapshot | ACMA. *Acma.gov.au*. Retrieved 4 September 2016, from *http://acma.gov.au/theACMA/media-interests-snapshot*
+* ACMA. (2016). 'Media Interests' snapshot | ACMA. *Acma.gov.au*. Retrieved 4 September 2016, from *http://acma.gov.au/theACMA/media-interests-snapshot*
 
-* AIM Editorial,. (2014). Democracy and diversity: media ownership in Australia. The AIM Network. Retrieved from *http://theaimn.com/democracy-diversity-media-ownership-australia/*
+* AIM Editorial. (2014). Democracy and diversity: media ownership in Australia. The AIM Network. Retrieved from *http://theaimn.com/democracy-diversity-media-ownership-australia/*
 
 * Foreman, A. & Jordan, K. (2016). Government announces media ownership law changes. *Claytonutz.com*. Retrieved from *https://www.claytonutz.com/knowledge/2016/march/government-announces-media-ownership-law-changes*
 
