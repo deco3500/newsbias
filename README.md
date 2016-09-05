@@ -134,7 +134,7 @@ The 'Search' feature will be a high fidelity prototype that users can search new
 Users will be able to see how to submit article, how to become a volunteer and view sample results page. No actual volunteer fact checkers will be developed for this prototype.  
 
 ##### 5.1.4.3 Approach
-We plan to use a mobile-first approach in designing and developing this web app using responsive technologies like the [W3 CSS grid layout](http://www.w3schools.com/w3css/).  Code will be managed using GitHub and tasks/workflow will be managed using the Zenhub approach.
+We plan to use a mobile-first approach in designing and developing this web app using responsive technologies like the [W3 CSS grid layout](http://www.w3schools.com/w3css/).  Code will be managed using GitHub and tasks/workflow will be managed using the Zenhub approach.  A web app was chosen so the product is device neutral.
 
 
 
