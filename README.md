@@ -107,20 +107,21 @@ Files will be named using descriptive terms in camel case, e.g. trustRatingContr
 ### 5.1 Project Phases
 
 #### 5.1.1 Research and Requirements
-* news ownership information available
-* technical development environment
+* research problem space including academic and non-academic sources
+* review similar approaches (including [Crickey bias-o-meter](https://www.crikey.com.au/2007/06/26/crikey-bias-o-meter-the-newspapers/), [The Conversation author information](https://theconversation.com/students-are-not-hard-wired-to-learn-in-different-ways-we-need-to-stop-using-unproven-harmful-methods-63715), [ABC Fact Check](http://www.abc.net.au/news/factcheck/) )
+* source news ownership information available to use in the prototype
+* confirm technical requirements and development environment
 
 #### 5.1.2 Design
-* wireframes
-* UI design
-* UI testing
+* produce wireframes and user interface designs
+* test designs with users
 
 #### 5.1.3 Construction
-* front end development
-* back end development
+* build the prototype
+* front end and back end development
 
 #### 5.1.4 Prototypes
-Both a low and high fidelity prototype will be produced.  
+* final decisions about high/low fidelity of different aspects of prototype
 
 ##### 5.1.4.1 High Fidelity: Search
 The 'Search' feature will be a high fidelity prototype that users can search news sites/articles and see results.  A database of news sites will be developed,initially with a small amount of data with a view to make this as robust as possible for final prototype. The crowd-sourced trust rating will also be functional.  We plan to use AngularJS to complete this aspect.  There will also be a form to submit sites not yet listed
