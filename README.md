@@ -29,7 +29,10 @@ If a site has no data, users can submit for it to be added to our database. All 
 
 ### 2.2 Fact Check
 User can submit a quote and a link to an article to be fact checked by a team of community leaders i.e. "Fact Checkers". Users can apply to become fact-checkers via a form on the website.
+
 Articles will be given a "rating", computed by a series of weighted parameters which 3 members of the fact-checking team must answer independently. 
+
+Results of a fact check can be easily shared by a user to social media chanels and email.
 
 **Possible guidelines/parameters for fact check**
 * Is the content factually correct? (All aspects / most aspects / few aspects / no aspects)
