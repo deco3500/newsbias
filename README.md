@@ -25,7 +25,8 @@ If a site has no data, users can submit for it to be added to our database. All 
 
 ### 2.2 Fact Check
 User can submit a quote and a link to an article to be fact checked by a team of community leaders i.e. "Fact Checkers". Users can apply to become fact-checkers via a form on the website.
-Articles will be given a "rating", computed by a series of weighted parameters which 3 members of the fact-checking team must answer independently. 
+
+Articles will be given a "rating", computed by a series of weighted parameters which 3 members of the fact-checking team must answer independently.  Results of a fact check can be easily shared by a user to social media chanels and email.
 
 **Possible guidelines/parameters for fact check**
 * Is the content factually correct? (All aspects / most aspects / few aspects / no aspects)
@@ -128,7 +129,7 @@ The 'Search' feature will be a high fidelity prototype that users can search new
 Users will be able to see how to submit article, how to become a volunteer and view sample results page. No actual volunteer fact checkers will be developed for this prototype.  
 
 ##### 5.1.4.3 Approach
-We plan to use a mobile-first approach in designing and developing this web app using responsive technologies like the [W3 CSS grid layout](http://www.w3schools.com/w3css/).  Code will be managed using GitHub and tasks/workflow will be managed using the Zenhub approach.
+We plan to use a mobile-first approach in designing and developing this web app using responsive technologies like the [W3 CSS grid layout](http://www.w3schools.com/w3css/).  Code will be managed using GitHub and tasks/workflow will be managed using the Zenhub approach. A web app was chosen so the product is device neutral.
 
 
 
