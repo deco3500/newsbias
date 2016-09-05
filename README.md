@@ -41,7 +41,7 @@ Results from the 3 are averaged and computed into a rating (e.g. A - F) which is
 
 The site's community (including the submitter) can offer their own commentary in this section. As with the ownership profile, results for individual articles can be shared on social media. 
 
-### 2.3 Strech goals
+### 2.3 Stretch goals
 * A further breakdown of the trust rating by non-identifiable demographics, e.g. 34% conservatives vs 65% liberals find a source trustworthy.
 * Chrome extension for users to check sites as they encounter them without having to navigate to a seperate site
 * Ability for text-based searching terms other than a URL - such as a journalist, organisation, owner, etc.
