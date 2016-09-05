@@ -172,6 +172,6 @@ https://www.claytonutz.com/knowledge/2016/march/government-announces-media-owner
 
 http://theaimn.com/democracy-diversity-media-ownership-australia/
 
-Hobbs, M., McKnight D (2016). 'Kick this mob out: The Murdoch media and the Australian Labor Government (2007 to 2013)',  Global Media Journal Australian Edition, Vol 10 (Issue 1)*. Retrieved from http://www.hca.westernsydney.edu.au/gmjau/?p=1075
+Hobbs, M., McKnight D (2016). *'Kick this mob out: The Murdoch media and the Australian Labor Government (2007 to 2013)',  Global Media Journal Australian Edition, Vol 10 (Issue 1)*. Retrieved from http://www.hca.westernsydney.edu.au/gmjau/?p=1075
 
 McKnight, D (2012) 'Gina Rinehart and Rupert Murdoch: a study of power in the media' http://theconversation.com/gina-rinehart-and-rupert-murdoch-a-study-of-power-in-the-media-5394
