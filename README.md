@@ -2,8 +2,6 @@
 
 ## 1. Introduction
 
-*What is your project and what dilemma does it aim to address.  It should outline a news dilemma and how your project will address it.*
-
 In March 2016, the Government tabled changes to media ownership rules set out in the Broadcasting Services Act 1992 (Cth). The changes proposed to repeal the “2/3 cross media ownership” and “75% reach” rules respectively, citing a need for “traditional” platforms (Commercial Television/Radio, most Newspapers), to have greater flexibility to respond to increased pressure from “new” forms of media (i.e. online) (Foreman & Jordan, 2016).
 
 Although these changes do not specifically apply to online publications, they reinforce the ever-evolving landscape of media ownership in Australia. Data published by the Australian Communications and Media Authority (ACMA) show that 9 individuals hold the majority of media outlets in Australia (ACMA, 2016). The selection of senior editorial staff is often closely managed (McKnight, 2012), and accusations of bias are not uncommon given the numerous private interests the owners hold (Hobbs, 2016), (AIM Editorial, 2014).
@@ -13,8 +11,6 @@ While the data provided by the ACMA is useful, it lacks granularity and is only 
 Our app will connect the available information directly with the article being read; a consumer can draw their own informed conclusion as to the presence of bias. Presenting the information at the point of delivery will bridge the disconnect between an article and the ownership / editorial structure underpinning it's authorship.
 
 ## 2. Concept
-
-*Identify the target users/audience and what makes your idea different from existing solutions.*
 
 News Bias is a web app that will highlight ownership, key stakeholders, reach, and a crowdsourced trust rating for news web sites that users search for. The app pairs with a Chrome extension that detects and notifies a user when they browse a site within the app's database.  
 
@@ -106,8 +102,6 @@ Files will be named using descriptive terms in camel case, e.g. trustRatingContr
 
 
 ## 5. Plan
-
-*Outline the work to be done and what will be produced as a result.*
 
 ### 5.1 Project Phases
 
