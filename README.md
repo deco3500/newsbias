@@ -165,13 +165,13 @@ Week | Due | Key Deliverable
 
 ## 7. Bibliography
 
-* 'Media Interests' snapshot | ACMA*. (2016). *Acma.gov.au*. Retrieved 4 September 2016, from http://acma.gov.au/theACMA/media-interests-snapshot
+*'Media Interests' snapshot*. (2016). *Acma.gov.au*. Retrieved 4 September 2016, from http://acma.gov.au/theACMA/media-interests-snapshot
 
-* 'Government announces media ownership law changes' | Clayton Utz*. (2016). *www.claytonutz.com*. Retrieved 31 August 2016, from
+*'Government announces media ownership law changes', Clayton Utz*. (2016). *www.claytonutz.com*. Retrieved 31 August 2016, from
 https://www.claytonutz.com/knowledge/2016/march/government-announces-media-ownership-law-changes
 
-* http://theaimn.com/democracy-diversity-media-ownership-australia/
+http://theaimn.com/democracy-diversity-media-ownership-australia/
 
-* Hobbs, M., McKnight D (2016). 'Kick this mob out: The Murdoch media and the Australian Labor Government (2007 to 2013)' | Global Media Journal Australian Edition, Vol 10 (Issue 1)*. Retrieved from http://www.hca.westernsydney.edu.au/gmjau/?p=1075
+Hobbs, M., McKnight D (2016). 'Kick this mob out: The Murdoch media and the Australian Labor Government (2007 to 2013)',  Global Media Journal Australian Edition, Vol 10 (Issue 1)*. Retrieved from http://www.hca.westernsydney.edu.au/gmjau/?p=1075
 
-* McKnight, D (2012) 'Gina Rinehart and Rupert Murdoch: a study of power in the media' http://theconversation.com/gina-rinehart-and-rupert-murdoch-a-study-of-power-in-the-media-5394
+McKnight, D (2012) 'Gina Rinehart and Rupert Murdoch: a study of power in the media' http://theconversation.com/gina-rinehart-and-rupert-murdoch-a-study-of-power-in-the-media-5394
