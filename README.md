@@ -61,7 +61,7 @@ The ability to share results via social media will serve to engage those who lac
 Name | Details | Roles | Responsibilities
 --- | --- | --- | --- 
 Lilly Borchardt | <ul><li>Lilly.borchardt@gmail.com</li><li>40652218</li><li>Github: lollyborch</li><li>DECO7350</li></ul> | Team Co-ordinator | <ul><li>Keep team on track for meeting project goals</li><li>Front and back end support</li><ul>
-Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>4297656</li><li>Github: chrispala</li><li>DECO7350</li></ul> | Content and Communication | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
+Chris Pala | <ul><li>highwaytoacdc@gmail.com</li><li>42976561</li><li>Github: chrispala</li><li>DECO7350</li></ul> | Content and Communication | <ul><li>Writing web content for product</li><li>Coordination of team documentation (e.g. project proposal)</li><ul>
 Xu Liu (Leo) | <ul><li>liuxu1992422@gmail.com</li><li>43677191</li><li>Github: leoliuxu</li><li>DECO3500</li></ul> | Design | <ul><li>Wireframing, interface design</li><li>Front end support</li><ul>
 Foo Cheok Kok (Kirill) | <ul><li>kfc1346@gmail.com </li><li>43845570</li><li>Github: kirillmomo</li><li>DECO3500</li></ul> | Development | <ul><li>Front and back end</li>
 
