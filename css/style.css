@@ -1,0 +1,275 @@
+
+@font-face {
+    font-family: "Intro-r";
+    src: url("INTRO.OTF") format("opentype");
+}
+
+body
+{
+	margin-top: 0px;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	min-width:700px;
+}
+
+#submit
+{
+	
+	color: #764b8e;
+	font-size: 1em;
+	border-radius: 6px;
+}
+
+
+header
+{
+	background-color: #082644;
+	width:100%;
+	height: 70px;
+	box-shadow: 0px 5px 50px #5E5E5E;
+	padding-bottom: 5px;
+}
+
+.nav img
+{
+	float: right;
+	height: 62px;
+	margin-top: 6px;
+	margin-right: 6px;
+}
+
+.nav a
+{
+	text-decoration: none; 
+	font-family: 'Century Gothic', serif;
+	color:white;
+	font-size: 2.55em;
+	margin-left:20px;
+	margin-top: 20px;
+	text-align:center;
+	float: left;
+}
+
+.nav a:hover
+{
+	color: #7aC143;
+}
+
+/*main body*/
+
+.main
+{
+	width: 66%;
+	height: 350px;
+	margin: 60px 16.66% 0 16.66%;
+	font-family: verdana;
+	background-color: white;
+	
+
+}
+
+
+.main h1
+{
+    font-family: Intro-r;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 85px;
+}
+
+.main h2
+{
+	font-family:Intro-r;
+	text-align:left;
+	font-size:1.5em;
+}
+
+.main h3
+{
+	font-family:arial;
+	font-weight:bolder;
+    padding-top:10px;
+    margin-top:10px;
+}
+
+.introSub
+{
+	font-family: Intro-r;
+	font-size: 23.5px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#form{
+	text-align: center;
+	background-color: white;
+}
+
+select{
+    margin: 10px;
+    padding: 10px; 
+    border: 2px solid purple; 
+    width: 200px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: white;
+    background-color:#551c44;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+input[type=text]
+{
+	background-color: #082644;
+	border: 0;
+	border-radius:10px;
+	font-family: "Century Gothic";
+	color: #FFFFFF;
+}
+.usernameIn
+{
+	width: 100%;
+	height: 50px;
+	font-size: 30px;
+	text-indent: 10px;
+	
+}
+
+.arrowIcon
+{
+	border: 0;
+	width: 50px;
+	height: 50px;
+	background-color: #cacaca;
+	background-image: url("../IMG/arrowIconNoFocus.png");
+	background-size: 100%;
+	float: right;
+	margin-top: 50px;
+}
+
+.arrowIcon:hover
+{
+	background-image: url("../IMG/arrowIconFocus.png");
+}
+
+.arrowBackIcon
+{
+	border: 0;
+	width: 50px;
+	height: 50px;
+	background-color: #cacaca;
+	background-image: url("../IMG/arrowBackIconNoFocus.png");
+	background-size: 100%;
+	float: right;
+	margin-top:19px;
+	margin-right:50px;
+}
+
+.arrowBackIcon:hover
+{
+	background-image: url("../IMG/arrowBackIconFocus.png");
+}
+
+.helpIcon
+{
+	border: 0;
+	width: 50px;
+	height: 50px;
+	background-color: #cacaca;
+	background-image: url("../IMG/helpIconNoFocus.png");
+	background-size: 100%;
+	float: left;
+	margin-top: 50px;
+}
+
+.helpIcon:hover
+{
+	background-image: url("../IMG/helpIconFocus.png");
+}
+
+.profileNav
+{
+	height: 20px;
+}
+
+.profileNav ul
+{
+	text-align: center;
+}
+
+.profileNav li
+{
+	display: inline;
+	margin: 5%;
+	font-family: "Century Gothic";
+	font-size: 12pt;
+	margin: 5%;
+	font-weight: bold;
+}
+
+.profileNav a:hover
+{
+	display: inline;
+	color: #7ac143;
+}
+
+.profileNav a
+{
+	text-decoration: none;
+	color: #000000;
+}
+
+#profileImg
+{
+	float: left;
+	height: 100%;
+	width: 40%;
+	border-width: 2px;
+	border-color: #000000;
+	margin-right: 10px;
+}
+
+.profileOverview
+{
+	float: left;
+	background-color: #999999;
+	border-radius: 5px;
+	height: 100%;
+	width: 57.5%;
+}
+
+.profileName
+{
+	margin: 10px;
+	font-size: 14pt;
+	font-family: "Century Gothic";
+}
+
+.profileDesc
+{
+	margin: 10px;
+	font-size: 9pt;
+	font-family: "Century Gothic";
+}
+/*footer*/
+
+footer
+{
+	background-color: #551c44;
+	height: 40px;
+	text-align: right;
+	font-family: "Times New Roman", Georgia, Serif;
+	color: #FFFFFF;
+	padding-top: 30px;
+	padding-right: 10px;
+	min-height:60px;
+	margin-top:20%;
+}
