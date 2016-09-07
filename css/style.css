@@ -93,25 +93,6 @@ header
 	background-color: white;
 }
 
-select{
-    margin: 10px;
-    padding: 10px; 
-    border: 2px solid purple; 
-    width: 200px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    color: white;
-    background-color:#551c44;
-    font-size: inherit;
-    margin: 0;
-    overflow: hidden;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 input[type=text]
 {
 	background-color: #082644;
@@ -120,7 +101,7 @@ input[type=text]
 	font-family: "Century Gothic";
 	color: #FFFFFF;
 }
-.usernameIn
+.sourceIn
 {
 	width: 100%;
 	height: 50px;
@@ -134,7 +115,7 @@ input[type=text]
 	border: 0;
 	width: 50px;
 	height: 50px;
-	background-color: #cacaca;
+	background-color: white;
 	background-image: url("../IMG/arrowIconNoFocus.png");
 	background-size: 100%;
 	float: right;
@@ -146,30 +127,12 @@ input[type=text]
 	background-image: url("../IMG/arrowIconFocus.png");
 }
 
-.arrowBackIcon
-{
-	border: 0;
-	width: 50px;
-	height: 50px;
-	background-color: #cacaca;
-	background-image: url("../IMG/arrowBackIconNoFocus.png");
-	background-size: 100%;
-	float: right;
-	margin-top:19px;
-	margin-right:50px;
-}
-
-.arrowBackIcon:hover
-{
-	background-image: url("../IMG/arrowBackIconFocus.png");
-}
-
 .helpIcon
 {
 	border: 0;
 	width: 50px;
 	height: 50px;
-	background-color: #cacaca;
+	background-color: white;
 	background-image: url("../IMG/helpIconNoFocus.png");
 	background-size: 100%;
 	float: left;
@@ -181,70 +144,6 @@ input[type=text]
 	background-image: url("../IMG/helpIconFocus.png");
 }
 
-.profileNav
-{
-	height: 20px;
-}
-
-.profileNav ul
-{
-	text-align: center;
-}
-
-.profileNav li
-{
-	display: inline;
-	margin: 5%;
-	font-family: "Century Gothic";
-	font-size: 12pt;
-	margin: 5%;
-	font-weight: bold;
-}
-
-.profileNav a:hover
-{
-	display: inline;
-	color: #7ac143;
-}
-
-.profileNav a
-{
-	text-decoration: none;
-	color: #000000;
-}
-
-#profileImg
-{
-	float: left;
-	height: 100%;
-	width: 40%;
-	border-width: 2px;
-	border-color: #000000;
-	margin-right: 10px;
-}
-
-.profileOverview
-{
-	float: left;
-	background-color: #999999;
-	border-radius: 5px;
-	height: 100%;
-	width: 57.5%;
-}
-
-.profileName
-{
-	margin: 10px;
-	font-size: 14pt;
-	font-family: "Century Gothic";
-}
-
-.profileDesc
-{
-	margin: 10px;
-	font-size: 9pt;
-	font-family: "Century Gothic";
-}
 /*footer*/
 
 footer
