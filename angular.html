@@ -28,24 +28,30 @@
 
 
 <!-- Getting started container -->
-<div class="container" ng-app="myApp" ng-controller="newsBias">
-    <h1>News Bias</h1>   
+<div ng-app="myApp" ng-controller="newsBias">
+  <h1>Search & Filter</h1>
+    <p> Search for Brisbane Times, ABC News, or The Conversation or web articles from these</p>
+  <p>e.g.    http://www.brisbanetimes.com.au/entertainment/tv-and-radio/qa-recap-coalition-senator-bridget-mckenzie-confronted-by-gay-brother-over-plebiscite-20160912-gret2z.html </p>
 
-    <p class="sectionHeading">Search URL here</p>
-    <p id="demo"></p>
-
-    <input type="text" id="newsURL"/>
-    <input type=button onclick="getHostName('newsURL');" value="Search"/>
-
-    <p class="sectionHeading">Filter URL here</p>
-    <p><input type="text" ng-model="urlInput"></p>
-
-    <div ng-repeat="x in newsSites | filter:urlInput">
-        <h2>{{x.name}}</h2>
-        <p>{{x.bias}}</p>
-        <a ng-href="{{x.url}}">{{x.url}}</a>
+  <div class="search-box">
+   <div>
+     <input type="text" ng-model="newsQuery" id="myNewsURL" />
+     <input type="button" data-ng-click="searchURL('myNewsURL');" value="Search" />
+     <!--searchURL('myNewsURL'); -->
     </div>
+    
+</div>
+    
+  <!--With our powers combined, I am Captain Planet-->
 
+  <div class="searchResults" ng-show="searchResult && newsQuery" ng-repeat="news in urlToFilter | filter:searchQuery">
+    <h2>{{news.name}}</h2>
+    <p>{{news.bias}}</p>
+    <a ng-href="{{news.url}}">{{news.url}}</a>
+  </div>
+  
+
+  
 </div>
       <!-- footer -->
         <footer>
@@ -53,7 +59,7 @@
 
 
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- AngularJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <!--controllers -->

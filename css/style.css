@@ -4,7 +4,33 @@
     src: url("INTRO.OTF") format("opentype");
 }
 
-body
+@font-face {
+    font-family: 'Intro';
+    src:url('../fonts/Intro.ttf.woff') format('woff'),
+        url('../fonts/Intro.ttf.svg#Intro') format('svg'),
+        url('../fonts/Intro.ttf.eot'),
+        url('../fonts/Intro.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navy,.hover-navy:hover{
+    color:#fff!important;
+    background-color:#082644!important
+}
+
+.text-navy,.hover-text-navy:hover{
+    color:#082644!important
+}
+
+h1,h2,h3,h4,h5,h6,  {
+    font-family: 'Intro', sans-serif;
+}
+body, .w3-navbar,button {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*body
 {
 	margin-top: 0px;
 	background-color: white;
@@ -12,7 +38,7 @@ body
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	min-width:700px;
-}
+}*/
 
 #submit
 {
@@ -20,6 +46,15 @@ body
 	color: #764b8e;
 	font-size: 1em;
 	border-radius: 6px;
+}
+
+.searchResults{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 20px 20px 20px;
+  width: 25%;
+  margin-top: 10px;
+  
 }
 
 
@@ -41,6 +76,18 @@ header
 
 }
 
+.navLogoContainer {
+    width: 130px;
+}
+.navLogo {
+    float: left;
+    height: 30px;
+    margin-bottom: 6px;
+    width: 100%;
+    height: auto;
+}
+
+
 
 
 /*main body*/
@@ -55,7 +102,15 @@ header
 	
 
 }
+.headerImage {
+    background: url(../IMG/cover_image.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
 
+/* Image from https://www.flickr.com/photos/esthervargasc/14209650919/ */
 
 .main h1
 {
@@ -93,14 +148,14 @@ header
 	background-color: white;
 }
 
-input[type=text]
+/*input[type=text]
 {
 	background-color: #082644;
 	border: 0;
 	border-radius:10px;
 	font-family: "Century Gothic";
 	color: #FFFFFF;
-}
+}*/
 .sourceIn
 {
 	width: 100%;
@@ -146,7 +201,7 @@ input[type=text]
 
 /*footer*/
 
-footer
+/*footer
 {
 	background-color: #082644;
 	height: 40px;
@@ -157,4 +212,4 @@ footer
 	padding-right: 10px;
 	min-height:60px;
 	margin-top:20%;
-}
+}*/
