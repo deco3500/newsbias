@@ -30,6 +30,12 @@ body, .w3-navbar,button {
     font-family: 'Roboto', sans-serif;
 }
 
+.formCenter{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 /*body
 {
 	margin-top: 0px;
