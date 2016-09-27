@@ -9,10 +9,69 @@ var app = angular.module('myApp', []);
 app.controller('newsBias', function($scope) { 
 
   $scope.newsSites = [
-    {url:'brisbanetimes.com',name:'Brisbane Times',bias:'one'},
-    {url:'abc.net.au',name:'ABC News',bias:'two'},
-    {url:'theconversation.com',name:'The Conversation',bias:'three'}
+    {
+        url:'brisbanetimes.com',
+        name:'Brisbane Times',
+        bias:'one',
+        likes: 0,
+        likePercentage: 0,
+    	dislikes: 0,
+        dislikePercentage: 0,
+        totalVotes: 0
+    },
+      {
+        url:'brisbanetimes.com2',
+        name:'Brisbane Times2',
+        bias:'four',
+        likes: 0,
+        likePercentage: 0,
+    	dislikes: 0,
+        dislikePercentage: 0,
+        totalVotes: 0
+    },
+    {
+        url:'abc.net.au',
+        name:'ABC News',
+        bias:'two',
+        likes: 0,
+        likePercentage: 0,
+    	dislikes: 0,
+        dislikePercentage: 0,
+        totalVotes: 0
+    },
+    {
+        url:'theconversation.com',
+        name:'The Conversation',
+        bias:'three',
+        likes: 0,
+        likePercentage: 0,
+    	dislikes: 0,
+        dislikePercentage: 0,
+        totalVotes: 0
+    }
   ];
+    
+    $scope.updatePercentage = function(index) {
+      var likes = $scope.newsSites[index].likes;
+      var dislikes = $scope.newsSites[index].dislikes;
+      var total = $scope.newsSites[index].totalVotes;
+    $scope.newsSites[index].likePercentage = ((likes/total) * 100).toFixed(2);
+    $scope.newsSites[index].dislikePercentage = ((dislikes/total) * 100).toFixed(2);
+    };
+    
+    
+        
+  $scope.plusOne = function(index) { 
+    $scope.newsSites[index].likes += 1;
+    $scope.newsSites[index].totalVotes += 1;
+    $scope.updatePercentage(index);
+  };
+  $scope.minusOne = function(index) { 
+  	 $scope.newsSites[index].dislikes += 1; 
+      $scope.newsSites[index].totalVotes += 1;
+      $scope.updatePercentage(index);
+  };
+    
   $scope.domain = "";
   $scope.page = "";
   
@@ -54,4 +113,12 @@ app.controller('newsBias', function($scope) {
         $scope.searchResult=true;
 
     }
+    $scope.biasVote=function(userInput){
+        var vote = document.getElementById(userInput).value;
+        console.log(vote);
+        
+
+    }
+    
+    
   });
