@@ -12,6 +12,10 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
 	    <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/w3.css">
+        
+        <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
+        <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.css">
+    
 
         <!--Fonts-->
         <!--Google Fonts - Roboto -->
@@ -65,34 +69,50 @@
 <!-- White Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content" ng-show="searchResult && newsQuery">
-        <h1 class="text-navy">Search Results</h1>        
+    <!--<div class="w3-content" >-->
+        <h1 id="searchResultScroll" class="text-navy">Search Results</h1>  
+        <p class="w3-margin-bottom">You searched for: <span id="searchTerm" ></span></p>
         <div class="w3-padding-xlarge w3-card w3-round-medium totalHeight w3-margin-bottom" ng-repeat="news in urlToFilter | filter:searchQuery">
+        <!--<div class="w3-padding-xlarge w3-card w3-round-medium totalHeight w3-margin-bottom" ng-repeat="news in newsSites | filter: 'brisbane' ">-->
        
             <div class="w3-twothird">
 
-                <h2 class="text-navy">{{news.name}}</h2>
-                <p class="text-navy">{{news.bias}}</p>
-                <a ng-href="{{news.url}}">{{news.url}}</a>
-
+                <h2 class="text-navy">Name: {{news.name}}</h2>
+                <p class="text-navy w3-margin-bottom">URL: 
+                    <a ng-href="{{news.url}}">{{news.url}}</a>
+                </p>
+                
+                <h3 class="text-navy">Owned by: {{news.owner}}</h3>
+                <p class="text-navy">The {{news.owner}} CEO is {{news.CEO}} and the Chairman is {{news.Chairman}}</p>
+                <p class="text-navy w3-margin-bottom">{{news.owner}} is a {{news.type}} based in {{news.based}}.</p>
+                <p class="text-navy">Other newspapers owned by {{news.owner}}: </p>
+                <p class="w3-text-red w3-margin-bottom">{{news.otherNews}}</p>
+                <p class="text-navy">Other online content owned by {{news.owner}}:</p>
+                <p class="w3-text-red w3-margin-bottom">{{news.otherOnline}}</p>
+                
+                
             </div>
 
             <div class="w3-third">
-                <h2>Crowd-sourced trust rating</h2>
-                <p>How much to you trust this news site?</p>
-               <!-- <input type="range" name="vote" min="0" max="10" id="myVote" />-->
+                <h3>Trust rating</h3>
+                <h4>{{news.name}}:  <span class="w3-text-red">{{news.averageRating}}/5</span></h4>
+                <p class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</p>
                 
+                <h5>Vote on {{news.name}}</h5>
+                <p>How much do you trust this news site?</p>
+                
+                 <rzslider rz-slider-model="slider.value"
+          rz-slider-options="slider.options" id="myVote"></rzslider>
+                
+                <input class="w3-btn-block margin-top-60 w3-round w3-red" type="button" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" />
+                
+               <!-- <input type="range" name="vote" min="0" max="10" id="myVote" />-->
                 <!--<div class="range-slider">
                   <input class="range-slider__range" type="range" value="5" min="0" max="10" name="vote" id="myVote">
                   <span class="range-slider__value">0</span>
                 </div>-->
                 
-                <div id="slider"></div>
-                
-                
-                
-                
-                <input type="button" name="submit" data-ng-click="biasVote('myVote');" value="Submit Vote" />
-                <div class="rating text-navy">
+                <!--<div class="rating text-navy">
                         <p class="likes" ng-click="plusOne($index)">+ {{ news.likes }} </p>
                         <p class="dislikes" ng-click="minusOne($index)">- {{ news.dislikes }} </p>
                          <p>TOTAL VOTES</p>
@@ -101,7 +121,7 @@
                          <p> {{ news.likePercentage }} %</p>
                          <p>Percentage dislikes</p>
                          <p> {{ news.dislikePercentage }} %</p>
-                    </div> 
+                    </div> -->
             </div>
         </div>
     </div>
@@ -150,8 +170,13 @@
     <!-- AngularJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <!--controllers -->
-    <script src="js/controller.js"></script>   
-    <script src="js/sliderValue.js"></script>
+    <script src="js/controller.js"></script>
+    <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js"></script>
+    <!--jquery scroll to -->
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    
+    
 
 </body>
 </html>

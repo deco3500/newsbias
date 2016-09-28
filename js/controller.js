@@ -4,30 +4,29 @@
 //Clean URL from
 //http://stackoverflow.com/questions/5343288/get-the-domain-and-page-name-from-a-string-url
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['rzModule']);
 
 app.controller('newsBias', function($scope) { 
 
   $scope.newsSites = [
     {
-        url:'brisbanetimes.com',
+        url:'http://www.brisbanetimes.com.au/',
         name:'Brisbane Times',
+        owner: 'Fairfax Media Group',
+        type: 'Public Company',
+        based: 'Sydney',
+        CEO: 'Greg Hywood',
+        Chairman: 'Nick Falloon',
+        otherNews: 'The Sydney Morning Herald, The Age, The Australian Financial Review, The Canberra Times, The Sun-Herald, The Land, BrisbaneTimes.com.au, WAtoday.com.au',
+        otherOnline: 'traveller.com.au, essentialbaby.com.au, essentialkids.com.au, goodfood.com.au, oversixty.com.au, findababysitter.com.au',
         bias:'one',
         likes: 0,
         likePercentage: 0,
     	dislikes: 0,
         dislikePercentage: 0,
-        totalVotes: 0
-    },
-      {
-        url:'brisbanetimes.com2',
-        name:'Brisbane Times2',
-        bias:'four',
-        likes: 0,
-        likePercentage: 0,
-    	dislikes: 0,
-        dislikePercentage: 0,
-        totalVotes: 0
+        totalVotes: 0,
+        totalRating: 0,
+        averageRating: 0
     },
     {
         url:'abc.net.au',
@@ -37,7 +36,9 @@ app.controller('newsBias', function($scope) {
         likePercentage: 0,
     	dislikes: 0,
         dislikePercentage: 0,
-        totalVotes: 0
+        totalVotes: 0,
+        totalRating: 0,
+        averageRating: 0
     },
     {
         url:'theconversation.com',
@@ -47,31 +48,13 @@ app.controller('newsBias', function($scope) {
         likePercentage: 0,
     	dislikes: 0,
         dislikePercentage: 0,
-        totalVotes: 0
+        totalVotes: 0,
+        totalRating: 0,
+        averageRating: 0
     }
   ];
     
-    $scope.updatePercentage = function(index) {
-      var likes = $scope.newsSites[index].likes;
-      var dislikes = $scope.newsSites[index].dislikes;
-      var total = $scope.newsSites[index].totalVotes;
-    $scope.newsSites[index].likePercentage = ((likes/total) * 100).toFixed(2);
-    $scope.newsSites[index].dislikePercentage = ((dislikes/total) * 100).toFixed(2);
-    };
-    
-    
-        
-  $scope.plusOne = function(index) { 
-    $scope.newsSites[index].likes += 1;
-    $scope.newsSites[index].totalVotes += 1;
-    $scope.updatePercentage(index);
-  };
-  $scope.minusOne = function(index) { 
-  	 $scope.newsSites[index].dislikes += 1; 
-      $scope.newsSites[index].totalVotes += 1;
-      $scope.updatePercentage(index);
-  };
-    
+  
   $scope.domain = "";
   $scope.page = "";
   
@@ -101,8 +84,9 @@ app.controller('newsBias', function($scope) {
   //$scope.cleanURL("http://myWebSite.com"); // domain : myWebSite
   //$scope.cleanURL("myWebSite.com/xxx.html"); // domain : myWebSite page : xxx
   //$scope.cleanURL("https://www.myWebSite.com/meowbeans.html"); // domain : myWebSite page : xxx
-  
-  
+
+  //search
+  $scope.searchResult=false;
     $scope.searchURL=function(urlInput){
         var url = document.getElementById(urlInput).value;
         $scope.cleanURL(url);
@@ -111,14 +95,67 @@ app.controller('newsBias', function($scope) {
         //$scope.searchQuery = angular.copy($scope.newsQuery);
         $scope.urlToFilter=$scope.newsSites;
         $scope.searchResult=true;
-
-    }
-    $scope.biasVote=function(userInput){
-        var vote = document.getElementById(userInput).value;
-        console.log(vote);
         
+        //show search term
+        $("#searchTerm").replaceWith("<span id='searchTerm' >" + url + "</span>");
+        
+        //scroll down page to search result
+       // $.scrollTo($('#searchResultScroll'), 1000);
 
     }
+   
+    $scope.updatePercentage = function(index) {
+      var likes = $scope.newsSites[index].likes;
+      var dislikes = $scope.newsSites[index].dislikes;
+      var total = $scope.newsSites[index].totalVotes;
+    $scope.newsSites[index].likePercentage = ((likes/total) * 100).toFixed(2);
+    $scope.newsSites[index].dislikePercentage = ((dislikes/total) * 100).toFixed(2);
+    };
+    
+  $scope.plusOne = function(index) { 
+    $scope.newsSites[index].likes += 1;
+    $scope.newsSites[index].totalVotes += 1;
+    $scope.updatePercentage(index);
+  };
+  $scope.minusOne = function(index) { 
+     $scope.newsSites[index].dislikes += 1; 
+      $scope.newsSites[index].totalVotes += 1;
+      $scope.updatePercentage(index);
+  };
+    
+    //on click function to vote
+    $scope.biasVote=function(index){
+        //var vote = document.getElementById(userInput).value;
+        //update total number votes
+        $scope.newsSites[index].totalVotes += 1;
+        var total = $scope.newsSites[index].totalVotes;
+        //console.log('total ' + total);
+        //update total vote value
+        var newVote = $scope.slider.value
+        //console.log('newVote ' + newVote);
+        $scope.newsSites[index].totalRating += newVote;
+        var totalVotes = $scope.newsSites[index].totalRating;
+        //console.log('totalVotes ' + totalVotes);
+        //get vote average
+        $scope.newsSites[index].averageRating = (totalVotes/total).toFixed(1);
+        //console.log('average ' + $scope.newsSites[index].averageRating);
+    }
+
+    
+    $scope.slider = {
+      value: 3,
+      options: {
+        showTicksValues: true,
+        stepsArray: [
+          {value: 1, legend: 'Not at all'},
+          {value: 2},
+          {value: 3, legend: 'Average'},
+          {value: 4},
+          {value: 5, legend: 'Very much'}
+        ]
+      }
+    };
+    
     
     
   });
