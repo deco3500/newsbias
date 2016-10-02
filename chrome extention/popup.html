@@ -5,11 +5,38 @@
  value "popup.html".
  -->
 <html>
+  <link rel="stylesheet" type="text/css" href="w3.css">
+  <script src="popup.js"></script>
   <head>
     <title>Newsbias</title>
   </head>
   <body>
-    <h1>Hello, We are team Newsbias.</h1>
+    <div class = "w3-container">
+      <div class = "w3-row">
+        <div class = class="w3-col" style="width:20%">
+        </div>
+        <div class = class="w3-col" style="width:60%">
+          <div id ="host"></div>
+        </div>
+        <div class = class="w3-col" style="width:20%">
+        </div>
+      </div>
+
+      <div class = "w3-row">
+        <div class = class="w3-col" style="width:10%">
+          <p>Rating</p>
+        </div>
+        <div class = class="w3-col" style="width:80%">
+          <div class="w3-progress-container">
+            <div id="myBar" class="w3-progressbar w3-red" style="width:50%">
+              <div class="w3-center w3-text-white">50%</div>
+            </div>
+          </div>
+        </div>
+        <div class = class="w3-col" style="width:10%">         
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 

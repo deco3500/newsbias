@@ -9,8 +9,10 @@
     "default_icon": "NewsBias.png",
     "default_popup": "popup.html"
   },
+
   "permissions": [
     "activeTab",
+    "tabs",
     "https://ajax.googleapis.com/"
   ]
 }

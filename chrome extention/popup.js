@@ -116,3 +116,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+chrome.windows.getCurrent(function(w) 
+{
+    // chrome.tabs.getSelected(w.id,function (response)
+    // {
+    //     var url = new URL(response.url)
+    //     document.getElementById('host').innerHTML = url.hostname;
+    // });
+
+    chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+    var url = new URL(tabs[0].url)
+    console.log(tabs[0].url);
+    console.log(tabs[0].title);
+    document.getElementById('host').innerHTML = url.hostname;
+});
+});
+
+
