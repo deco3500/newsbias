@@ -85,6 +85,10 @@ body, .w3-navbar,button {
    background: rgba(246, 90, 91, 0.25);
    transition: background 500ms;
 }
+
+.clear {
+    clear:both;
+}
 /*body
 {
 	margin-top: 0px;

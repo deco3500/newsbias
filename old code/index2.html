@@ -94,34 +94,50 @@
             </div>
 
             <div class="w3-third">
-                <h3>Trust rating</h3>
-                <h4>{{news.name}}:  <span class="w3-text-red">{{news.averageRating}}/5</span></h4>
-                <p class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</p>
-                
-                <h5>Vote on {{news.name}}</h5>
-                <p>How much do you trust this news site?</p>
-                
-                 <rzslider rz-slider-model="slider.value"
-          rz-slider-options="slider.options" id="myVote"></rzslider>
-                
-                <input class="w3-btn-block margin-top-60 w3-round w3-red" type="button" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" />
-                
-               <!-- <input type="range" name="vote" min="0" max="10" id="myVote" />-->
-                <!--<div class="range-slider">
-                  <input class="range-slider__range" type="range" value="5" min="0" max="10" name="vote" id="myVote">
-                  <span class="range-slider__value">0</span>
+                <div ng-show="{{ news.bias }} == true">
+                    <h3>Trust rating #1A</h3>
+                    <h4>{{news.name}}:  <span class="w3-text-red">{{news.averageRating}}/5</span></h4>
+                    <p class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</p>
+
+                    <h5>Vote on {{news.name}}</h5>
+                    <p>How much do you trust this news site?</p>
+
+                     <rzslider rz-slider-model="slider.value"
+              rz-slider-options="slider.options" id="myVote"></rzslider>
+
+                    <input class="w3-btn-block margin-top-60 w3-round w3-red" type="button" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" />
+
+                   <!-- <input type="range" name="vote" min="0" max="10" id="myVote" />-->
+                    <!--<div class="range-slider">
+                      <input class="range-slider__range" type="range" value="5" min="0" max="10" name="vote" id="myVote">
+                      <span class="range-slider__value">0</span>
                 </div>-->
                 
-                <!--<div class="rating text-navy">
-                        <p class="likes" ng-click="plusOne($index)">+ {{ news.likes }} </p>
-                        <p class="dislikes" ng-click="minusOne($index)">- {{ news.dislikes }} </p>
-                         <p>TOTAL VOTES</p>
-                         <p> {{ news.totalVotes }} </p>
-                         <p>Percentage likes</p>
-                         <p> {{ news.likePercentage }} %</p>
-                         <p>Percentage dislikes</p>
-                         <p> {{ news.dislikePercentage }} %</p>
-                    </div> -->
+                </div>
+                
+                <div ng-show="{{ news.bias }} == false">
+                    <h3>Trust rating #1B</h3>
+                    <h4 class="w3-left w3-margin-right" ng-click="plusOne($index)"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span class="w3-text-red">{{news.likePercentage}}</span></h4>
+                    <h4 class="w3-left" ng-click="minusOne($index)"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i><span class="w3-text-red">{{news.dislikePercentage}}</span></h4>
+
+                    <p class="clear w3-margin-bottom">{{news.totalVotesPercent}} total votes from visitors to this site.</p>
+
+                    <h5>Vote for {{news.name}} </h5>
+                    <p>How much do you trust this news site?  Vote by clicking on the thumbs up or thumbs down buttons above</p>
+
+
+                    <!--<div class="rating text-navy">
+                            <p class="likes" ng-click="plusOne($index)">+ {{ news.likes }} </p>
+                            <p class="dislikes" ng-click="minusOne($index)">- {{ news.dislikes }} </p>
+                             <p>TOTAL VOTES</p>
+                             <p> {{ news.totalVotes }} </p>
+                             <p>Percentage likes</p>
+                             <p> {{ news.likePercentage }} %</p>
+                             <p>Percentage dislikes</p>
+                             <p> {{ news.dislikePercentage }} %</p>
+                        </div>-->
+                </div>
+                
             </div>
         </div>
     </div>
