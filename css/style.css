@@ -162,7 +162,7 @@ header
 
 }
 .headerImage {
-    background: url(../IMG/news_bg.png) no-repeat center center fixed; 
+    background: url(../IMG/cover_image.jpg) no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -224,39 +224,7 @@ header
 	
 }
 
-.arrowIcon
-{
-	border: 0;
-	width: 50px;
-	height: 50px;
-	background-color: white;
-	background-image: url("../IMG/arrowIconNoFocus.png");
-	background-size: 100%;
-	float: right;
-	margin-top: 50px;
-}
 
-.arrowIcon:hover
-{
-	background-image: url("../IMG/arrowIconFocus.png");
-}
-
-.helpIcon
-{
-	border: 0;
-	width: 50px;
-	height: 50px;
-	background-color: white;
-	background-image: url("../IMG/helpIconNoFocus.png");
-	background-size: 100%;
-	float: left;
-	margin-top: 50px;
-}
-
-.helpIcon:hover
-{
-	background-image: url("../IMG/helpIconFocus.png");
-}
 
 /*footer*/
 
