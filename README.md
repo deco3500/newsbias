@@ -178,3 +178,5 @@ Week | Due | Key Deliverable
 
 * McKnight, D. (2012). Gina Rinehart and Rupert Murdoch: a study of power in the media. Theconversation.com. Retrieved 5 September 2016, from *http://theconversation.com/gina-rinehart-and-rupert-murdoch-a-study-of-power-in-the-media-5394*
 
+https://fullfact.org/blog/2016/oct/how-find-fact/
+
