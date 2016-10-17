@@ -38,8 +38,8 @@
             <a class="w3-padding-large w3-hover-white w3-large navy" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
           </li>
           <li><a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo"/></a></li>
-          <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Home</a></li>
-          <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Fact Check</a></li>
+          <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white active-tab">Home</a></li>
+          <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check</a></li>
           <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
          
         </ul>
@@ -49,8 +49,8 @@
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
   <ul class="w3-navbar w3-left-align w3-large navy">
-    <li><a class="w3-padding-large" href="#">Home</a></li>
-    <li><a class="w3-padding-large" href="#">Fact Check</a></li>
+    <li><a class="w3-padding-large" href="index.html">Home</a></li>
+    <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
 
     <li><a class="w3-padding-large" href="about.html">About</a></li>
   </ul>
@@ -61,7 +61,7 @@
   <h1 class="w3-margin w3-jumbo">Who owns your news?</h1>     
     
     <input class="w3-padding-16 w3-large w3-margin-top w3-input" type="text" ng-model="newsQuery" id="myNewsURL" placeHolder="Enter a link to a news article or the name of a news site">
-    <input class="w3-btn w3-padding-xlarge w3-large w3-margin-top navy w3-card w3-round-medium" type="button" data-ng-click="searchURL('myNewsURL');" value="Search" />
+    <input class="w3-btn w3-padding-xlarge w3-large w3-margin-top w3-lime w3-card w3-round-medium" type="button" data-ng-click="searchURL('myNewsURL');" value="Search" />
   
   <!--<button class="w3-btn w3-padding-xlarge w3-large w3-margin-top navy w3-card w3-round-medium">Get Started</button>-->
 </div>
@@ -86,9 +86,9 @@
                 <p class="text-navy">The {{news.owner}} CEO is {{news.CEO}} and the Chairman is {{news.Chairman}}</p>
                 <p class="text-navy w3-margin-bottom">{{news.owner}} is a {{news.type}} based in {{news.based}}.</p>
                 <p class="text-navy">Other newspapers owned by {{news.owner}}: </p>
-                <p class="w3-text-red w3-margin-bottom">{{news.otherNews}}</p>
+                <p class="w3-text-cyan w3-margin-bottom">{{news.otherNews}}</p>
                 <p class="text-navy">Other online content owned by {{news.owner}}:</p>
-                <p class="w3-text-red w3-margin-bottom">{{news.otherOnline}}</p>
+                <p class="w3-text-cyan w3-margin-bottom">{{news.otherOnline}}</p>
                 
                 
             </div>
@@ -96,7 +96,7 @@
             <div class="w3-third">
                 <div ng-show="{{ news.bias }} == true">
                     <h3>Trust rating #1A</h3>
-                    <h4>{{news.name}}:  <span class="w3-text-red">{{news.averageRating}}/5</span></h4>
+                    <h4>{{news.name}}:  <span class="w3-text-cyan">{{news.averageRating}}/5</span></h4>
                     <p class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</p>
 
                     <h5>Vote on {{news.name}}</h5>
@@ -105,7 +105,7 @@
                      <rzslider rz-slider-model="slider.value"
               rz-slider-options="slider.options" id="myVote"></rzslider>
 
-                    <input class="w3-btn-block margin-top-60 w3-round w3-red" type="button" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" />
+                    <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="button" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" />
 
                    <!-- <input type="range" name="vote" min="0" max="10" id="myVote" />-->
                     <!--<div class="range-slider">
@@ -114,7 +114,7 @@
                 </div>-->
                 
                 </div>
-                
+                <!-- Version 1B
                 <div ng-show="{{ news.bias }} == false">
                     <h3>Trust rating #1B</h3>
                     <h4 class="w3-left w3-margin-right" ng-click="plusOne($index)"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span class="w3-text-red">{{news.likePercentage}} %</span></h4>
@@ -135,8 +135,8 @@
                              <p> {{ news.likePercentage }} %</p>
                              <p>Percentage dislikes</p>
                              <p> {{ news.dislikePercentage }} %</p>
-                        </div>-->
-                </div>
+                        </div>
+                </div>-->
                 
             </div>
         </div>

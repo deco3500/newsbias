@@ -24,7 +24,7 @@ app.controller('newsBias', function($scope) {
         totalRating: 22,
         averageRating: 3.7
     },
-      {
+      /*{
         url:'http://www.brisbanetimes.com.au/',
         name:'Brisbane Times v2',
         owner: 'Fairfax Media Group',
@@ -40,7 +40,7 @@ app.controller('newsBias', function($scope) {
         likePercentage: 67.57,
         dislikePercentage: 32.43,
         totalVotesPercent: 37
-    },
+    },*/
     {
         url:'abc.net.au',
         name:'ABC News',
@@ -67,6 +67,42 @@ app.controller('newsBias', function($scope) {
     }
   ];
     
+  $scope.results = [
+    {
+        url:'http://www.brisbanetimes.com.au/',
+        name:'article name1',
+        publication:'Brisbane Times',
+        owner: 'Fairfax Media Group',
+        category: 'IT',
+        score: 5,
+        detail: 'result1'
+    },
+      {
+        url:'http://www.brisbanetimes.com.au/',
+        name:'article name2',
+        publication:'Brisbane Times',
+        owner: 'Fairfax Media Group',
+        category: 'IT',
+        score: 5,
+        detail: 'result1'
+    },{
+        url:'http://www.brisbanetimes.com.au/',
+        name:'article name3',
+        publication:'Brisbane Times',
+        owner: 'Fairfax Media Group',
+        category: 'IT',
+        score: 5,
+        detail: 'result1'
+    },{
+        url:'http://www.brisbanetimes.com.au/',
+        name:'article name4',
+        publication:'Brisbane Times',
+        owner: 'Fairfax Media Group',
+        category: 'IT',
+        score: 5,
+        detail: 'result1'
+    }
+  ];
   
   $scope.domain = "";
   $scope.page = "";
