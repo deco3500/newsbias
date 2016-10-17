@@ -66,8 +66,17 @@
   <!--<button class="w3-btn w3-padding-xlarge w3-large w3-margin-top navy w3-card w3-round-medium">Get Started</button>-->
 </div>
 
-<!-- White Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+    <!-- Trigger/Open the Modal -->
+<!--<button onclick="document.getElementById('searchResultsModal').style.display='block'"
+class="w3-btn">Open Modal</button>-->
+
+<!-- The Modal -->
+<div id="searchResultsModal" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('searchResultsModal').style.display='none'" 
+      class="w3-closebtn">&times;</span>
+      <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content" ng-show="searchResult && newsQuery">
     <!--<div class="w3-content" >-->
         <h1 id="searchResultScroll" class="text-navy">Search Results</h1>  
@@ -142,6 +151,13 @@
         </div>
     </div>
 </div>
+    </div>
+  </div>
+</div>
+    
+    
+<!-- White Grid -->
+
 
 <!-- Grey Grid -->
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
@@ -179,6 +195,19 @@
         }
     }
     </script>
+    
+    <!--close modal from clicking anywhere from w3.css -->
+    <script>
+        // Get the modal
+    var modal = document.getElementById('searchResultsModal');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
 <!-- jQuery -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

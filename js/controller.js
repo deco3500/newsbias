@@ -137,6 +137,7 @@ app.controller('newsBias', function($scope) {
   //search
   $scope.searchResult=false;
     $scope.searchURL=function(urlInput){
+        document.getElementById('searchResultsModal').style.display='block';
         var url = document.getElementById(urlInput).value;
         $scope.cleanURL(url);
       

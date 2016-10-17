@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <title>News Bias - Fact Check</title>
+        <title>News Bias</title>
 
         <!--Stylesheets-->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -33,10 +33,10 @@
           <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
             <a class="w3-padding-large w3-hover-white w3-large navy" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
           </li>
-          <li><a href="#" class="navLogoContainer" id="nohover"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo"/></a></li>
+          <li><a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo"/></a></li>
           <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
-          <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check</a></li>
-          <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
+          <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check</a></li>
+          <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white active-tab">About</a></li>
          
         </ul>
         </nav>
@@ -54,65 +54,48 @@
 
 <!-- Header -->
 <div class="w3-container w3-section white w3-center w3-padding-top-64">
-  <h1>Fact Check Results</h1>
+  <h1>Submit an article</h1>
 </div>
 <div class="w3-container">
-  <p class="w3-small w3-padding-bottom">Fact Check > Results</p>
+  <p class="w3-small w3-padding-bottom">Fact Check > Submit an article</p>
 </div>
+
 <div class="w3-container">
-  <p>User can submit a quote and a link to an article to be fact checked by a team of community leaders i.e. "Fact Checkers". Users can apply to become fact-checkers via a form on the website.</p>
+  <div class="w3-card-4 formCenter">
 
-<p>Articles will be given a "rating", computed by a series of weighted parameters which 3 members of the fact-checking team must answer independently. Results of a fact check can be easily shared by a user to social media chanels and email. 
-</p>
+<header class="w3-container navy">
+  <h2 class="w3-center">Review form</h2>
+</header>
+
+<div class="w3-container">
+  <div class="w3-row-padding w3-padding-medium">
+            <label class="w3-label w3-text-black">Name:</label>
+            <input class="w3-input" type = "text" id = "name_input"></input> 
+        </div>
+        <div class="w3-row-padding w3-padding-medium">
+            <label class="w3-label w3-text-black">Email:</label>
+            <input class="w3-input" type = "email" id = "email_input"></input>     
+        </div>
+        <div class="w3-row-padding w3-padding-medium">
+            <label class="w3-label w3-text-black">Link:</label>	
+            <input class="w3-input" type = "url" id = "url_input"></input>  
+        </div>
+        <div class="w3-row-padding w3-padding-medium">
+            <label class="w3-label w3-text-black">Comment:</label>
+            <textarea class="w3-input" id = "comment_input"></textarea>  
+        </div>	
 </div>
-   
-<div class="w3-container w3-padding-top-32">
-    <div class="w3-third w3-padding-medium" ng-repeat="result in results">
-        <div class="w3-card-4">
 
-            <header class="w3-container w3-light-grey">
-              <h1>{{result.name}}</h1>
-            </header>
+<footer class="w3-container navy">
+  <h5 class="w3-center">Put a submit button here</h5>
+</footer>
 
-            <div class="w3-container w3-padding-32">
-                
-              <p>Publication: {{result.publication}}</p>
-                <p>Owner: {{result.owner}}</p>    
-              <hr>
-                <p>Category: {{result.category}}</p>
-                <a ng-href="{{result.url}}">{{result.url}}</a>
-            </div>
-            <footer class="w3-container w3-lime w3-padding-16">
-              <p class="w3-center">Overall score {{result.score}}/10</h5>
-            </footer>
-            <button class="w3-btn-block w3-cyan w3-text-white "><a ng-href="{{result.detail}}.html"><h5>View detailed results</h5></a></button>
-            
+</div>
 
-        </div>
-    </div>
-   <!-- <div class="w3-third w3-padding-medium" ng-repeat="news in newsSites">
-        <div class="w3-card-4">
-
-            <header class="w3-container w3-light-grey">
-              <h1>Name: {{news.name}}</h1>
-            </header>
-
-            <div class="w3-container w3-padding-32">
-              <p>summary text</p>
-              <hr>
-              <p>summary text</p>
-            </div>
-
-            <button class="w3-btn-block w3-red">summary score 5/10</button>
-            <footer class="w3-container w3-indigo">
-              <h5>View detailed results</h5>
-            </footer>
-
-        </div>
-    </div>-->
-    
 </div>
 <hr>
+
+
 
 
 <!-- Footer -->
