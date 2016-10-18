@@ -22,6 +22,7 @@ function getCookie(cookieName)
             return c.substring(sourcelink.length, c.length);
         }
     }
+    console.log(123);
     return "";
 }
 

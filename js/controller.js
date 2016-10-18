@@ -6,7 +6,7 @@
 
 var app = angular.module('myApp', ['rzModule']);
 
-app.controller('newsBias', function($scope) { 
+app.controller('newsBias', function($scope,$location) { 
 
   $scope.newsSites = [
     {
@@ -36,7 +36,7 @@ app.controller('newsBias', function($scope) {
         otherOnline: 'traveller.com.au, essentialbaby.com.au, essentialkids.com.au, goodfood.com.au, oversixty.com.au, findababysitter.com.au',
         bias: false,
         likes: 25,
-    	dislikes: 12,
+      dislikes: 12,
         likePercentage: 67.57,
         dislikePercentage: 32.43,
         totalVotesPercent: 37
@@ -47,7 +47,7 @@ app.controller('newsBias', function($scope) {
         bias:'two',
         likes: 0,
         likePercentage: 0,
-    	dislikes: 0,
+      dislikes: 0,
         dislikePercentage: 0,
         totalVotes: 0,
         totalRating: 0,
@@ -59,7 +59,7 @@ app.controller('newsBias', function($scope) {
         bias:'three',
         likes: 0,
         likePercentage: 0,
-    	dislikes: 0,
+      dislikes: 0,
         dislikePercentage: 0,
         totalVotes: 0,
         totalRating: 0,
@@ -121,12 +121,17 @@ app.controller('newsBias', function($scope) {
     if (url.indexOf("www.") == 0) {
         url = url.substr(4);
     }
+    //remove "www."
+    if (url.indexOf("file://") == 0) {
+        url = url.substr(0);
+    }
     $scope.domain = url.split('/')[0].split('.')[0]
     if (url.split('/').length > 1) {
         $scope.page = url.split('/')[1].split('.')[0];
     }
     //document.write("domain : " + domain + (page == "" ? "" : " page : " + page) + "<br/>");
     console.log("domain : " + $scope.domain + ($scope.page == "" ? "" : " page : " + $scope.page));
+    return $scope.domain;
 
   }
   //$scope.cleanURL("www.myWebSite.com"); // domain : myWebSite
@@ -152,6 +157,14 @@ app.controller('newsBias', function($scope) {
         //scroll down page to search result
        // $.scrollTo($('#searchResultScroll'), 1000);
 
+    }
+
+    $scope.searchURLbyTAB=function(urlInput){
+        var url = urlInput;
+        $scope.cleanURL(url);
+      
+        $scope.searchQuery = angular.copy($scope.domain);
+        $scope.urlToFilter=$scope.newsSites;
     }
    
     $scope.updatePercentage = function(index) {
@@ -213,7 +226,29 @@ app.controller('newsBias', function($scope) {
         ]
       }
     };
-    
-    
-    
+
+    //google chrome extension controller
+    if($scope.cleanURL($location.absUrl())!="file:")
+    {
+      chrome.windows.getCurrent(function(w) 
+      {
+      // chrome.tabs.getSelected(w.id,function (response)
+      // {
+      //     var url = new URL(response.url)
+      //     document.getElementById('host').innerHTML = url.hostname;
+      // });
+
+        chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+        var url = new URL(tabs[0].url)
+        $scope.title = tabs[0].title;
+        $scope.url = tabs[0].url;
+        $scope.searchURLbyTAB(tabs[0].url);
+        $scope.$apply();
+        // console.log(tabs[0].url);
+        // console.log(tabs[0].title);
+        // document.getElementById('host').innerHTML = url.hostname;
+        });
+      });
+    }
   });
+
