@@ -121,7 +121,7 @@ app.controller('newsBias', function($scope,$location) {
     if (url.indexOf("www.") == 0) {
         url = url.substr(4);
     }
-    //remove "www."
+    //remove "file://"
     if (url.indexOf("file://") == 0) {
         url = url.substr(0);
     }
@@ -193,9 +193,10 @@ app.controller('newsBias', function($scope,$location) {
       $scope.updatePercentage(index);
       console.log("done");
   };
-    
+    $scope.submitVote=false;
     //on click function to vote
     $scope.biasVote=function(index){
+        $scope.submitVote=true;
         //var vote = document.getElementById(userInput).value;
         //update total number votes
         $scope.newsSites[index].totalVotes += 1;

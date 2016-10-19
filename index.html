@@ -81,10 +81,10 @@ class="w3-btn">Open Modal</button>-->
     <!--<div class="w3-content" >-->
         <h1 id="searchResultScroll" class="text-navy">Search Results</h1>  
         <p class="w3-margin-bottom">You searched for: <span id="searchTerm" ></span></p>
-        <div class="w3-padding-xlarge w3-card w3-round-medium totalHeight w3-margin-bottom" ng-repeat="news in urlToFilter | filter:searchQuery">
+        <div class="w3-round-medium totalHeight w3-margin-bottom" ng-repeat="news in urlToFilter | filter:searchQuery">
         <!--<div class="w3-padding-xlarge w3-card w3-round-medium totalHeight w3-margin-bottom" ng-repeat="news in newsSites | filter: 'brisbane' ">-->
        
-            <div class="w3-twothird">
+            <div class="w3-twothird w3-padding-right">
 
                 <h2 class="text-navy">Name: {{news.name}}</h2>
                 <p class="text-navy w3-margin-bottom">URL: 
@@ -114,7 +114,7 @@ class="w3-btn">Open Modal</button>-->
                      <rzslider rz-slider-model="slider.value"
               rz-slider-options="slider.options" id="myVote"></rzslider>
 
-                    <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="button" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" />
+                    <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" />
 
                    <!-- <input type="range" name="vote" min="0" max="10" id="myVote" />-->
                     <!--<div class="range-slider">
