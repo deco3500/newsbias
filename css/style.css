@@ -53,6 +53,14 @@ h5,h6, body, .w3-navbar,button {
     background-color: #cddc39 !important;
 }
 
+.rzslider .rz-ticks .rz-tick .rz-tick-value {
+    top: -35px !important;
+}
+
+.rz-tick-legend {
+    line-height: 20px !important;
+}
+
 .rating {
  text-align: right;
  -webkit-user-select: none;

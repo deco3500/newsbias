@@ -1,173 +1,110 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <title>News Bias</title>
 
-        <!--Stylesheets-->
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-	    <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/w3.css">
-        
-        <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
-        <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.css">
-    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Bias</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.css">
+    <!--Fonts-->
+    <!--Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> </head>
 
-        <!--Fonts-->
-        <!--Google Fonts - Roboto -->
-        
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>>
-        <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
-	
-
-        <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
-            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-    </head>
-    
 <body ng-app="myApp" ng-controller="newsBias">
-
-<!-- Navbar -->
+    <!-- Navbar -->
     <nav>
         <ul class="w3-navbar navy w3-card-2 w3-top w3-left-align w3-large">
-          <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-            <a class="w3-padding-large w3-hover-white w3-large navy" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-          </li>
-          <li><a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo"/></a></li>
-          <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white active-tab">Home</a></li>
-          <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check</a></li>
-          <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
-         
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right"> <a class="w3-padding-large w3-hover-white w3-large navy" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> </li>
+            <li>
+                <a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo" /></a>
+            </li>
+            <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white active-tab">Home</a></li>
+            <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check</a></li>
+            <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
         </ul>
-        </nav>
-    
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
-  <ul class="w3-navbar w3-left-align w3-large navy">
-    <li><a class="w3-padding-large" href="index.html">Home</a></li>
-    <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
-
-    <li><a class="w3-padding-large" href="about.html">About</a></li>
-  </ul>
-</div>
-
-<!-- Header -->
-<div class="w3-container navy w3-center w3-padding-64 headerImage">
-  <h1 class="w3-margin w3-jumbo">Who owns your news?</h1>     
-    
-    <input class="w3-padding-16 w3-large w3-margin-top w3-input" type="text" ng-model="newsQuery" id="myNewsURL" placeHolder="Enter a link to a news article or the name of a news site">
-    <input class="w3-btn w3-padding-xlarge w3-large w3-margin-top w3-lime w3-card w3-round-medium" type="button" data-ng-click="searchURL('myNewsURL');" value="Search" />
-  
-  <!--<button class="w3-btn w3-padding-xlarge w3-large w3-margin-top navy w3-card w3-round-medium">Get Started</button>-->
-</div>
-
-    <!-- Trigger/Open the Modal -->
-<!--<button onclick="document.getElementById('searchResultsModal').style.display='block'"
-class="w3-btn">Open Modal</button>-->
-
-<!-- The Modal -->
-<div id="searchResultsModal" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom">
-    <div class="w3-container">
-      <span onclick="document.getElementById('searchResultsModal').style.display='none'" 
-      class="w3-closebtn">&times;</span>
-      <div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content" ng-show="searchResult && newsQuery">
-    <!--<div class="w3-content" >-->
-        <h1 id="searchResultScroll" class="text-navy">Search Results</h1>  
-        <p class="w3-margin-bottom">You searched for: <span id="searchTerm" ></span></p>
-        <div class="w3-round-medium totalHeight w3-margin-bottom" ng-repeat="news in urlToFilter | filter:searchQuery">
-        <!--<div class="w3-padding-xlarge w3-card w3-round-medium totalHeight w3-margin-bottom" ng-repeat="news in newsSites | filter: 'brisbane' ">-->
-       
-            <div class="w3-twothird w3-padding-right">
-
-                <h2 class="text-navy">Name: {{news.name}}</h2>
-                <p class="text-navy w3-margin-bottom">URL: 
-                    <a ng-href="{{news.url}}">{{news.url}}</a>
-                </p>
-                
-                <h3 class="text-navy">Owned by: {{news.owner}}</h3>
-                <p class="text-navy">The {{news.owner}} CEO is {{news.CEO}} and the Chairman is {{news.Chairman}}</p>
-                <p class="text-navy w3-margin-bottom">{{news.owner}} is a {{news.type}} based in {{news.based}}.</p>
-                <p class="text-navy">Other newspapers owned by {{news.owner}}: </p>
-                <p class="w3-text-cyan w3-margin-bottom">{{news.otherNews}}</p>
-                <p class="text-navy">Other online content owned by {{news.owner}}:</p>
-                <p class="w3-text-cyan w3-margin-bottom">{{news.otherOnline}}</p>
-                
-                
-            </div>
-
-            <div class="w3-third">
-                <div ng-show="{{ news.bias }} == true">
-                    <h3>Trust rating #1A</h3>
-                    <h4>{{news.name}}:  <span class="w3-text-cyan">{{news.averageRating}}/5</span></h4>
-                    <p class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</p>
-
-                    <h5>Vote on {{news.name}}</h5>
-                    <p>How much do you trust this news site?</p>
-
-                     <rzslider rz-slider-model="slider.value"
-              rz-slider-options="slider.options" id="myVote"></rzslider>
-
-                    <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" />
-
-                   <!-- <input type="range" name="vote" min="0" max="10" id="myVote" />-->
-                    <!--<div class="range-slider">
-                      <input class="range-slider__range" type="range" value="5" min="0" max="10" name="vote" id="myVote">
-                      <span class="range-slider__value">0</span>
-                </div>-->
-                
-                </div>
-                <!-- Version 1B
-                <div ng-show="{{ news.bias }} == false">
-                    <h3>Trust rating #1B</h3>
-                    <h4 class="w3-left w3-margin-right" ng-click="plusOne($index)"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span class="w3-text-red">{{news.likePercentage}} %</span></h4>
-                    <h4 class="w3-left" ng-click="minusOne($index)"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i><span class="w3-text-red">{{news.dislikePercentage}} %</span></h4>
-
-                    <p class="clear w3-margin-bottom">{{news.totalVotesPercent}} total votes from visitors to this site.</p>
-
-                    <h5>Vote for {{news.name}} </h5>
-                    <p>How much do you trust this news site?  Vote by clicking on the thumbs up or thumbs down buttons above</p>
-
-
-                    <!--<div class="rating text-navy">
-                            <p class="likes" ng-click="plusOne($index)">+ {{ news.likes }} </p>
-                            <p class="dislikes" ng-click="minusOne($index)">- {{ news.dislikes }} </p>
-                             <p>TOTAL VOTES</p>
-                             <p> {{ news.totalVotes }} </p>
-                             <p>Percentage likes</p>
-                             <p> {{ news.likePercentage }} %</p>
-                             <p>Percentage dislikes</p>
-                             <p> {{ news.dislikePercentage }} %</p>
+    </nav>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+        <ul class="w3-navbar w3-left-align w3-large navy">
+            <li><a class="w3-padding-large" href="index.html">Home</a></li>
+            <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
+            <li><a class="w3-padding-large" href="about.html">About</a></li>
+        </ul>
+    </div>
+    <!-- Header -->
+    <div class="w3-container navy w3-center w3-padding-64 headerImage">
+        <h1 class="w3-margin w3-jumbo">Who owns your news?</h1>
+        <form name="searchInput" ng-submit="searchURL('myNewsURL', searchInput.$valid);" novalidate>
+            <input class="w3-padding-16 w3-large w3-margin-top w3-input" type="text" ng-model="newsQuery" id="myNewsURL" placeHolder="Enter a link to a news article or the name of a news site" ng-minlength="3" required>
+            <!-- SUBMIT BUTTON -->
+            <button type="submit" class="w3-btn w3-padding-xlarge w3-large w3-margin-top w3-card w3-round-medium" ng-disabled="searchInput.$invalid" ng-class="{ 'w3-lime': searchInput.$valid }">Search</button>
+        </form>
+    </div>
+    <!-- The Modal -->
+    <div id="searchResultsModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container"> <span onclick="document.getElementById('searchResultsModal').style.display='none'" class="w3-closebtn">&times;</span>
+                <div class="w3-row-padding w3-padding-24 w3-container">
+                    <div class="w3-content" ng-show="searchResult && newsQuery">
+                        <div class="w3-row">
+                            <h1 id="searchResultScroll" class="text-navy">Search Results</h1>
+                            <p ng-hide="(urlToFilter | filter:searchQuery).length === 0">You searched for &quot;<span class="searchTerm"></span>&quot;</p>
+                            <p ng-show="(urlToFilter | filter:searchQuery).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned no results. <a onclick="document.getElementById('searchResultsModal').style.display='none'" style="text-decoration: underline">Try and search again.</a></p>
                         </div>
-                </div>-->
-                
+                        <div ng-repeat="news in urlToFilter | filter:searchQuery track by $index">
+                            <hr>
+                            <div class="w3-row">
+                                <div class="w3-col w3-half w3-padding-right">
+                                    <h2 class="w3-text-cyan" style="margin-top: 0">{{news.name}}</h2>
+                                    <p class="text-navy w3-margin-bottom">URL: <a ng-href="{{news.url}}">{{news.url}}</a> </p>
+                                    <p class="text-navy w3-margin-bottom">{{news.name}} is owned by <span style="font-weight:bold" class="w3-text-cyan">{{news.owner}}</span>.</p>
+                                    <p class="text-navy">CEO: {{news.CEO}}</p>
+                                    <p class="text-navy w3-margin-bottom">Chairman: {{news.Chairman}}</p>
+                                    <p class="text-navy w3-margin-bottom">{{news.owner}} is a <span style="font-weight:bold" class="w3-text-cyan">{{news.type}}</span> based in <span style="font-weight:bold" class="w3-text-cyan">{{news.based}}</span>.</p>
+                                    <p class="text-navy" style="font-weight:bold">Other newspapers owned by {{news.owner}}: </h4>
+                                        <ul class="w3-margin-bottom searchResult">
+                                            <li ng-repeat="i in news.otherNews">{{i}}</li>
+                                        </ul>
+                                        <p class="text-navy" style="font-weight:bold">Other online content owned by {{news.owner}}:</p>
+                                        <ul class="w3-margin-bottom searchResult">
+                                            <li ng-repeat="i in news.otherOnline">{{i}}</li>
+                                        </ul>
+                                </div>
+                                <div class="w3-col w3-half w3-border w3-padding">
+                                    <div ng-show="{{ news.bias }} == true">
+                                        <h3 class="w3-text-cyan">Trust rating</h3>
+                                        <h4>{{news.name}}:  <span class="w3-text-cyan">{{news.averageRating}}/5</span></h4>
+                                        <p class="w3-margin-bottom">Rating is an average of <span class="w3-text-cyan intro">{{news.totalVotes}}</span> total votes from visitors to this site.</p>
+                                        <h5>Submit your vote for {{news.name}}</h5>
+                                        <p class="w3-margin-bottom">Rate how much you trust this news site by dragging the slider between 1 and 5.</p>
+                                        <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options" id="myVote"></rzslider>
+                                        <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" /> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    </div>
-  </div>
-</div>
-    
-    
-<!-- White Grid -->
-
-
-<!-- Grey Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <p class="w3-padding-64 text-navy">one third things</p>
-    </div>
-
-    <div class="w3-twothird">
-      <h2 class="text-navy">Search Tips for demo</h1>
+    <!-- White Grid -->
+    <!-- Grey Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <p class="w3-padding-64 text-navy">one third things</p>
+            </div>
+            <div class="w3-twothird">
+                <h2 class="text-navy">Search Tips for demo</h1>
         <p class="w3-text-grey"> Search for Brisbane Times, ABC News, or The Conversation or web articles from these</p>
   <p class="w3-text-grey">e.g.    http://www.brisbanetimes.com.au/entertainment/tv-and-radio/qa-recap-coalition-senator-bridget-mckenzie-confronted-by-gay-brother-over-plebiscite-20160912-gret2z.html </p>
     </div>
@@ -225,4 +162,3 @@ class="w3-btn">Open Modal</button>-->
 
 </body>
 </html>
-

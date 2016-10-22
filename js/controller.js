@@ -29,30 +29,14 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         based: 'Sydney',
         CEO: 'Greg Hywood',
         Chairman: 'Nick Falloon',
-        otherNews: 'The Sydney Morning Herald, The Age, The Australian Financial Review, The Canberra Times, The Sun-Herald, The Land, BrisbaneTimes.com.au, WAtoday.com.au',
-        otherOnline: 'traveller.com.au, essentialbaby.com.au, essentialkids.com.au, goodfood.com.au, oversixty.com.au, findababysitter.com.au',
+        otherNews: ['The Sydney Morning Herald', 'The Age', 'The Australian Financial Review', 'The Canberra Times', 'The Sun-Herald', 'The Land', 'BrisbaneTimes.com.au', 'WAtoday.com.au'],
+        otherOnline: ['traveller.com.au', 'essentialbaby.com.au', 'essentialkids.com.au', 'goodfood.com.au', 'oversixty.com.au', 'findababysitter.com.au'],
         bias: true,
         totalVotes: 6,
         totalRating: 22,
         averageRating: 3.7
     },
-      /*{
-        url:'http://www.brisbanetimes.com.au/',
-        name:'Brisbane Times v2',
-        owner: 'Fairfax Media Group',
-        type: 'Public Company',
-        based: 'Sydney',
-        CEO: 'Greg Hywood',
-        Chairman: 'Nick Falloon',
-        otherNews: 'The Sydney Morning Herald, The Age, The Australian Financial Review, The Canberra Times, The Sun-Herald, The Land, BrisbaneTimes.com.au, WAtoday.com.au',
-        otherOnline: 'traveller.com.au, essentialbaby.com.au, essentialkids.com.au, goodfood.com.au, oversixty.com.au, findababysitter.com.au',
-        bias: false,
-        likes: 25,
-      dislikes: 12,
-        likePercentage: 67.57,
-        dislikePercentage: 32.43,
-        totalVotesPercent: 37
-    },*/
+     
     {
         url:'abc.net.au',
         name:'ABC News',
@@ -78,6 +62,15 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         averageRating: 0
     }
   ];
+    
+    //function to split comma list into seperate elements it iterate over
+    $scope.splitString=function(listaroo){
+        $scope.stringArray = new Array();
+        $scope.stringArray = $scope.listaroo.split(',');
+        console.log(stringArray);
+    }
+
+    //otherNews: ['The Sydney Morning Herald, The Age, The Australian Financial Review, The Canberra Times, The Sun-Herald, The Land, BrisbaneTimes.com.au, WAtoday.com.au'],
     
   $scope.results = [
     {
@@ -142,7 +135,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         $scope.page = url.split('/')[1].split('.')[0];
     }
     //document.write("domain : " + domain + (page == "" ? "" : " page : " + page) + "<br/>");
-    console.log("domain : " + $scope.domain + ($scope.page == "" ? "" : " page : " + $scope.page));
+    //console.log("domain : " + $scope.domain + ($scope.page == "" ? "" : " page : " + $scope.page));
     return $scope.domain;
 
   }
@@ -152,24 +145,27 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
   //$scope.cleanURL("https://www.myWebSite.com/meowbeans.html"); // domain : myWebSite page : xxx
 
   //search
-  $scope.searchResult=false;
-    $scope.searchURL=function(urlInput){
-        document.getElementById('searchResultsModal').style.display='block';
-        var url = document.getElementById(urlInput).value;
-        $scope.cleanURL(url);
-      
-        $scope.searchQuery = angular.copy($scope.domain);
-        //$scope.searchQuery = angular.copy($scope.newsQuery);
-        $scope.urlToFilter=$scope.newsSites;
-        $scope.searchResult=true;
+    $scope.searchResult=false;
+    $scope.searchURL=function(urlInput, isValid){
+        if (isValid) {
+            console.log("isvalid");
+            document.getElementById('searchResultsModal').style.display='block';
+            var url = document.getElementById(urlInput).value;
+            $scope.cleanURL(url);
+
+            $scope.searchQuery = angular.copy($scope.domain);
+            //$scope.searchQuery = angular.copy($scope.newsQuery);
+            $scope.urlToFilter=$scope.newsSites;
+            $scope.searchResult=true;
+
+            //show search term
+            $(".searchTerm").replaceWith("<span class='searchTerm' >" + url + "</span>");
+            console.log(url);
+        }
         
-        //show search term
-        $("#searchTerm").replaceWith("<span id='searchTerm' >" + url + "</span>");
-        
-        //scroll down page to search result
-       // $.scrollTo($('#searchResultScroll'), 1000);
 
     }
+    
 
     $scope.searchURLbyTAB=function(urlInput){
         var url = urlInput;
@@ -179,37 +175,11 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         $scope.urlToFilter=$scope.newsSites;
     }
    
-    $scope.updatePercentage = function(index) {
-      var likes = $scope.newsSites[index].likes;
-      var dislikes = $scope.newsSites[index].dislikes;
-      var total = $scope.newsSites[index].totalVotesPercent;
-    $scope.newsSites[index].likePercentage = ((likes/total) * 100).toFixed(2);
-        console.log('likes' + $scope.newsSites[index].likePercentage);
-    $scope.newsSites[index].dislikePercentage = ((dislikes/total) * 100).toFixed(2);
-        console.log('dislikes' + $scope.newsSites[index].dislikePercentage);
-    };
-    
-  $scope.plusOne = function(index) { 
-    $scope.newsSites[index].likes += 1;
-      console.log('likes' + $scope.newsSites[index].likes);
-    $scope.newsSites[index].totalVotesPercent += 1;
-      console.log('total' + $scope.newsSites[index].totalVotesPercent);
-    $scope.updatePercentage(index);
-      console.log("done");
-  };
-  $scope.minusOne = function(index) { 
-     $scope.newsSites[index].dislikes += 1; 
-      console.log('dislikes' + $scope.newsSites[index].dislikes);
-      $scope.newsSites[index].totalVotesPercent += 1;
-      console.log('total' + $scope.newsSites[index].totalVotesPercent);
-      $scope.updatePercentage(index);
-      console.log("done");
-  };
+   
     $scope.submitVote=false;
     //on click function to vote
     $scope.biasVote=function(index){
         $scope.submitVote=true;
-        //var vote = document.getElementById(userInput).value;
         //update total number votes
         $scope.newsSites[index].totalVotes += 1;
         var total = $scope.newsSites[index].totalVotes;
@@ -223,6 +193,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         //get vote average
         $scope.newsSites[index].averageRating = (totalVotes/total).toFixed(1);
         //console.log('average ' + $scope.newsSites[index].averageRating);
+        alert('Thanks for voting!');
     }
 
     
