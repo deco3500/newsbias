@@ -35,8 +35,8 @@
           </li>
           <li><a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo"/></a></li>
           <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
-          <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check</a></li>
-          <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white active-tab">About</a></li>
+          <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check</a></li>
+          <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
          
         </ul>
         </nav>
@@ -61,33 +61,50 @@
 </div>
 
 <div class="w3-container">
+    <p class="w3-margin-bottom">Thank you for your interest in our fact-checking process. Use the form below to get started.</p>
+<p>NOTE: While we will endeavour to check all submissions, please note that many types of articles are not well-suited to this process. Some types of articles will not be accepted by the submission system.</p>
   <div class="w3-card-4 formCenter">
 
 <header class="w3-container navy">
   <h2 class="w3-center">Review form</h2>
 </header>
 
-<div class="w3-container">
+<div class="w3-container w3-margin-top">
   <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Name:</label>
-            <input class="w3-input" type = "text" id = "name_input"></input> 
+            <label class="w3-label w3-text-black">Name/Alias</label>
+            <input class="w3-input" type = "text" id = "name_input" placeHolder="Please enter a name or alias to be published alongside factcheck results"></input> 
         </div>
         <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Email:</label>
-            <input class="w3-input" type = "email" id = "email_input"></input>     
+            <label class="w3-label w3-text-black">Email</label>
+            <input class="w3-input" type = "email" id = "email_input" placeHolder="Please enter an email to receive your results when they are available"></input>     
         </div>
         <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Link:</label>	
-            <input class="w3-input" type = "url" id = "url_input"></input>  
+            <label class="w3-label w3-text-black">Article URL</label>	
+            <input class="w3-input" type = "url" id = "url_input" placeHolder="Copy paste the article URL"></input>  
         </div>
         <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Comment:</label>
-            <textarea class="w3-input" id = "comment_input"></textarea>  
+            <label class="w3-label w3-text-black">Comment</label>
+            
+            <textarea class="w3-input" id = "comment_input" placeHolder="Briefly explain why you submitted the article for fact checking"></textarea>  
         </div>	
+    
+    
+    <div class="w3-row-padding w3-padding-medium w3-margin-bottom" >
+            <label class="w3-label w3-text-black">Article Category</label>
+        <br><small>Please select a category that best suits the article.</small><br><small>Categories not eligible include: Cars, Entertainment, Lifestyle, Local, Property, Religion / Spirituality, Sports, Technology, Travel, Weather </small><br>
+            <select id = "job_input">
+              <option value="Business">Business</option>
+              <option value="Current Events">Current Events</option>
+              <option value="Education">Education</option>
+                <option value="Health">Health</option>
+                <option value="Politics">Politics</option>
+                <option value="Science / Environment">Science / Environment</option>
+            </select>    
+        </div>
 </div>
 
-<footer class="w3-container navy">
-  <h5 class="w3-center">Put a submit button here</h5>
+<footer class="w3-container navy w3-margin-bottom">
+  <h5 class="w3-center"><a>Submit article</a></h5>
 </footer>
 
 </div>

@@ -151,6 +151,11 @@ header
 .navLogoContainer {
     width: 130px;
 }
+.navLogoContainer:hover {
+    
+    background-color: transparent !important; 
+    border-bottom: none !important; 
+}
 .navLogo {
     float: left;
     height: 30px;
