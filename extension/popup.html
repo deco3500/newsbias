@@ -2,6 +2,9 @@
 <html ng-app="myApp" ng-csp>
     <head>
         <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" type="text/css"  href="css/slider.css">
+        <link rel="stylesheet" type="text/css"  href="css/w3.css">
+        <link rel="stylesheet" type="text/css"  href="../css/style.css">
 
         <!--<script src="js/lib/jquery-1.8.2.min.js"></script>-->
         <script src="js/angular.js"></script>
@@ -10,31 +13,50 @@
         
     </head>
     <body id="popup">
-        <header>
-            <h1>NewsBias Google extension</h1>
-        </header>
+        <div class="w3-container">
+        <div class="w3-row">
+          <div class="w3-col m12 w3-center"><h4><b>Who's News</b></h4></div>
+        </div>
+            <div ng-controller="newsBias">
+                <div ng-repeat="news in urlToFilter | filter:searchQuery">
+                    <div ng-show="{{ news.bias }} == true">              
+                        <div class="w3-row-padding">
+                            <div class="w3-col s6">                  
+                                <h6><b><i><u>Name:</u></i></b></h6>
+                                <h6>{{news.name}}</h6>
+                                <h6><b><i><u>Rating:</u></i></b></h6>
+                                <h6 class="w3-text-cyan">{{news.averageRating}}/5</h6>
+                                <h6 class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</h6>
+                            </div>
+                            <div class="w3-col s6">                     
+                                <h6><b><i><u>Vote on {{news.name}}</u></i></b></h6>
+                                <h6>How much do you trust this news site?</h6>
+                                <div class="w3-col s12">
+                                 <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options" id="myVote"></rzslider>
+                                 <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" />
+                                </div>
 
-        <div ng-controller="newsBias">
-            <h2>Title: {{title}}</h2>
-            <div ng-repeat="news in urlToFilter | filter:searchQuery">
-                    <h3><b><i><u>Name:</u></i></b></h3>
-                    <h3>{{news.name}}</h3>
-                    <h3><b><i><u>Rating:</u></i></b></h3>
-                    <h3>{{news.averageRating}}/5</h3>
-                    <h3><b><i><u>Other company own by {{news.name}}:</u></i></b></h3>
-                    <h3>{{news.otherNews}}</h3>
-                    <h3><b><i><u>Other website own by {{news.name}}:</u></i></b></h3>
-                    <h3>{{news.otherOnline}}</h3>
-            </div> 
+                                
+                            </div>
+                        </div>
 
-
-            <ul>
-                <li ng-repeat="pageInfo in pageInfos">
-                    <div>{{pageInfo.url}}</div>
-                </li>                       
-            </ul>
+                        <div class="w3-row-padding">
+                            <div class="w3-col s12">
+                                <h6><b><i><u>Other company own by {{news.name}}:</u></i></b></h6>
+                                <h6 class="w3-text-cyan">{{news.otherNews}}</h6>
+                                <h6><b><i><u>Other website own by {{news.name}}:</u></i></b></h6>
+                                <h6 class="w3-text-cyan">{{news.otherOnline}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
 
 
+
+<div class="w3-row">
+  <div class="w3-col m12 w3-center w3-grey"><h4><b>Who's News</b></h4></div>
+</div>

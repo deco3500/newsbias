@@ -64,14 +64,13 @@
   <h2 class="w3-center">Login</h2>
 </header>
 
-    <form class="w3-container" action="form.asp">
+    <form class="w3-container">
         <div class="w3-section">
           <label><b>Username</b></label>
-          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="test" id="usrname" required>
           <label><b>Password</b></label>
-          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
-          <button class="w3-btn-block w3-green w3-section w3-padding" type="submit">Login</button>
-          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+          <input class="w3-input w3-border" type="password" placeholder="test" id="psw" required>
+          <button class="w3-btn-block w3-green w3-section w3-padding" type="button" data-ng-click="login('usrname','psw');">Login</button>
         </div>
     </form>
     <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
@@ -103,10 +102,15 @@
     </script>
 <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
     <!-- AngularJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <!--controllers -->
-    <script src="js/controller.js"></script>    
+    <script src="js/controller.js"></script>
+    <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js"></script>
+    <!--jquery scroll to -->
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>    
 
 </body>
 </html>

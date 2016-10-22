@@ -6,7 +6,19 @@
 
 var app = angular.module('myApp', ['rzModule']);
 
-app.controller('newsBias', function($scope,$location) { 
+
+// app.config(function($routeProvider){
+//   $routeProvider
+//   .when('/',{templateUrl: 'login.html'})
+//   .when('/dashboard',{templateUrl:'dashboard.html'})
+//   .otherwise({templateUrl: '/'});
+// });
+
+
+
+
+
+app.controller('newsBias', function($scope,$location,$window) { 
 
   $scope.newsSites = [
     {
@@ -251,5 +263,34 @@ app.controller('newsBias', function($scope,$location) {
         });
       });
     }
+
+
+
+    $scope.login=function(name,psw){
+      var name = document.getElementById(name).value;
+      var password = document.getElementById(psw).value;
+      if(name=='test' && password=='test')
+      {    
+        $window.location.href = $location.$$absUrl.replace('login.html',"index.html");
+      }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   });
 
