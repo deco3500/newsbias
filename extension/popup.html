@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="css/popup.css">
         <link rel="stylesheet" type="text/css"  href="css/slider.css">
-        <link rel="stylesheet" type="text/css"  href="css/w3.css">
+        <link rel="stylesheet" type="text/css"  href="../css/w3.css">
         <link rel="stylesheet" type="text/css"  href="../css/style.css">
 
         <!--<script src="js/lib/jquery-1.8.2.min.js"></script>-->
@@ -24,27 +24,26 @@
                         <div class="w3-row-padding">
                             <div class="w3-col s6">                  
                                 <h6><b><i><u>Name:</u></i></b></h6>
-                                <h6>{{news.name}}</h6>
-                                <h6><b><i><u>Rating:</u></i></b></h6>
-                                <h6 class="w3-text-cyan">{{news.averageRating}}/5</h6>
-                                <h6 class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</h6>
+                                <h6><a ng-href="{{news.url}}">{{news.name}}</a></h6>
+                                <h6>{{news.name}} is owned by <span style="font-weight:bold" class="w3-text-cyan">{{news.owner}}</span>.</h6>
+                                    <h6 class="text-navy"><b>CEO: </b>{{news.CEO}}</h6>
+                                    <h6 class="text-navy"><b>Chairman: </b>{{news.Chairman}}</h6>
+                                    <h6 class="text-navy"><b>{{news.owner}}</b> is a <span style="font-weight:bold" class="w3-text-cyan">{{news.type}}</span> based in <span style="font-weight:bold" class="w3-text-cyan">{{news.based}}</span>.</h6>
                             </div>
-                            <div class="w3-col s6">                     
+                            <div class="w3-col s6">
+                                <h6><b><i><u>Rating:</u></i></b> <span class="w3-text-cyan">{{news.averageRating}}/5</span> </h6>
+                                <h6 class="w3-margin-bottom">{{news.totalVotes}} total votes from visitors to this site.</h6>                     
                                 <h6><b><i><u>Vote on {{news.name}}</u></i></b></h6>
                                 <h6>How much do you trust this news site?</h6>
                                 <div class="w3-col s12">
                                  <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options" id="myVote"></rzslider>
-                                 <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" />
                                 </div>                             
                             </div>
                         </div>
 
                         <div class="w3-row-padding">
                             <div class="w3-col s12">
-                                <h6><b><i><u>Other company own by {{news.name}}:</u></i></b></h6>
-                                <h6 class="w3-text-cyan">{{news.otherNews}}</h6>
-                                <h6><b><i><u>Other website own by {{news.name}}:</u></i></b></h6>
-                                <h6 class="w3-text-cyan">{{news.otherOnline}}</h6>
+                                <input class="w3-btn-block margin-top-20-btm-10 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}"/>
                             </div>
                         </div>
                     </div>

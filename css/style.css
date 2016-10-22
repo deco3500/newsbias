@@ -49,6 +49,11 @@ h5,h6, body, .w3-navbar,button {
     margin-top: 60px;
 }
 
+.margin-top-20-btm-10{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .rzslider .rz-pointer {
     background-color: #cddc39 !important;
 }
