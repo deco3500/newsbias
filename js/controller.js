@@ -79,7 +79,8 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         publication:'Brisbane Times',
         owner: 'Fairfax Media Group',
         category: 'IT',
-        score: 5,
+        score: 'A',
+        color: 'w3-green',
         detail: 'result1'
     },
       {
@@ -88,7 +89,8 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         publication:'Brisbane Times',
         owner: 'Fairfax Media Group',
         category: 'IT',
-        score: 5,
+        score: 'B',
+        color: 'w3-blue',
         detail: 'result1'
     },{
         url:'http://www.brisbanetimes.com.au/',
@@ -96,7 +98,8 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         publication:'Brisbane Times',
         owner: 'Fairfax Media Group',
         category: 'IT',
-        score: 5,
+        score: 'C',
+        color: 'w3-grey',
         detail: 'result1'
     },{
         url:'http://www.brisbanetimes.com.au/',
@@ -104,7 +107,17 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         publication:'Brisbane Times',
         owner: 'Fairfax Media Group',
         category: 'IT',
-        score: 5,
+        score: 'D',
+        color: 'w3-yellow',
+        detail: 'result1'
+    },{
+        url:'http://www.brisbanetimes.com.au/',
+        name:'article name4',
+        publication:'Brisbane Times',
+        owner: 'Fairfax Media Group',
+        category: 'IT',
+        score: 'F',
+        color: 'w3-red',
         detail: 'result1'
     }
   ];

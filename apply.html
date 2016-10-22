@@ -1,137 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <title>News Bias</title>
 
-        <!--Stylesheets-->
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-	    <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/w3.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Bias</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/w3.css">
+    <!--Fonts-->
+    <!--Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>>
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> </head>
 
-        <!--Fonts-->
-        <!--Google Fonts - Roboto -->
-        
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>>
-        <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
-	
-
-        <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
-            <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-    </head>
-    
 <body ng-app="myApp" ng-controller="newsBias">
-
-<!-- Navbar -->
+    <!-- Navbar -->
     <nav>
         <ul class="w3-navbar navy w3-card-2 w3-top w3-left-align w3-large">
-          <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-            <a class="w3-padding-large w3-hover-white w3-large navy" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-          </li>
-          <li><a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo"/></a></li>
-          <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
-          <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check</a></li>
-          <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white active-tab">About</a></li>
-         
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right"> <a class="w3-padding-large w3-hover-white w3-large navy" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> </li>
+            <li>
+                <a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo" /></a>
+            </li>
+            <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
+            <li class="w3-hide-small"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check</a></li>
+            <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
         </ul>
-        </nav>
-    
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
-  <ul class="w3-navbar w3-left-align w3-large w3-black">
-    <li><a class="w3-padding-large" href="index.html">Home</a></li>
-    <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
-
-    <li><a class="w3-padding-large" href="about.html">About</a></li>
-  </ul>
-</div>
-
-<!-- Header -->
-<div class="w3-container w3-section white w3-center w3-padding-top-64">
-  <h1>Apply to be a fact checker</h1>
-</div>
+    </nav>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+        <ul class="w3-navbar w3-left-align w3-large w3-black">
+            <li><a class="w3-padding-large" href="index.html">Home</a></li>
+            <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
+            <li><a class="w3-padding-large" href="about.html">About</a></li>
+        </ul>
+    </div>
+    <!-- Header -->
+    <div class="w3-container w3-section white w3-center w3-padding-top-64">
+        <h1>Apply to be a fact checker</h1> </div>
     <div class="w3-container">
-  <p class="w3-small w3-padding-bottom">Fact Check > Apply to be a fact checker</p>
-</div>
-
-<div class="w3-card-4 formCenter">
-
-<header class="w3-container navy">
-  <h2 class="w3-center">Register form</h2>
-</header>
-
-<div class="w3-container">
-  <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Name:</label>
-            <input class="w3-input" type = "text" id = "name_input"></input> 
+        <p class="w3-small w3-padding-bottom">Fact Check > Apply to be a fact checker</p>
+    </div>
+    <div class="w3-card-4 formCenter">
+        <div class="w3-container w3-cyan">
+            <h2 class="w3-center w3-text-white">Register form</h2> </div>
+        
+     
+        
+        <div class="w3-container w3-margin-top">
+            <div class="w3-row-padding w3-padding-medium">
+                <label class="w3-label w3-text-cyan">Name</label>
+                <input class="w3-input w3-border" type="text" id="name_input" placeHolder="Please enter your name.  Your name will NOT be published alongside the fact check results."></input>
+            </div>
+            <div class="w3-row-padding w3-padding-medium">
+                <label class="w3-label w3-text-cyan">Email for account login</label>
+                <input class="w3-input w3-border" type="email" id="email_input" placeHolder="Please enter your email address for account login."></input>
+            </div>
+            <div class="w3-row-padding w3-padding-medium">
+                <label class="w3-label w3-text-cyan">Field of expertise</label>
+                <br><small>Please give a brief description of your field of expertise and how many years expereince you have.</small>
+                <br>
+                <textarea class="w3-input w3-border" id="experience_input" placeHolder="Please enter your field of expertise"></textarea>
+            </div>
+            <div class="w3-row-padding w3-padding-medium w3-margin-bottom">
+                <label class="w3-label w3-text-cyan">Categories you want to assess</label>
+                <p>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Business</label>
+                </p>
+                <p>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Current Events</label>
+                </p>
+                <p>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Education</label>
+                </p>
+                <p>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Health</label>
+                </p>
+                <p>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Politics</label>
+                </p>
+                <p>
+                    <input class="w3-check" type="checkbox">
+                    <label class="w3-validate">Science / Environment</label>
+                </p>
+            </div>
+            <div class="w3-row-padding w3-padding-medium w3-margin-bottom">
+                <label class="w3-label w3-text-cyan">Category eligibility</label>
+                <br><small>Please give a brief description of any relevent expereince to the categoreis you selected.</small>
+                <br>
+                <textarea class="w3-input w3-border" id="experience_input" placeHolder="Please enter your category eligibility."></textarea>
+            </div>
+            
         </div>
-        <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Email:</label>
-            <input class="w3-input" type = "email" id = "email_input"></input>     
+    <button class="w3-btn-block w3-lime w3-large w3-padding-xlarge">Apply</button>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center navy">
+        <div class="w3-xlarge w3-padding-24">
+            <p>Copyright 2016 Team News Bias</p>
         </div>
-        <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Field of expertise:</label>	
-            <select id = "job_input">
-              <option value="IT">IT</option>
-              <option value="Business">Business</option>
-              <option value="Science">Science</option>
-              <option value="Art">Art</option>
-            </select>    
-        </div>
-        <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Experience:</label>	
-            <textarea class="w3-input" id = "experience_input"></textarea>   
-        </div>	
-        <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Year of experience:</label>	
-            <input class="w3-input" type = "number" min = 0 id = "experience_year_input"></input>  
-        </div>	
-        <div class="w3-row-padding w3-padding-medium">
-            <label class="w3-label w3-text-black">Current job:</label>
-			<input class="w3-input" type = "text" id = "job_input"></input>  
-        </div>	
-</div>
-
-<footer class="w3-container navy">
-  <h5 class="w3-center">Put a submit button here</h5>
-</footer>
-
-</div>
-<hr>
-
-
-
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center navy">
-  <div class="w3-xlarge w3-padding-24">
-    <p>Copyright 2016 Team News Bias</p>
-
- </div>
- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+        <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
     <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            }
+            else {
+                x.className = x.className.replace(" w3-show", "");
+            }
         }
-    }
-    </script>
-!-- jQuery -->
-    
+    </script> <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script   src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <!-- AngularJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
     <!--controllers -->
@@ -140,7 +132,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js"></script>
     <!--jquery scroll to -->
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
-    
 </body>
-</html>
 
+</html>
