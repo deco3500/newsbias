@@ -15,9 +15,10 @@
     <body id="popup">
         <div class="w3-container">
         <div class="w3-row">
-          <div class="w3-col m12 w3-center"><h4><b>Who's News</b></h4></div>
+          <div class="w3-col s12 w3-center"><h4><b>Who's News</b></h4></div>
         </div>
             <div ng-controller="newsBias">
+            <div class="w3-col s12 w3-center"><h6><b>{{url}}</b></h4></div>
                 <div ng-repeat="news in urlToFilter | filter:searchQuery">
                     <div ng-show="{{ news.bias }} == true">              
                         <div class="w3-row-padding">
@@ -45,6 +46,13 @@
                                 <h6><b><i><u>Other website own by {{news.name}}:</u></i></b></h6>
                                 <h6 class="w3-text-cyan">{{news.otherOnline}}</h6>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-if = "search_newsSites == 0">
+                    <div class="w3-row-padding">
+                        <div class="w3-col s12 w3-center">
+                            <h6><b><i><u>No one voted on this website yet. Be the first one</u></i></b></h6>
                         </div>
                     </div>
                 </div>

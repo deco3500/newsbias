@@ -18,7 +18,7 @@ var app = angular.module('myApp', ['rzModule']);
 
 
 
-app.controller('newsBias', function($scope,$location,$window) { 
+app.controller('newsBias', function($scope,$location,$window,$filter) { 
 
   $scope.newsSites = [
     {
@@ -254,8 +254,9 @@ app.controller('newsBias', function($scope,$location,$window) {
         chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
         var url = new URL(tabs[0].url)
         $scope.title = tabs[0].title;
-        $scope.url = tabs[0].url;
+        $scope.url = $scope.cleanURL(tabs[0].url);
         $scope.searchURLbyTAB(tabs[0].url);
+        $scope.search_newsSites = $filter('filter')($scope.newsSites, {url: tabs[0].url}, true);
         $scope.$apply();
         // console.log(tabs[0].url);
         // console.log(tabs[0].title);
@@ -264,8 +265,6 @@ app.controller('newsBias', function($scope,$location,$window) {
       });
     }
 
-
-
     $scope.login=function(name,psw){
       var name = document.getElementById(name).value;
       var password = document.getElementById(psw).value;
@@ -273,24 +272,6 @@ app.controller('newsBias', function($scope,$location,$window) {
       {    
         $window.location.href = $location.$$absUrl.replace('login.html',"index.html");
       }
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   });
 
