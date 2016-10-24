@@ -22,8 +22,8 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
 
   $scope.newsSites = [
     {
-        url:'http://www.brisbanetimesdogs.com.au/',
-        name:'Brisbane Times cats',
+        url:'http://www.brisbanetimes.com.au/',
+        name:'Brisbane Times',
         owner: 'Fairfax Media',
         type: 'Public Company',
         based: 'Sydney, New South Wales',
