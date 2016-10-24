@@ -16,6 +16,11 @@
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> </head>
+    
+    <!-- SHare This http://tools.sharethis.com/get-sharing-tools/# -->
+  <script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" id="st_insights_js" src="https://ws.sharethis.com/button/buttons.js?publisher=32d8982a-2e24-4dfe-a167-ab796bd890f8-10exp-Y"></script>
+<script type="text/javascript">stLight.options({publisher: "32d8982a-2e24-4dfe-a167-ab796bd890f8-10exp-Y", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 <body ng-app="myApp" ng-controller="newsBias">
     <!-- Navbar -->
@@ -73,6 +78,13 @@
                 <li class="w3-padding-8">How sensational is the tone? Are "loaded" words used?<span class="w3-right w3-xlarge">{{ detail.a4 }}/5</span></li>
             </ul>
                     <h4 class="w3-right w3-padding-8">TOTAl score: {{detail.total}}/{{detail.totalpos}}</h4>
+                    <span class='st_sharethis_large' displayText='ShareThis'></span>
+<span class='st_facebook_large' displayText='Facebook'></span>
+<span class='st_twitter_large' displayText='Tweet'></span>
+<span class='st_linkedin_large' displayText='LinkedIn'></span>
+<span class='st_pinterest_large' displayText='Pinterest'></span>
+<span class='st_email_large' displayText='Email'></span>
+                    
                 <!--<button class="w3-btn-floating-large w3-border w3-right {{detail.color}}">{{detail.grade}}</button>-->
                 </div>
                 <!--<button class="w3-btn-block {{detail.color}}"><h5>{{detail.grade}}</h5></button>-->
@@ -140,6 +152,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js"></script>
     <!--jquery scroll to -->
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    
+       
 </body>
 
 </html>
