@@ -22,8 +22,8 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
 
   $scope.newsSites = [
     {
-        url:'http://www.brisbanetimes.com.au/',
-        name:'Brisbane Times',
+        url:'http://www.brisbanetimesdogs.com.au/',
+        name:'Brisbane Times cats',
         owner: 'Fairfax Media',
         type: 'Public Company',
         based: 'Sydney, New South Wales',
@@ -541,13 +541,14 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     //document.write("domain : " + domain + (page == "" ? "" : " page : " + page) + "<br/>");
     //console.log("domain : " + $scope.domain + ($scope.page == "" ? "" : " page : " + $scope.page));
       //returns name of domain
+   // console.log("cleanURl " + $scope.domain);  
     return $scope.domain;
 
   }
-  //$scope.cleanURL("www.myWebSite.com"); // domain : myWebSite
-  //$scope.cleanURL("http://myWebSite.com"); // domain : myWebSite
-  //$scope.cleanURL("myWebSite.com/xxx.html"); // domain : myWebSite page : xxx
-  //$scope.cleanURL("https://www.myWebSite.com/meowbeans.html"); // domain : myWebSite page : xxx
+ // $scope.cleanURL("www.myWebSite.com"); // domain : myWebSite
+//  $scope.cleanURL("http://myWebSite.com"); // domain : myWebSite
+//  $scope.cleanURL("myWebSite.com/xxx.html"); // domain : myWebSite page : xxx
+//  $scope.cleanURL("https://www.myWebSite.com/meowbeans.html"); // domain : myWebSite page : xxx
 
   //search
     $scope.searchResult=false;
@@ -562,13 +563,21 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
             
             //copies the result of cleanURL (return domain) to new variable searchQuery
             $scope.searchQuery = angular.copy($scope.domain);
+            
+            //custom filter
+            $scope.filterByNameOrURL = function(news) {
+                var filterName = news.name;
+                var filterUrl = news.url
+                return ($scope.searchQuery.indexOf(filterName || filterUrl) !== -1);
+            };
+            
             //$scope.searchQuery = angular.copy($scope.newsQuery);
             $scope.urlToFilter=$scope.newsSites;
             $scope.searchResult=true;
 
             //show search term
             $(".searchTerm").replaceWith("<span class='searchTerm' >" + url + "</span>");
-            console.log(url);
+            //console.log('user search query ' + url);
         }
         
 
@@ -667,5 +676,6 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
             x.className = x.className.replace(" w3-show", "");
         }
     }
+    
   });
 

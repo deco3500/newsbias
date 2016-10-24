@@ -68,12 +68,13 @@
                     <div class="w3-content" ng-show="searchResult && newsQuery">
                         <div class="w3-row">
                             <h1 id="searchResultScroll" class="text-navy">Search Results</h1>
-                            <p ng-hide="(urlToFilter | filter:{ name: searchQuery }).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned the following titles</p>
-                            <p ng-show="(urlToFilter | filter:{ name: searchQuery }).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned no results. <a onclick="document.getElementById('searchResultsModal').style.display='none'" style="text-decoration: underline">Try and search again.</a></p>
+                            <p ng-hide="(urlToFilter | filter:searchQuery).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned the following titles</p>
+                            <p ng-show="(urlToFilter | filter:searchQuery).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned no results. <a onclick="document.getElementById('searchResultsModal').style.display='none'" style="text-decoration: underline">Try and search again.</a></p>
                            
                         </div>
                         <!--repeats urlToFilter data and filters by searchQuery after it's been cleaned -->
-                        <div ng-repeat="news in urlToFilter | filter:{ name: searchQuery } track by $index">
+                        <div ng-repeat="news in urlToFilter | filter:({ url: searchQuery} || {name: searchQuery}) track by $index">
+                            <!--<div ng-repeat="news in urlToFilter | filter: filterByNameOrURL track by $index">-->
                             <hr>
                             <div class="w3-row">
                                 <div class="w3-col w3-half w3-padding-right">
@@ -90,14 +91,14 @@
                                     </ul>
                                 </div>
                                 <div class="w3-col w3-half w3-border w3-padding">
-                                    <div ng-show="{{ news.bias }} == true">
+                                    
                                         <h3 class="w3-text-cyan">Trust rating</h3>
                                         <h4>{{news.name}}:  <span class="w3-text-cyan">{{news.averageRating}}/5</span></h4>
                                         <p class="w3-margin-bottom">Rating is an average of <span class="w3-text-cyan intro">{{news.totalVotes}}</span> total votes from visitors to this site.</p>
                                         <h5>Submit your vote for {{news.name}}</h5>
                                         <p class="w3-margin-bottom">Rate how much you trust this news site by dragging the slider between 1 and 5.</p>
                                         <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options" id="myVote"></rzslider>
-                                        <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" /> </div>
+                                        <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" /> 
                                 </div>
                             </div>
                         </div>
