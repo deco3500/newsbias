@@ -28,15 +28,9 @@
                 <a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo" /></a>
             </li>
             <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white active-tab">Home</a></li>
-            
-            <li class=" w3-hide-small w3-dropdown-hover">
-                <a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check <i class="fa fa-caret-down"></i></a>
-                <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="results.html">View all results</a>
-                  <a href="submit.html">Submit an article</a>
-                  <a href="apply.html">Apply to be a fact checker</a>
-                </div>
-              </li>
+            <li class=" w3-hide-small w3-dropdown-hover"> <a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check <i class="fa fa-caret-down"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="results.html">View all results</a> <a href="submit.html">Submit an article</a> <a href="apply.html">Apply to be a fact checker</a> </div>
+            </li>
             <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
             <li class="w3-hide-small w3-right"><a class="w3-padding-large w3-hover-white" href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
         </ul>
@@ -44,15 +38,16 @@
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
         <ul class="w3-navbar w3-left-align w3-large navy">
-           <ul class="w3-navbar w3-left-align w3-large w3-black">
-    <li><a class="w3-padding-large" hre="index.html"Home</a></li>
-    <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
-      <li><a class="w3-padding-large" href="results.html">View all results</a></li>
-      <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
-      <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
-    <li><a class="w3-padding-large" href="about.html">About</a></li>
-    <li><a class="w3-padding-large" href="login.html">Login</a></li>
-  </ul>
+            <ul class="w3-navbar w3-left-align w3-large w3-black">
+                <li>
+                    <a class="w3-padding-large" hre="index.html" Home</a></li>
+                <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
+                <li><a class="w3-padding-large" href="results.html">View all results</a></li>
+                <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
+                <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
+                <li><a class="w3-padding-large" href="about.html">About</a></li>
+                <li><a class="w3-padding-large" href="login.html">Login</a></li>
+            </ul>
         </ul>
     </div>
     <!-- Header -->
@@ -73,10 +68,12 @@
                     <div class="w3-content" ng-show="searchResult && newsQuery">
                         <div class="w3-row">
                             <h1 id="searchResultScroll" class="text-navy">Search Results</h1>
-                            <p ng-hide="(urlToFilter | filter:searchQuery).length === 0">You searched for &quot;<span class="searchTerm"></span>&quot;</p>
-                            <p ng-show="(urlToFilter | filter:searchQuery).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned no results. <a onclick="document.getElementById('searchResultsModal').style.display='none'" style="text-decoration: underline">Try and search again.</a></p>
+                            <p ng-hide="(urlToFilter | filter:{ name: searchQuery }).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned the following titles</p>
+                            <p ng-show="(urlToFilter | filter:{ name: searchQuery }).length === 0">Your search for &quot;<span class="searchTerm"></span>&quot; returned no results. <a onclick="document.getElementById('searchResultsModal').style.display='none'" style="text-decoration: underline">Try and search again.</a></p>
+                           
                         </div>
-                        <div ng-repeat="news in urlToFilter | filter:searchQuery track by $index">
+                        <!--repeats urlToFilter data and filters by searchQuery after it's been cleaned -->
+                        <div ng-repeat="news in urlToFilter | filter:{ name: searchQuery } track by $index">
                             <hr>
                             <div class="w3-row">
                                 <div class="w3-col w3-half w3-padding-right">
@@ -87,13 +84,10 @@
                                     <p class="text-navy w3-margin-bottom">Chairman: {{news.Chairman}}</p>
                                     <p class="text-navy w3-margin-bottom">{{news.owner}} is a <span style="font-weight:bold" class="w3-text-cyan">{{news.type}}</span> based in <span style="font-weight:bold" class="w3-text-cyan">{{news.based}}</span>.</p>
                                     <p class="text-navy" style="font-weight:bold">Other newspapers owned by {{news.owner}}: </p>
-                                        <ul class="w3-margin-bottom searchResult">
-                                            <li ng-repeat="i in news.otherNews">{{i}}</li>
-                                        </ul>
-                                        <p class="text-navy" style="font-weight:bold">Other online content owned by {{news.owner}}:</p>
-                                        <ul class="w3-margin-bottom searchResult">
-                                            <li ng-repeat="i in news.otherOnline">{{i}}</li>
-                                        </ul>
+                                    <ul class="w3-margin-bottom searchResult">
+                                        <li ng-repeat="i in news.otherNews"><a ng-href="{{news.otherOnline[$index]}}">{{i}}</a></li>
+                                        
+                                    </ul>
                                 </div>
                                 <div class="w3-col w3-half w3-border w3-padding">
                                     <div ng-show="{{ news.bias }} == true">
@@ -107,6 +101,49 @@
                                 </div>
                             </div>
                         </div>
+                        <hr>
+                         <h2 ng-hide="(urlToFilter | filter:searchQuery).length === 0" class="text-navy w3-margin-bottom">Related results: </h2>
+                        
+                        <div ng-repeat="news in urlToFilter | filter:searchQuery track by $index">
+
+                            <div class="w3-accordion w3-margin-tiny">
+                              <button ng-click="accordian(news.name)" class="w3-btn-block w3-left-align  w3-light-grey">
+                                {{news.name}}
+                              </button>
+                              <div id="{{news.name}}" class="w3-accordion-content w3-container w3-margin-top">
+                                   <div class="w3-row">
+                                <div class="w3-col w3-half w3-padding-right">
+                                <p class="text-navy w3-margin-bottom">URL: <a ng-href="{{news.url}}">{{news.url}}</a> </p>
+                                    <p class="text-navy w3-margin-bottom">{{news.name}} is owned by <span style="font-weight:bold" class="w3-text-cyan">{{news.owner}}</span>.</p>
+                                    <p class="text-navy">CEO: {{news.CEO}}</p>
+                                    <p class="text-navy w3-margin-bottom">Chairman: {{news.Chairman}}</p>
+                                    <p class="text-navy w3-margin-bottom">{{news.owner}} is a <span style="font-weight:bold" class="w3-text-cyan">{{news.type}}</span> based in <span style="font-weight:bold" class="w3-text-cyan">{{news.based}}</span>.</p>
+                                    <p class="text-navy" style="font-weight:bold">Other newspapers owned by {{news.owner}}: </p>
+                                    <ul class="w3-margin-bottom searchResult">
+                                        <li ng-repeat="i in news.otherNews"><a ng-href="{{news.otherOnline[$index]}}">{{i}}</a></li>
+                                        
+                                    </ul>
+                              
+                                       </div>
+                                       <div class="w3-col w3-half w3-border w3-padding">
+                                    <div ng-show="{{ news.bias }} == true">
+                                        <h3 class="w3-text-cyan">Trust rating</h3>
+                                        <h4>{{news.name}}:  <span class="w3-text-cyan">{{news.averageRating}}/5</span></h4>
+                                        <p class="w3-margin-bottom">Rating is an average of <span class="w3-text-cyan intro">{{news.totalVotes}}</span> total votes from visitors to this site.</p>
+                                        <h5>Submit your vote for {{news.name}}</h5>
+                                        <p class="w3-margin-bottom">Rate how much you trust this news site by dragging the slider between 1 and 5.</p>
+                                        <rzslider rz-slider-model="slider.value" rz-slider-options="slider.options" id="myVote"></rzslider>
+                                        <input class="w3-btn-block margin-top-60 w3-round w3-lime" type="submit" name="submit" data-ng-click="biasVote($index);" value="Submit Vote" ng-class="{'w3-disabled' : submitVote == true}" /> </div>
+                                </div>
+                                       
+                                       
+                                  </div>
+                                
+                                </div>
+                            </div>
+                            
+               
+                        </div>
                     </div>
                 </div>
             </div>
@@ -115,8 +152,7 @@
     <!-- Grey Grid -->
     <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
         <div class="w3-content">
-            
-                <h2 class="text-navy">Search Tips for demo</h1>
+            <h2 class="text-navy">Search Tips for demo</h1>
         <p class="w3-text-grey"> Search for Brisbane Times, ABC News, or The Conversation or web articles from these</p>
   <p class="w3-text-grey">e.g.    http://www.brisbanetimes.com.au/entertainment/tv-and-radio/qa-recap-coalition-senator-bridget-mckenzie-confronted-by-gay-brother-over-plebiscite-20160912-gret2z.html </p>
   
@@ -156,6 +192,7 @@
       }
     }
 </script>
+    
 <!-- jQuery -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

@@ -24,13 +24,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     {
         url:'http://www.brisbanetimes.com.au/',
         name:'Brisbane Times',
-        owner: 'Fairfax Media Group',
+        owner: 'Fairfax Media',
         type: 'Public Company',
-        based: 'Sydney',
+        based: 'Sydney, New South Wales',
         CEO: 'Greg Hywood',
         Chairman: 'Nick Falloon',
-        otherNews: ['The Sydney Morning Herald', 'The Age', 'The Australian Financial Review', 'The Canberra Times', 'The Sun-Herald', 'The Land', 'BrisbaneTimes.com.au', 'WAtoday.com.au'],
-        otherOnline: ['traveller.com.au', 'essentialbaby.com.au', 'essentialkids.com.au', 'goodfood.com.au', 'oversixty.com.au', 'findababysitter.com.au'],
+        otherNews: ['The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier', 'Brisbane Times'],
+        otherOnline: ['theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 6,
         totalRating: 22,
@@ -94,7 +94,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier', 'Brisbane Times'],
-		otherOnline: ['theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -110,7 +110,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -126,7 +126,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -142,7 +142,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -158,7 +158,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -174,7 +174,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -190,7 +190,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','The Border Mail','The Advocate','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -206,7 +206,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Advocate','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','theadvocate.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -222,7 +222,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Courier','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','thecourier.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -238,7 +238,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         CEO:'Greg Hywood', 
         Chairman:'Nick Falloon', 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','Brisbane Times'],
-		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au'], 
+		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','http://www.brisbanetimes.com.au/'], 
         bias: true,
         totalVotes: 0,
         totalRating: 0,
@@ -462,15 +462,6 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     }
   ];
     
-    //function to split comma list into seperate elements it iterate over
-    $scope.splitString=function(listaroo){
-        $scope.stringArray = new Array();
-        $scope.stringArray = $scope.listaroo.split(',');
-        console.log(stringArray);
-    }
-
-    //otherNews: ['The Sydney Morning Herald, The Age, The Australian Financial Review, The Canberra Times, The Sun-Herald, The Land, BrisbaneTimes.com.au, WAtoday.com.au'],
-    
   $scope.results = [
     {
         url:'http://www.brisbanetimes.com.au/',
@@ -542,12 +533,14 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     if (url.indexOf("file://") == 0) {
         url = url.substr(0);
     }
+
     $scope.domain = url.split('/')[0].split('.')[0]
     if (url.split('/').length > 1) {
         $scope.page = url.split('/')[1].split('.')[0];
     }
     //document.write("domain : " + domain + (page == "" ? "" : " page : " + page) + "<br/>");
     //console.log("domain : " + $scope.domain + ($scope.page == "" ? "" : " page : " + $scope.page));
+      //returns name of domain
     return $scope.domain;
 
   }
@@ -560,11 +553,14 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     $scope.searchResult=false;
     $scope.searchURL=function(urlInput, isValid){
         if (isValid) {
-            console.log("isvalid");
+            //console.log("isvalid");
             document.getElementById('searchResultsModal').style.display='block';
+            //gets value of input field passes as urlInput
             var url = document.getElementById(urlInput).value;
+            //cleans input in case it is a weblink
             $scope.cleanURL(url);
-
+            
+            //copies the result of cleanURL (return domain) to new variable searchQuery
             $scope.searchQuery = angular.copy($scope.domain);
             //$scope.searchQuery = angular.copy($scope.newsQuery);
             $scope.urlToFilter=$scope.newsSites;
@@ -655,6 +651,21 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
       {    
         $window.location.href = $location.$$absUrl.replace('login.html',"index.html");
       }
+    }
+    
+    //hide show accordian
+    $scope.accordian = function(id) {
+        console.log("clicked");
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+                    console.log("if");
+
+            x.className += " w3-show";
+        } else { 
+                    console.log("else");
+
+            x.className = x.className.replace(" w3-show", "");
+        }
     }
   });
 
