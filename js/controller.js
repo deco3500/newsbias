@@ -462,6 +462,26 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     }
   ];
     
+    $scope.detailResults = [
+        {
+            title: 'Construction figures "fall off a cliff" in Queensland: report',
+            url: 'http://www.brisbanetimes.com.au/queensland/construction-figures-fall-off-a-cliff-in-queensland-report-20161024-gs9jhu.html',
+            author: 'Tony Moore',
+            name: 'Brisbane Times',
+            owner: 'Fairfax Media',
+            a1: 5,
+            a2: 5,
+            a3:2,
+            a4:3,
+            total: 15,
+            totalpos: 19,
+            percentage: 78,
+            grade: 'C',
+            color:'w3-grey'
+
+        }
+    ];
+    
   $scope.results = [
     {
         url:'http://www.brisbanetimes.com.au/',

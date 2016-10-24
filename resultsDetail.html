@@ -51,35 +51,35 @@
         </ul>
     </div>
     <!-- Header -->
-    <div class="w3-container w3-section white w3-center w3-padding-top-64">
-        <h1>Fact Check Results</h1> </div>
+  <div class="w3-container w3-section white w3-center w3-padding-top-64">
+        <h1>Fact Check Detailed Results</h1> </div>
     <div class="w3-container">
-        <p class="w3-small w3-padding-bottom">Fact Check > Results</p>
-    </div>
-    <div class="w3-container">
-       <p class="w3-margin-bottom">Who's News Fact Check allows you to submit an article to be checked and assessed by our team of community leaders.</p>
-      
-       <p class="w3-margin-bottom">Articles will be given a rating based on four weighted criteria which are independantly assessed by three members of the fact-checking team. </p>
-      
-       <p class="w3-margin-bottom">Results will be given a grade (A to F) based on an average of the three fact checker ratings. Find something interesting?  Share the results of a fact check with your friends. </p>
+        <p class="w3-small w3-padding-bottom">Fact Check > Results > Detailed Results</p>
     </div>
     <div class="w3-container w3-padding-top-32 w3-margin-bottom">
-        <div class="w3-third w3-padding-medium" ng-repeat="result in results">
+        <div class="w3-padding-medium" ng-repeat="detail in detailResults">
             <div class="w3-card-4">
-                <div class="w3-container w3-light-grey w3-padding">
-                    <h1>{{result.name}}</h1> </div>
+                <div class="w3-container w3-cyan w3-text-white w3-padding">
+                    <h2>{{detail.title}}</h2> <p class="w3-right">By {{detail.author}}</p></div>
                 <div class="w3-container w3-padding">
-                    <p>Publication: {{result.publication}}</p>
-                    <p>Owner: {{result.owner}}</p>
+                    <p>URL: <a ng-href={{detail.url}}>{{detail.url}}</a></p>
+                    <p>Publication: {{detail.name}}.  Publication Owner: {{detail.owner}}</p>
                     <hr>
-                    <p>Category: {{result.category}}</p> 
-                    <p><a ng-href="{{result.url}}">{{result.url}}</a></p>
-                <button class="w3-btn-floating-large w3-border w3-right {{result.color}}">{{result.score}}</button>
+                    <h3>Results</h3>
+            <ul class="searchResult w3-margin-bottom">
+                <li class="w3-padding-8">Is the content factually correct? <span class="w3-right w3-xlarge">{{ detail.a1 }}/5</span></li>
+                <li class="w3-padding-8">Have all aspects been presented In a reasonable, even and balanced manner?<span class="w3-right w3-xlarge">{{ detail.a2 }}/5</span></li>
+                <li class="w3-padding-8">Is the headline refelctive of the article's content? Does it exaggerate elements that are not central to the issue or focus of the article?<span class="w3-right w3-xlarge">{{ detail.a3 }}/4</span></li>
+                <li class="w3-padding-8">How sensational is the tone? Are "loaded" words used?<span class="w3-right w3-xlarge">{{ detail.a4 }}/5</span></li>
+            </ul>
+                    <h4 class="w3-right w3-padding-8">TOTAl score: {{detail.total}}/{{detail.totalpos}}</h4>
+                <!--<button class="w3-btn-floating-large w3-border w3-right {{detail.color}}">{{detail.grade}}</button>-->
                 </div>
-                <!--<footer class="w3-container w3-lime w3-padding-16">
-                    <p class="w3-center">Overall score {{result.score}}</h5>
-                </footer>-->
-                <button class="w3-btn-block w3-cyan w3-text-white "><a ng-href="resultsDetail.html"><h5>View detailed results</h5></a></button>
+                <!--<button class="w3-btn-block {{detail.color}}"><h5>{{detail.grade}}</h5></button>-->
+                <footer class="w3-container {{detail.color}} w3-padding-16 w3-center">
+                    <h5 class="w3-xxxlarge">{{detail.grade}}</h5>
+                </footer>
+
             </div>
         </div>
     </div>
