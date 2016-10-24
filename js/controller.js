@@ -38,7 +38,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 	
     {
-        url:'http://www.toowoombachronicle.com.au',
+        url:'http://www.toowoombachronicle.com.au/',
         name:'The Toowoomba Chronicle',
         owner:'APN News & Media',
         type:'Public Company',
@@ -54,7 +54,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.coastdaily.com.au',
+        url:'http://www.coastdaily.com.au/',
         name:'Sunshine Coast Daily',
         owner:'APN News & Media',
         type:'Public Company',
@@ -70,7 +70,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.morningbulletin.com.au',
+        url:'http://www.morningbulletin.com.au/',
         name:'The Morning Bulletin',
         owner:'APN News & Media',
         type:'Public Company',
@@ -86,7 +86,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.smh.com.au',
+        url:'http://www.smh.com.au/',
         name:'The Sydney Morning Herald',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -102,7 +102,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.theage.com.au',
+        url:'http://www.theage.com.au/',
         name:'The Age',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -118,7 +118,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.afr.com',
+        url:'http://www.afr.com/',
         name:'The Australian Financial Review',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -134,7 +134,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.theherald.com.au',
+        url:'http://www.theherald.com.au/',
         name:'The Herald',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -150,7 +150,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.canberratimes.com.au',
+        url:'http://www.canberratimes.com.au/',
         name:'The Canberra Times',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -166,7 +166,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.examiner.com.au',
+        url:'http://www.examiner.com.au/',
         name:'The Examiner',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -182,7 +182,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.illawarramercury.com.au',
+        url:'http://www.illawarramercury.com.au/',
         name:'Illawarra Mercury',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -198,7 +198,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.bordermail.com.au',
+        url:'http://www.bordermail.com.au/',
         name:'The Border Mail',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -214,7 +214,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.theadvocate.com.au',
+        url:'http://www.theadvocate.com.au/',
         name:'The Advocate',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -230,7 +230,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.thecourier.com.au',
+        url:'http://www.thecourier.com.au/',
         name:'The Courier',
         owner:'Fairfax Media',
         type:'Public Company',
@@ -246,7 +246,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.heraldsun.com.au',
+        url:'http://www.heraldsun.com.au/',
         name:'Herald Sun',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -262,7 +262,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.dailytelegraph.com.au',
+        url:'http://www.dailytelegraph.com.au/',
         name:'The Daily Telegraph',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -278,7 +278,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.couriermail.com.au',
+        url:'http://www.couriermail.com.au/',
         name:'The Courier-Mail',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -294,7 +294,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.adelaidenow.com.au',
+        url:'http://www.adelaidenow.com.au/',
         name:'The Advertiser',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -310,7 +310,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.theaustralian.com.au',
+        url:'http://www.theaustralian.com.au/',
         name:'The Australian',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -326,7 +326,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.themercury.com.au',
+        url:'http://www.themercury.com.au/',
         name:'The Mercury',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -342,7 +342,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.goldcoastbulletin.com.au',
+        url:'http://www.goldcoastbulletin.com.au/',
         name:'The Gold Coast Bulletin',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -358,7 +358,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.townsvillebulletin.com.au',
+        url:'http://www.townsvillebulletin.com.au/',
         name:'Townsville Bulletin',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -374,7 +374,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.geelongadvertiser.com.au',
+        url:'http://www.geelongadvertiser.com.au/',
         name:'Geelong Advertiser',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -390,7 +390,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.cairnspost.com.au',
+        url:'http://www.cairnspost.com.au/',
         name:'The Cairns Post',
         owner:'News Corp Australia',
         type:'Public Company',
@@ -421,7 +421,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
 
     {
-        url:'http://www.au.news.yahoo.com/thewest',
+        url:'http://www.au.news.yahoo.com/thewest/',
         name:'The West Australian',
         owner:'West Australian Newspapers',
         type:'Public Company',
@@ -437,7 +437,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
     },
      
     {
-        url:'abc.net.au',
+        url:'http://www.abc.net.au/',
         name:'ABC News',
         bias:'two',
         likes: 0,
@@ -449,7 +449,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         averageRating: 0
     },
     {
-        url:'theconversation.com',
+        url:'http://www.theconversation.com/',
         name:'The Conversation',
         bias:'three',
         likes: 0,
@@ -646,8 +646,9 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         $scope.searchURLbyTAB(tabs[0].url);
         $scope.search_newsSites = $filter('filter')($scope.newsSites, {url: tabs[0].url}, true);
         $scope.$apply();
+        // console.log($scope.newsSites.indexOf(tabs[0].url));
         // console.log(tabs[0].url);
-        // console.log(tabs[0].title);
+        // console.log($filter('filter')($scope.newsSites, {url: tabs[0].url}, true));
         // document.getElementById('host').innerHTML = url.hostname;
         });
       });
