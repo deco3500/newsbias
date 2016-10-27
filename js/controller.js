@@ -27,14 +27,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner: 'Fairfax Media',
         type: 'Public Company',
         based: 'Sydney, New South Wales',
-        CEO: 'Greg Hywood',
-        Chairman: 'Nick Falloon',
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'],
         otherNews: ['The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier'],
         otherOnline: ['theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au'], 
-        bias: true,
         totalVotes: 6,
         totalRating: 22,
-        averageRating: 3.7
+        averageRating: 3.7,
+        search:['brisbane times', 'brisbanetimes']
     },
 	
     {
@@ -43,14 +42,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'APN News & Media',
         type:'Public Company',
         based:'Toowoomba, Queensland',
-        CEO:'Ciaran Davis', 
-        Chairman:'Rupert Murdoch, Allan Gray', 
+        people:['CEO: Ciaran Davis', 'Chairman: Rupert Murdoch, Allan Gray'],
         otherNews: ['Sunshine Coast Daily','The Morning Bulletin'], 
         otherOnline: ['coastdaily.com.au','morningbulletin.com.au'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Toowoomba Chronicle', 'toowoombachronicle']
     },
 
     {
@@ -59,14 +57,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'APN News & Media',
         type:'Public Company',
         based:'Maroochydore, Queensland',
-        CEO:'Ciaran Davis', 
-        Chairman:'Rupert Murdoch, Allan Gray', 
+        people:['CEO: Ciaran Davis', 'Chairman: Rupert Murdoch, Allan Gray'], 
         otherNews: ['The Toowoomba Chronicle','The Morning Bulletin'], 
         otherOnline: ['toowoombachronicle.com.au','morningbulletin.com.au'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['Sunshine Coast Daily', 'coastdaily']
     },
 
     {
@@ -75,14 +72,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'APN News & Media',
         type:'Public Company',
         based:'Rockhampton, Queensland',
-        CEO:'Ciaran Davis', 
-        Chairman:'Rupert Murdoch, Allan Gray', 
+        people:['CEO: Ciaran Davis', 'Chairman: Rupert Murdoch, Allan Gray'], 
         otherNews: ['The Toowoomba Chronicle','Sunshine Coast Daily'], 
         otherOnline: ['toowoombachronicle.com.au','coastdaily.com.au'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Morning Bulletin', 'morningbulletin']
     },
 
     {
@@ -91,14 +87,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Sydney, New South Wales',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'], 
         otherNews: ['The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier', 'Brisbane Times'],
 		otherOnline: ['theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Sydney Morning Herald', 'smh']
     },
 
     {
@@ -107,14 +102,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Melbourne, Victoria',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'], 
         otherNews: ['The Sydney Morning Herald','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Age', 'theage']
     },
 
     {
@@ -123,14 +117,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Melbourne, Victoria',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'], 
         otherNews: ['The Sydney Morning Herald','The Age','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Australian Financial Review', 'afr']
     },
 
     {
@@ -139,14 +132,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Newcastle, New South Wales',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'], 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Herald', 'theherald']
     },
 
     {
@@ -155,14 +147,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Canberra, Australian Capital Territory',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'],
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Canberra Times', 'canberratimes']
     },
 
     {
@@ -171,14 +162,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Launceston, Tasmania',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'], 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','Illawarra Mercury','The Border Mail','The Advocate','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Examiner', 'examiner']
     },
 
     {
@@ -187,14 +177,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Wollongong, New South Wales',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'], 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','The Border Mail','The Advocate','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','bordermail.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['Illawarra Mercury', 'illawarramercury']
     },
 
     {
@@ -203,14 +192,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Wodonga, Victoria',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'], 
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Advocate','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','theadvocate.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Border Mail', 'bordermail']
     },
 
     {
@@ -219,14 +207,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Burnie, Tasmania',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'],
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Courier','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','thecourier.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Advocate', 'theadvocate']
     },
 
     {
@@ -235,14 +222,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'Fairfax Media',
         type:'Public Company',
         based:'Ballarat, Victoria',
-        CEO:'Greg Hywood', 
-        Chairman:'Nick Falloon', 
+        people:['CEO: Greg Hywood', 'Chairman: Nick Falloon'],
         otherNews: ['The Sydney Morning Herald','The Age','The Australian Financial Review','The Herald','The Canberra Times','The Examiner','Illawarra Mercury','The Border Mail','The Advocate','Brisbane Times'],
 		otherOnline: ['smh.com.au.com.au','theage.com.au','afr.com','theherald.com.au','canberratimes.com.au','examiner.com.au','illawarramercury.com.au','bordermail.com.au','theadvocate.com.au','http://www.brisbanetimes.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Courier', 'thecourier']
     },
 
     {
@@ -251,14 +237,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Melbourne, Victoria',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['The Daily Telegraph','The Courier-Mail','The Advertiser','The Australian','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'],
 		otherOnline: ['dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['Herald Sun', 'heraldsun']
     },
 
     {
@@ -267,14 +252,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Sydney, New South Wales',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Courier-Mail','The Advertiser','The Australian','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'],
 		otherOnline: ['heraldsun.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Daily Telegraph', 'dailytelegraph']
     },
 
     {
@@ -283,14 +267,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Brisbane, Queensland',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Advertiser','The Australian','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'],
 		otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Courier-Mail', 'couriermail', 'The Courier Mail']
     },
 
     {
@@ -299,14 +282,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Adelaide, South Australia',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Australian','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'],
 		otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Advertiser', 'adelaidenow']
     },
 
     {
@@ -315,14 +297,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Sydney, New South Wales',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Advertiser','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'], 
         otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Australian', 'theaustralian']
     },
 
     {
@@ -331,14 +312,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Hobart, Tasmania',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Advertiser','The Australian','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'], 
         otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Mercury', 'themercury']
     },
 
     {
@@ -347,14 +327,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Gold Coast, Queensland',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'],
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Advertiser','The Australian','The Mercury','Townsville Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'], 
         otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Gold Coast Bulletin', 'goldcoastbulletin']
     },
 
     {
@@ -363,14 +342,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Queensland, Queensland',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Advertiser','The Australian','The Mercury','The Gold Coast Bulletin','Geelong Advertiser','The Cairns Post','Northern Territory News'], 
         otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['Townsville Bulletin', 'townsvillebulletin']
     },
 
     {
@@ -379,14 +357,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Geelong, Victoria',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Advertiser','The Australian','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','The Cairns Post','Northern Territory News'], 
         otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','cairnspost.com.au','http://www.ntnews.com.au/'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['Geelong Advertiser', 'geelongadvertiser']
     },
 
     {
@@ -395,14 +372,13 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Cairns, Queensland',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Advertiser','The Australian','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','Northern Territory News'], 
         otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','darwinnow.com.te'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The Cairns Post', 'cairnspost']
     },
 
     {
@@ -411,13 +387,12 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'News Corp Australia',
         type:'Public Company',
         based:'Darwin, Northern Territory',
-        CEO:'Julian Clarke ', 
-        Chairman:'Rupert Murdoch', 
+        people:['CEO: Julian Clarke', 'Chairman: Rupert Murdoch'], 
         otherNews: ['Herald Sun','The Daily Telegraph','The Courier-Mail','The Advertiser','The Australian','The Mercury','The Gold Coast Bulletin','Townsville Bulletin','Geelong Advertiser','The Cairns Post'],    otherOnline: ['heraldsun.com.au','dailytelegraph.com.au','couriermail.com.au','adelaidenow.com.au','theaustralian.com.au','themercury.com.au','goldcoastbulletin.com.au','townsvillebulletin.com.au','geelongadvertiser.com.au','cairnspost.com.au'], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['Northern Territory News', 'ntnews']
     },
 
     {
@@ -426,39 +401,60 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         owner:'West Australian Newspapers',
         type:'Public Company',
         based:'Perth, Western Australia',
-        CEO:'Tim Worner', 
-        Chairman:'Kerry Stokes', 
-        otherNews: [], 
-        otherOnline: [], 
-        bias: true,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        people:['CEO: Tim Worner', 'Chairman: Kerry Stokes'],  
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['The West Australian', 'thewest']
     },
      
     {
         url:'http://www.abc.net.au/',
         name:'ABC News',
-        bias:'two',
-        likes: 0,
-        likePercentage: 0,
-      dislikes: 0,
-        dislikePercentage: 0,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        owner:'Australian Government',
+        type:'Nationally funded public broadcaster',
+        based:'Sydney, New South Wales',
+        people:['Chairman: James Spigelman AC, QC', 'Managing Director: Michelle Guthrie'], 
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['abc', 'australian broadcasting corporation', 'abce news']
+    },
+      {
+        url:'http://www.sbs.com.au/news/',
+        name:'SBS World News',
+        owner:'Commonwealth of Australia',
+        type:'Hybrid funded public broadcaster',
+        based:'Artarmon, New South Wales',
+        people:['Acting Chairman: Bulent Hass Dellal', 'Managing Director: Michael Ebeid'], 
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['sbs', 'special broadcasting service', 'sbs news']
     },
     {
-        url:'http://www.theconversation.com/',
+        url:'https://theconversation.com/',
         name:'The Conversation',
-        bias:'three',
-        likes: 0,
-        likePercentage: 0,
-      dislikes: 0,
-        dislikePercentage: 0,
-        totalVotes: 0,
-        totalRating: 0,
-        averageRating: 0
+        owner:'The Conversation Trust',
+        type:'Independent, not-for-profit media outlet',
+        based:'Melbourne, Victoria',
+        people:['Editor: Andrew Jaspan', 'Chief Operating Officer: Lisa Watts', 'Managing Editor: Lisa Watts'], 
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['the conversation', 'theconversation']
+    },
+      {
+        url:'https://www.crikey.com.au/',
+        name:'Crikey',
+        owner:'Private Media Pty. Ltd',
+        type:'Independent news website ',
+        based:'Melbourne, Victoria ',
+        people:['Chairman: Eric Beecher', 'Editor: Cassidy Knowlton'], 
+        totalVotes: 6,
+        totalRating: 22,
+        averageRating: 3.7,
+        search:['Crikey']
     }
   ];
     
