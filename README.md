@@ -1,4 +1,31 @@
-# newsbias
+# Who's News
+
+## Final report
+
+The final report for the Who's News prototype can be found on the [about page](https://deco3500.github.io/newsbias/about.html) of our prototype.
+
+## How to use the prototype
+
+### Search
+
+Search for an Australian newspaper (online or in print) using the search box on the [home page](https://deco3500.github.io/newsbias/index.html).  You can search for a name (e.g. Brisbane Times) or copy and paste a url of an article.
+
+### Fact Check
+Who's News Fact Check allows you to submit an article to be checked and assessed by our team of community leaders. Articles will be given a rating based on four weighted criteria which are independantly assessed by three members of the fact-checking team. 
+
+
+### Chrome Extension
+<ol>
+<li>[Download our Github repository](https://github.com/deco3500/newsbias) and unzip it.</li>
+<li>In Chrome, go the the Google Chrome Settings.</li>
+<li>On the side menu, click the extension tab.</li>
+<li>Tick the 'Developer mode' box.</li>
+<li>Click the 'Load unpacked extension' button and choose the folder 'newsbias'.</li>
+<li>Go to a news article [like this one](https://theconversation.com/is-it-back-to-the-future-for-human-origins-science-or-just-a-case-of-science-media-misleading-us-again-63043), and click on the extension button.</li>
+</ol>
+
+
+# Team News Bias Project Proposal
 
 ## 1. Introduction
 
