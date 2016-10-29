@@ -79,7 +79,7 @@
                             <div class="w3-row">
                                 <div class="w3-col w3-half w3-padding-right">
                                     <h2 class="w3-text-cyan" style="margin-top: 0">{{news.name}}</h2>
-                                    <p class="text-navy w3-margin-bottom">URL: <a ng-href="{{news.url}}">{{news.url}}</a> </p>
+                                    <p class="text-navy w3-margin-bottom">URL: <a target="_blank" ng-href="{{news.url}}">{{news.url}}</a> </p>
                                     <p class="text-navy w3-margin-bottom">{{news.name}} is owned by <span style="font-weight:bold" class="w3-text-cyan">{{news.owner}}</span>.</p>
                                     <div class="w3-margin-bottom searchResult">
                                         <p ng-repeat="i in news.people">{{i}}</p> 
@@ -87,7 +87,7 @@
                                     <p class="text-navy w3-margin-bottom">{{news.owner}} is a <span style="font-weight:bold" class="w3-text-cyan">{{news.type}}</span> based in <span style="font-weight:bold" class="w3-text-cyan">{{news.based}}</span>.</p>
                                     <p ng-hide="!news.otherNews" class="text-navy" style="font-weight:bold">Other newspapers owned by {{news.owner}}: </p>
                                     <ul class="w3-margin-bottom searchResult">
-                                        <li ng-hide="!news.otherNews" ng-repeat="i in news.otherNews"><a ng-href="{{news.otherOnline[$index]}}">{{i}}</a></li>
+                                        <li ng-hide="!news.otherNews" ng-repeat="i in news.otherNews"><a ng-href="{{news.otherOnline[$index]}}" target="_blank">{{i}}</a></li>
                                         
                                     </ul>
                                 </div>
@@ -115,14 +115,14 @@
                               <div id="{{news.name}}" class="w3-accordion-content w3-container w3-margin-top">
                                    <div class="w3-row">
                                 <div class="w3-col w3-half w3-padding-right">
-                                <p class="text-navy w3-margin-bottom">URL: <a ng-href="{{news.url}}">{{news.url}}</a> </p>
+                                <p class="text-navy w3-margin-bottom">URL: <a target="_blank" ng-href="{{news.url}}">{{news.url}}</a> </p>
                                     <p class="text-navy w3-margin-bottom">{{news.name}} is owned by <span style="font-weight:bold" class="w3-text-cyan">{{news.owner}}</span>.</p>
                                     <p class="text-navy">CEO: {{news.CEO}}</p>
                                     <p class="text-navy w3-margin-bottom">Chairman: {{news.Chairman}}</p>
                                     <p class="text-navy w3-margin-bottom">{{news.owner}} is a <span style="font-weight:bold" class="w3-text-cyan">{{news.type}}</span> based in <span style="font-weight:bold" class="w3-text-cyan">{{news.based}}</span>.</p>
                                     <p class="text-navy" style="font-weight:bold">Other newspapers owned by {{news.owner}}: </p>
                                     <ul class="w3-margin-bottom searchResult">
-                                        <li ng-repeat="i in news.otherNews"><a ng-href="{{news.otherOnline[$index]}}">{{i}}</a></li>
+                                        <li ng-repeat="i in news.otherNews"><a target="_blank" ng-href="{{news.otherOnline[$index]}}">{{i}}</a></li>
                                         
                                     </ul>
                               
