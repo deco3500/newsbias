@@ -473,58 +473,65 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
             totalpos: 19,
             percentage: 78,
             grade: 'C',
-            color:'w3-grey'
+            color:'w3-yellow'
 
         }
     ];
     
   $scope.results = [
     {
-        url:'http://www.brisbanetimes.com.au/',
-        name:'article name1',
-        publication:'Brisbane Times',
-        owner: 'Fairfax Media Group',
-        category: 'IT',
+        url:'http://www.abc.net.au/news/2016-10-28/what-we-know-so-far-about-the-dreamworld-tragedy/7974358',
+        name:'Dreamworld: What we know so far about the Thunder Rapids tragedy',
+        publication:'ABC News',
+        owner: 'Australian Government',
+        category: 'Current Events',
         score: 'A',
         color: 'w3-green',
         detail: 'result1'
     },
       {
-        url:'http://www.brisbanetimes.com.au/',
-        name:'article name2',
-        publication:'Brisbane Times',
-        owner: 'Fairfax Media Group',
-        category: 'IT',
+        url:'https://theconversation.com/what-will-consumers-gain-from-research-into-complementary-medicines-67784',
+        name:'What will consumers gain from research into complementary medicines?',
+        publication:'The Conversation',
+        owner: 'The Conversation Trust',
+        category: 'Health',
         score: 'B',
         color: 'w3-blue',
         detail: 'result1'
     },{
-        url:'http://www.brisbanetimes.com.au/',
-        name:'article name3',
+        url:'http://www.brisbanetimes.com.au/queensland/construction-figures-fall-off-a-cliff-in-queensland-report-20161024-gs9jhu.html',
+        name:'Construction figures "fall off a cliff" in Queensland: report',
         publication:'Brisbane Times',
         owner: 'Fairfax Media Group',
-        category: 'IT',
+        category: 'Current Events',
         score: 'C',
-        color: 'w3-grey',
-        detail: 'result1'
-    },{
-        url:'http://www.brisbanetimes.com.au/',
-        name:'article name4',
-        publication:'Brisbane Times',
-        owner: 'Fairfax Media Group',
-        category: 'IT',
-        score: 'D',
         color: 'w3-yellow',
-        detail: 'result1'
+        author: 'Tony Moore',
+        a1: 5,
+        a2: 5,
+        a3:2,
+        a4:3,
+        total: 15,
+        totalpos: 19,
+        percentage: 78
     },{
-        url:'http://www.brisbanetimes.com.au/',
-        name:'article name4',
+        url:'http://www.brisbanetimes.com.au/world/us-election/hillary-clinton-email-scandal-who-is-james-comey-20161029-gsdp1a.html',
+        name:"The man who detonated a bomb under Hillary Clinton's campaign",
         publication:'Brisbane Times',
         owner: 'Fairfax Media Group',
-        category: 'IT',
+        category: 'Politics',
+        score: 'D',
+        color: 'w3-orange',
+        detail: 'result1'
+    },{
+        url:'http://www.ntnews.com.au/subscribe/news/1/index.html?sourceCode=NTWEB_WRE170_a&mode=premium&dest=http://www.ntnews.com.au/lifestyle/steve-irwins-finals-days/news-story/df34ea8289ef546b2aa92677c166ff0b&memtype=anonymous',
+        name:'Steve Irwin’s final days',
+        publication:'Northern Territory News',
+        owner: 'News Corp Australia',
+        category: 'Current Events',
         score: 'F',
         color: 'w3-red',
-        detail: 'result1'
+        detail: 'result1'     
     }
   ];
   

@@ -67,13 +67,12 @@
         <div class="w3-third w3-padding-medium" ng-repeat="result in results">
             <div class="w3-card-4">
                 <div class="w3-container w3-light-grey w3-padding">
-                    <h1>{{result.name}}</h1> </div>
+                    <h2 class="w3-large"><a target="_blank" ng-href="{{result.url}}">{{result.name}}</a></h2> </div>
                 <div class="w3-container w3-padding">
                     <p>Publication: {{result.publication}}</p>
                     <p>Owner: {{result.owner}}</p>
                     <hr>
                     <p>Category: {{result.category}}</p> 
-                    <p><a ng-href="{{result.url}}">{{result.url}}</a></p>
                 <button class="w3-btn-floating-large w3-border w3-right {{result.color}}">{{result.score}}</button>
                 </div>
                 <!--<footer class="w3-container w3-lime w3-padding-16">

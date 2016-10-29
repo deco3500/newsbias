@@ -62,13 +62,12 @@
         <p class="w3-small w3-padding-bottom">Fact Check > Results > Detailed Results</p>
     </div>
     <div class="w3-container w3-padding-top-32 w3-margin-bottom">
-        <div class="w3-padding-medium" ng-repeat="detail in detailResults">
+        <div class="w3-padding-medium" ng-repeat="detail in results" ng-show="detail.score == 'C'">
             <div class="w3-card-4">
                 <div class="w3-container w3-cyan w3-text-white w3-padding">
-                    <h2>{{detail.title}}</h2> <p class="w3-right">By {{detail.author}}</p></div>
+                    <h2 class="w3-xlarge"><a target="_blank" ng-href={{detail.url}}>{{detail.name}}</a></h2> <p class="w3-right">By {{detail.author}}</p></div>
                 <div class="w3-container w3-padding">
-                    <p>URL: <a target="_blank" ng-href={{detail.url}}>{{detail.url}}</a></p>
-                    <p>Publication: {{detail.name}}.  Publication Owner: {{detail.owner}}</p>
+                    <p>Publication: {{detail.publication}}.  Publication Owner: {{detail.owner}}</p>
                     <hr>
                     <h3>Results</h3>
             <ul class="searchResult w3-margin-bottom">
@@ -89,7 +88,7 @@
                 </div>
                 <!--<button class="w3-btn-block {{detail.color}}"><h5>{{detail.grade}}</h5></button>-->
                 <footer class="w3-container {{detail.color}} w3-padding-16 w3-center">
-                    <h5 class="w3-xxxlarge">{{detail.grade}}</h5>
+                    <h5 class="w3-xxxlarge">{{detail.score}}</h5>
                 </footer>
 
             </div>
