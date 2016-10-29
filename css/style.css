@@ -30,6 +30,14 @@ h5,h6, body, .w3-navbar,button {
     font-family: 'Roboto', sans-serif;
 }
 
+ol {
+    list-style-type: circle !important;
+}
+
+.card-height-115{
+    min-height: 115px;
+}
+
 .formCenter{
     width: 80%;
     margin: 0 auto;

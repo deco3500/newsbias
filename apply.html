@@ -23,14 +23,22 @@
         <ul class="w3-navbar navy w3-card-2 w3-top w3-left-align w3-large">
             <li class="w3-hide-medium w3-hide-large w3-opennav w3-right"> <a class="w3-padding-large w3-hover-white w3-large navy" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> </li>
             <li>
-                <a href="#" class="navLogoContainer"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo" /></a>
+                <a href="#" class="navLogoContainer" id="nohover"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo" /></a>
             </li>
             <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
             <li class="w3-hide-small w3-dropdown-hover"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check <i class="fa fa-caret-down"></i></a>
-                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="results.html">View all results</a> <a href="submit.html">Submit an article</a> <a href="apply.html">Apply to be a fact checker</a> </div>
-            </li>
+                <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="results.html">View all results</a>
+                  <a href="submit.html">Submit an article</a>
+                  <a href="apply.html">Apply to be a fact checker</a>
+                </div></li>
             <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
-            <li class="w3-hide-small w3-right"><a class="w3-padding-large w3-hover-white" href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+             <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
+            <div class="w3-dropdown-content w3-white w3-card-4">
+                  <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                
+                </div></li>
         </ul>
     </nav>
     <!-- Navbar on small screens -->
@@ -44,12 +52,14 @@
                 <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
                 <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
                 <li><a class="w3-padding-large" href="about.html">About</a></li>
+                                <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
+
                 <li><a class="w3-padding-large" href="login.html">Login</a></li>
             </ul>
         </ul>
     </div>
     <!-- Header -->
-    <div class="w3-container w3-section white w3-center w3-padding-top-64">
+    <div class="w3-container w3-section white w3-center">
         <h1>Apply to be a fact checker</h1> </div>
     <div class="w3-container">
         <p class="w3-small w3-padding-bottom">Fact Check > Apply to be a fact checker</p>

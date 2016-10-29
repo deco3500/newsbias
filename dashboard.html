@@ -26,14 +26,14 @@
                 <a href="#" class="navLogoContainer" id="nohover"><img class="navLogo" src="IMG/NewsBias.png" alt="News Bias Logo" /></a>
             </li>
             <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
-            <li class="w3-hide-small w3-dropdown-hover"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check <i class="fa fa-caret-down"></i></a>
+            <li class="w3-hide-small w3-dropdown-hover"><a href="factcheck.html" class="w3-padding-large w3-hover-white">Fact Check <i class="fa fa-caret-down"></i></a>
                 <div class="w3-dropdown-content w3-white w3-card-4">
                   <a href="results.html">View all results</a>
                   <a href="submit.html">Submit an article</a>
                   <a href="apply.html">Apply to be a fact checker</a>
                 </div></li>
             <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
-             <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
+             <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white active-tab" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
             <div class="w3-dropdown-content w3-white w3-card-4">
                   <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
                 <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
@@ -59,64 +59,47 @@
     </div>
     <!-- Header -->
     <div class="w3-container w3-section white w3-center">
-        <h1>Fact Check Results</h1> </div>
+        <h1>Fact Check Dashboard</h1> </div>
     <div class="w3-container">
-        <p class="w3-small w3-padding-bottom">Fact Check > Results</p>
-    </div>
-    <div class="w3-container">
-       <p class="w3-margin-bottom">Who's News Fact Check allows you to submit an article to be checked and assessed by our team of community leaders.</p>
-      
-       <p class="w3-margin-bottom">Articles will be given a rating based on four weighted criteria which are independantly assessed by three members of the fact-checking team. </p>
-      
-       <p class="w3-margin-bottom">Results will be given a grade (A to F) based on an average of the three fact checker ratings. Find something interesting?  Share the results of a fact check with your friends. </p>
-    </div>
-    <div class="w3-container w3-padding-top-32 w3-margin-bottom">
-        <div class="w3-third w3-padding-medium" ng-repeat="result in results">
-            <div class="w3-card-4">
-                <div class="w3-container w3-light-grey w3-padding card-height-115">
-                    <h2 class="w3-large"><a target="_blank" ng-href="{{result.url}}">{{result.name}}</a></h2> </div>
-                <div class="w3-container w3-padding">
-                    <p>Publication: {{result.publication}}</p>
-                    <p>Owner: {{result.owner}}</p>
-                    <hr>
+        <h2 class="w3-text-cyan">Articles to be checked</h2>
+        <div class="w3-container w3-margin-bottom">
+                    <div class="w3-col w3-third w3-padding-medium" ng-repeat="result in results|limitTo:3">
+                        <div class="w3-card-4">
+                            <div class="w3-container w3-light-grey w3-padding">
+                                        <h3 class="w3-large">{{result.name}}</h3> </div>
+                                    <div class="w3-container w3-padding">
                     <p>Category: {{result.category}}</p> 
-                <button class="w3-btn-floating-large w3-border w3-right {{result.color}}">{{result.score}}</button>
+                
                 </div>
-                <!--<footer class="w3-container w3-lime w3-padding-16">
-                    <p class="w3-center">Overall score {{result.score}}</h5>
-                </footer>-->
-                <button class="w3-btn-block w3-cyan w3-text-white "><a ng-href="resultsDetail.html"><h5>View detailed results</h5></a></button>
-            </div>
-        </div>
+                            </div>
+                            <button class="w3-btn-block w3-cyan w3-text-white "><a ng-href="resultsDetail.html"><h5>Fact Check this article</h5></a></button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+    
+    <div class="w3-container">
+        <h2>Articles I have checked</h2>
+    <div class="w3-container w3-margin-bottom">
+                    <div class="w3-col w3-padding-medium" ng-repeat="result in results">
+                        <div class="w3-card-4">
+                            <div class="w3-container w3-light-grey w3-padding">
+                                <div class="w3-row">
+                                    <div class="w3-col w3-twothird w3-padding-right">
+                                        <h3 class="w3-xlarge">{{result.name}}</h3> </div>
+                                    <div class="w3-col w3-third">
+                                        <button class="w3-btn-floating-large w3-border w3-right {{result.color}}">{{result.score}}</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </div>
-    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-        <div class="w3-content">
-            <h2>About the fact checking process</h2>
-            <h3>What are the four criteria that will be used?</h3>
-            <ul class="searchResult">
-                <li>Is the content factually correct?</li>
-                <li>Have all aspects been presented In a reasonable, even and balanced manner?</li>
-                <li>Is the headline refelctive of the article's content? Does it exaggerate elements that are not central to the issue or focus of the article?</li>
-                <li>How sensational is the tone? Are "loaded" words used?</li>
-            </ul>
-            <h3>What are the grade cutoffs</h3>
-            <ul class="searchResult">
-                <li>A : 95% or greater</li>
-                <li>B : 80-94%</li>
-                <li>C : 68-79%</li>
-                <li>D : 55-67%</li>
-                <li>F : Less than 54%</li>
-            </ul>
-            <h3>What categories of news will be checked?</h3>
-            <p>Business, Current Events, Education, Health, Politics, Science / Environment
-</p>
-            <h3>What categories won't be assessed?
-</h3>
-            <p>Cars, Entertainment, Lifestyle, Local, Property, Religion / Spirituality, Sports, Technology, Travel, Weather
-</p>
-        </div>
     </div>
-    <hr>
+   
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center navy">
         <div class="w3-xlarge w3-padding-24">

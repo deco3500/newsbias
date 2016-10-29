@@ -500,7 +500,7 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         detail: 'result1'
     },{
         url:'http://www.brisbanetimes.com.au/queensland/construction-figures-fall-off-a-cliff-in-queensland-report-20161024-gs9jhu.html',
-        name:'Construction figures "fall off a cliff" in Queensland: report',
+        name:"Contruction figures fall off a cliff in Queensland: CommSec Report",
         publication:'Brisbane Times',
         owner: 'Fairfax Media Group',
         category: 'Current Events',
@@ -513,7 +513,8 @@ app.controller('newsBias', function($scope,$location,$window,$filter) {
         a4:3,
         total: 15,
         totalpos: 19,
-        percentage: 78
+        percentage: 78,
+        detail: 'result1'
     },{
         url:'http://www.brisbanetimes.com.au/world/us-election/hillary-clinton-email-scandal-who-is-james-comey-20161029-gsdp1a.html',
         name:"The man who detonated a bomb under Hillary Clinton's campaign",
