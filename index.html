@@ -163,13 +163,25 @@
     <!-- Grey Grid -->
     <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
         <div class="w3-content">
-            <h2 class="text-navy">Search Tips for demo</h1>
-        <p class="w3-text-grey"> Search for Brisbane Times, ABC News, or The Conversation or web articles from these</p>
-  <p class="w3-text-grey">e.g.    http://www.brisbanetimes.com.au/entertainment/tv-and-radio/qa-recap-coalition-senator-bridget-mckenzie-confronted-by-gay-brother-over-plebiscite-20160912-gret2z.html </p>
+            <h2>User Guide</h2>
+                <h3>Search</h3>
+                <p class="w3-margin-bottom">Search for an Australian newspaper (online or in print) using the search box on the <a href="index.html">home page</a>.  You can search for a name (e.g. Brisbane Times) or copy and paste a url of an article.</p>
+                <p class="w3-margin-bottom">Can't find the newspaper you're looking for? Our database currently only includes major Australian newspapers but we're adding to it regularly.</p>
+                <h3>Fact Check</h3>
+                <p class="w3-margin-bottom">Who's News Fact Check allows you to submit an article to be checked and assessed by our team of community leaders.</p>
+      
+       <p class="w3-margin-bottom">Articles will be given a rating based on four weighted criteria which are independantly assessed by three members of the fact-checking team. </p>
+      
+       <p class="w3-margin-bottom">Results will be given a grade (A to F) based on an average of the three fact checker ratings. Find something interesting?  Share the results of a fact check with your friends. </p>
+            <h3>Current list of newspapers</h3>
+            <p>Our database was last updated 30/10/2016</p>
+            <ul ng-repeat="news in newsSites" class="searchResult">
+                <li>{{news.name}}</li>
+            </ul>
+        
   
   </div>
 </div>
-
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center navy">
