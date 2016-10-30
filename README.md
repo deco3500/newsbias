@@ -19,7 +19,9 @@ Who's News Fact Check allows you to submit an article to be checked and assessed
 
 
 ### Chrome Extension
-[logo]: https://raw.githubusercontent.com/deco3500/newsbias/master/IMG/Screen%20Shot%202016-10-30%20at%209.55.25%20am.png "Logo Title Text 2"
+
+![Chrome Settings](https://raw.githubusercontent.com/deco3500/newsbias/master/IMG/Screen%20Shot%202016-10-30%20at%209.55.25%20am.png "Logo Title Text 1")
+
 <ol>
 <li>Download this Github repository and unzip it.</li>
 <li>In Chrome, go the the Google Chrome Settings.</li>
