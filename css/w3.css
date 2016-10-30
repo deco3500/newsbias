@@ -70,6 +70,9 @@ ul.searchResult{
     list-style-type: circle;
     margin-left: 20px;
 }
+ul.searchResult ul.searchResult{
+    list-style-type: square
+}
 .w3-tooltip,.w3-display-container{position:relative}
 .w3-fluid{max-width:100%;height:auto}
 .w3-tooltip .w3-text{display:none}

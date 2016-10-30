@@ -43,6 +43,16 @@ ol {
   
 }
 
+.columns3 {
+  -webkit-columns: 3 150px;
+  -moz-columns: 3 150px;
+  columns: 3 150px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  
+}
+
 .columnHeader {  
   -webkit-column-span: all;
   -moz-column-span: all;
