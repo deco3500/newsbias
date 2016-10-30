@@ -60,8 +60,10 @@
         <div class="w3-row">
             <div class="w3-col w3-twothird w3-padding-right text-navy">
                 <h2>Introduction</h2>
+               
                 <p class="w3-margin-bottom">Who's News is a web app that highlights ownership and key stakeholders of Australian newspaper and allows users to vote and view on a crowdsourced trust rating.   The app pairs with a Chrome Extension that displays the same information from within a site they are browsing.  Our Fact Check feature allows users to submit an article for independent review by our independent fact checkers.</p> 
                 <h2>Background</h2>
+                 <h3>Problem Space</h3>
                 <p class="w3-margin-bottom">It is contended that diversity in media ownership is an necessary component of a healthy democracy (Alderman, 2016; Pang, 2016; Vadori, 2016). Despite this, consider that:</p>
                     <ul class="searchResult w3-margin-bottom">
                         <li>In Australia, just two newspaper groups account for over 90% of daily newspapers in circulation (ACMA, 2016).</li>
@@ -70,7 +72,7 @@
                 </ul>
 <p class="w3-margin-bottom">While media “owners” might not write the articles, the selection of senior editorial staff is often closely managed (McKnight, 2012). Illustrating this point, a 2006 survey of journalists concluded that the political and commercial agendas of their employers had influenced their conduct - almost 40% indicated they had been directly instructed to  ‘toe the commercial line’ while over 16% had been told to ‘take into account their employer’s political position’ (MEAA 2006). </p>
 
-
+<h3>Our Approach</h3>
 <p class="w3-margin-bottom">With the above statistics in mind, we looked to see what data was publicly available on media ownership in Australia (with a focus on print/online media). There are many reports, infographics and journals available, however most exist as “snapshots” at a point in time and are not updated. The only comprehensive, regularly-maintained resource we were able to find is a clickable, interactive “Media Interests Snapshot” map made freely available by the ACMA. 
 </p> 
                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
@@ -101,15 +103,10 @@
                     <li>A trust rating (which can be contributed to)</li>
                     <li>A fact-check rating for the outlet (users can submit articles for fact checking / rating)</li>
                 </ul>
-
-
- 
-
-
-         
+                
                
             </div>
-            <div class="w3-col w3-third">
+            <div class="w3-col w3-third w3-margin-bottom">
                 <div class="w3-padding w3-border">
                 <h2 class="w3-text-cyan">User Guide</h2>
                 <h3>Search</h3>
@@ -142,7 +139,43 @@
         </div>
     </div>
     
+     <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-col w3-twothird w3-padding-right text-navy">
+            <h2>Process</h2>    
+            <h3>Initial Concept</h3>
+                <p class="w3-margin-bottom">Image 2 (right) is the idea in it’s initial conception. The first idea for the landing page was a simple search interface (not dissimilar to Google) with a large search bar centered on the page. After the first pitch, it was suggested that a Chrome extension would be a natural/useful accompaniment to the web app. We commenced development of an extension to be paired with the app, integrating with any news site that exists in our database.
+</p>
+                <h3>Framework</h3>
+                <p class="w3-margin-bottom">To begin we chose the W3.CSS (http://www.w3schools.com/w3css/default.asp) framework to provide a responsive, grid layout.  It is a simple, CSS-only, light framework that gave as the basic layout and styles to build our prototype on.  This framework also enabled us to create a mobile-first design.  AngularJS was used to provide dynamic data throughout the prototype.  It provides a basis for the main functions including search and the fact check results. 
+</p>
+                <h3>Initial UI</h3>
+                <p class="w3-margin-bottom">We liked the colour choices and contrasts in our first UI, but agreed it would benefit from imagery. For inspiration, we gathered a selection of images that reflected themes within the problem space (shown in the grid below). 
+We liked the idea of the media “control room”; silhouetted figures, dark lighting, an underlying theme of control/manipulation, etc. See the top row for examples, as well as the image that was used (under Creative Commons) as the cover for our prototype.</p>
+            </div>
+            
+             <div class="w3-col w3-third w3-padding">
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/02_Idea.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 2 - “Project Idea” submission</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/03_FirstUILeo.jpg" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 3 - First UI developed</p></div>
+</div>
+                  <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/04_ImageResearch.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 4 - Collection of images gathered for research</p></div>
+</div>
+         </div>
+    </div>
+    </div>
+    
     <hr>
+    
    
    
     <!-- Footer -->
