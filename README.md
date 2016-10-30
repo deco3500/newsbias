@@ -2,7 +2,7 @@
 
 ## Final report
 
-The final report for the Who's News prototype can be found on the [about page](https://deco3500.github.io/newsbias/about.html) of our prototype.  Our Github Page has been behaving inconsistently so the prototype and about page content are best viewed by downloading this Github repository and opening the files locally.
+The final report for the Who's News prototype can be found on the [about page](https://deco3500.github.io/newsbias/about.html) of our prototype.  Our Github Page has been behaving inconsistently so the prototype and about page content are **best viewed by downloading this Github repository and opening the files locally**.
 
 ### Promotional video
 
