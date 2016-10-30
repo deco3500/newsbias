@@ -8,6 +8,11 @@ The final report for the Who's News prototype can be found on the [about page](h
 
 Our [video can be viewed on You Tube](https://youtu.be/fGVuigW2Tww) or on our [about page](https://deco3500.github.io/newsbias/about.html).
 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=fGVuigW2Tww
+" target="_blank"><img src="http://img.youtube.com/vi/fGVuigW2Tww/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ## How to use the prototype
 
 ### Search
@@ -33,6 +38,10 @@ Who's News Fact Check allows you to submit an article to be checked and assessed
 You can now use the extension when viewing a news article on the web (like this one: https://theconversation.com/is-it-back-to-the-future-for-human-origins-science-or-just-a-case-of-science-media-misleading-us-again-63043), and click on the extension button.
 
 ![Using the extension](https://raw.githubusercontent.com/deco3500/newsbias/master/IMG/Screen%20Shot%202016-10-30%20at%2010.10.50%20am.png "Using the extension")
+
+
+
+
 
 
 
