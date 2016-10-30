@@ -20,16 +20,20 @@ Who's News Fact Check allows you to submit an article to be checked and assessed
 
 ### Chrome Extension
 
-![Chrome Settings](https://raw.githubusercontent.com/deco3500/newsbias/master/IMG/Screen%20Shot%202016-10-30%20at%209.55.25%20am.png "Logo Title Text 1")
-
 <ol>
 <li>Download this Github repository and unzip it.</li>
 <li>In Chrome, go the the Google Chrome Settings.</li>
 <li>On the side menu, click the extension tab.</li>
 <li>Tick the 'Developer mode' box.</li>
 <li>Click the 'Load unpacked extension' button and choose the folder 'newsbias'.</li>
-<li>Go to a news article (like this one: https://theconversation.com/is-it-back-to-the-future-for-human-origins-science-or-just-a-case-of-science-media-misleading-us-again-63043), and click on the extension button.</li>
 </ol>
+
+![Chrome Settings](https://raw.githubusercontent.com/deco3500/newsbias/master/IMG/Screen%20Shot%202016-10-30%20at%209.55.25%20am.png "Chrome Settings")
+
+You can now use the extension when viewing a news article on the web (like this one: https://theconversation.com/is-it-back-to-the-future-for-human-origins-science-or-just-a-case-of-science-media-misleading-us-again-63043), and click on the extension button.
+
+![Using the extension](https://raw.githubusercontent.com/deco3500/newsbias/master/IMG/Screen%20Shot%202016-10-30%20at%2010.10.50%20am.png "Using the extension")
+
 
 
 # Team News Bias Project Proposal
