@@ -42,7 +42,10 @@ You can now use the extension when viewing a news article on the web (like this 
 ![Using the extension](https://raw.githubusercontent.com/deco3500/newsbias/master/IMG/Screen%20Shot%202016-10-30%20at%2010.10.50%20am.png "Using the extension")
 
 
+---
 
+
+---
 
 
 
