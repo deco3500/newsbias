@@ -89,16 +89,16 @@
             <div class="w3-col w3-twothird w3-padding-right text-navy">
                 <h2>Introduction</h2>
                
-                <p class="w3-margin-bottom">Who's News is a web app that highlights ownership and key stakeholders of Australian newspaper and allows users to vote and view on a crowdsourced trust rating.   The app pairs with a Chrome Extension that displays the same information from within a site they are browsing.  Our Fact Check feature allows users to submit an article for independent review by our independent fact checkers.</p> 
+                <p class="w3-margin-bottom">Who's News is a web app that highlights ownership and key stakeholders of Australian newspapers and allows users to vote and view on a crowdsourced trust rating.   The app pairs with a Chrome Extension that displays the same information from within the site they are browsing.  Our Fact Check feature allows users to submit an article for review by our independent fact checkers.</p> 
                 <h2>Background</h2>
                  <h3>Problem Space</h3>
                 <p class="w3-margin-bottom">It is contended that diversity in media ownership is an necessary component of a healthy democracy (Alderman, 2016; Pang, 2016; Vadori, 2016). Despite this, consider that:</p>
                     <ul class="searchResult w3-margin-bottom">
                         <li>In Australia, just two newspaper groups account for over 90% of daily newspapers in circulation (ACMA, 2016).</li>
-                        <li>Data published by the Australian Communications and Media Authority (ACMA) show that 9 individuals hold the majority of media outlets in Australia (ACMA, 2016).</li>
-                        <li>Australia ranks just 25th on the world press freedom index. (RSF, 2016)</li>
+                        <li>Data published by the Australian Communications and Media Authority (ACMA) shows that 9 individuals hold the majority of media outlets in Australia (ACMA, 2016).</li>
+                        <li>Australia ranks just 25th on the world press freedom index (RSF, 2016).</li>
                 </ul>
-<p class="w3-margin-bottom">While media “owners” might not write the articles, the selection of senior editorial staff is often closely managed (McKnight, 2012). Illustrating this point, a 2006 survey of journalists concluded that the political and commercial agendas of their employers had influenced their conduct - almost 40% indicated they had been directly instructed to  ‘toe the commercial line’ while over 16% had been told to ‘take into account their employer’s political position’ (MEAA 2006). </p>
+<p class="w3-margin-bottom">While media owners might not write the articles, the selection of senior editorial staff is often closely managed (McKnight, 2012). Illustrating this point, a 2006 survey of journalists concluded that the political and commercial agendas of their employers had influenced their conduct - almost 40% indicated they had been directly instructed to  ‘toe the commercial line’ while over 16% had been told to ‘take into account their employer’s political position’ (MEAA 2006). </p>
 
 <h3>Our Approach</h3>
 <p class="w3-margin-bottom">With the above statistics in mind, we looked to see what data was publicly available on media ownership in Australia (with a focus on print/online media). There are many reports, infographics and journals available, however most exist as “snapshots” at a point in time and are not updated. The only comprehensive, regularly-maintained resource we were able to find is a clickable, interactive “Media Interests Snapshot” map made freely available by the ACMA. 
@@ -108,28 +108,28 @@
                     <div class="w3-container w3-padding w3-border">
                         <p class="w3-center w3-medium">Image 1 - ACMA Media Interests Snapshot</p></div>
 </div>
-                <p class="w3-margin-bottom">While this data is useful, navigating starts from the top (i.e. owner level) and goes down; each clickable link opens a PDF file listing an owner’s media interests. This approach has limitations; for example, to find a specific publication like the Sydney Morning Herald, a user would <span style="font-style: italic">already</span> need to know that it is owned by Fairfax Group Limited.</p>
+                <p class="w3-margin-bottom">While this data is useful, navigating starts from the top (i.e. owner level) and goes down; each clickable link opens a PDF file listing an owner’s media interests. This approach has limitations; for example, to find a specific publication like the Sydney Morning Herald, a user would already need to know that it is owned by Fairfax Group Limited.</p>
 
 
                 <p class="w3-margin-bottom">We saw an opportunity for a solution in this space, identifying 3 key areas to improve on ACMA’s existing resource:</p>
 
 
 <ul class="searchResult w3-margin-bottom">
-    <li>Accessibility - How to connect ownership data <span style="font-weight: bold">directly</span> to a news article being read by an end user to help contextualise the problem</li>
+    <li>Accessibility - How to connect ownership data directly to a news article being read by an end user to help contextualise the problem</li>
     <li>Presentation - How to present the data in a way that is relevant to the end user without overwhelming them</li>
-    <li>Engagement - How to engage end-users beyond simply presenting them data</li>
+    <li>Engagement - How to engage end-users beyond simply presenting data</li>
                 </ul>
 
 
 
 
-<p class="w3-margin-bottom">Our web app, “Who’s News” allows a user to quickly and easily find information about the news they consume. By searching an article URL or publication title, a user can find:</p>
+<p class="w3-margin-bottom">Our web app, Who’s News, allows a user to quickly and easily find information about the news they consume. By searching an article URL or publication title, a user can find:</p>
                 <ul class="searchResult w3-margin-bottom">
                     <li>The name of the outlet</li>
                     <li>The controlling owner or corporation, as well as other outlets they own</li>
                     <li>Key stakeholders</li>
                     <li>A trust rating (which can be contributed to)</li>
-                    <li>A fact-check rating for the outlet (users can submit articles for fact checking / rating)</li>
+                    <li>A fact-check rating for the outlet (users can submit articles for fact checking/rating)</li>
                 </ul>
                 
                
@@ -172,21 +172,21 @@
             <div class="w3-col w3-twothird w3-padding-right text-navy">
             <h2>Process</h2>    
             <h3>Initial Concept</h3>
-                <p class="w3-margin-bottom">Image 2 (right) is the idea in it’s initial conception. The first idea for the landing page was a simple search interface (not dissimilar to Google) with a large search bar centered on the page. After the first pitch, it was suggested that a Chrome extension would be a natural/useful accompaniment to the web app. We commenced development of an extension to be paired with the app, integrating with any news site that exists in our database.
+                <p class="w3-margin-bottom">Image 2 is the idea in it’s initial conception. The first idea for the landing page was a simple search interface (not dissimilar to Google) with a large search bar centered on the page. After the first pitch, it was suggested that a Chrome extension would be a natural/useful accompaniment to the web app. We commenced development of an extension to be paired with the app, integrating with any news site that exists in our database.
 </p>
                 <h3>Framework</h3>
-                <p class="w3-margin-bottom">To begin we chose the W3.CSS (http://www.w3schools.com/w3css/default.asp) framework to provide a responsive, grid layout.  It is a simple, CSS-only, light framework that gave as the basic layout and styles to build our prototype on.  This framework also enabled us to create a mobile-first design.  AngularJS was used to provide dynamic data throughout the prototype.  It provides a basis for the main functions including search and the fact check results. 
+                <p class="w3-margin-bottom">To begin we chose the W3.CSS (http://www.w3schools.com/w3css/default.asp) framework to provide a responsive, grid layout.  It is a simple, CSS-only, light framework that gave us the basic layout and styles to build our prototype on.  This framework also enabled us to create a mobile-first design.  AngularJS was used to provide dynamic data throughout the prototype.  It provides a basis for the main functions including search and the fact check results. 
 </p>
                 <h3>Initial UI</h3>
-                <p class="w3-margin-bottom">We liked the colour choices and contrasts in our first UI, but agreed it would benefit from imagery. For inspiration, we gathered a selection of images that reflected themes within the problem space (shown in the grid below). 
+                <p class="w3-margin-bottom">We liked the colour choices and contrasts in our first UI, but agreed it would benefit from imagery. For inspiration, we gathered a selection of images that reflected themes within the problem space, seen in image 4. 
 We liked the idea of the media “control room”; silhouetted figures, dark lighting, an underlying theme of control/manipulation, etc. See the top row for examples, as well as the image that was used (under Creative Commons) as the cover for our prototype.</p>
                 <h3>Chrome Extension Development</h3>
-                <p class="w3-margin-bottom">We commenced development of the Chrome extension - below are some early shots of the process, from our first “Hello World”, through to initial integration with the AngularJS controller.</p>
+                <p class="w3-margin-bottom">We commenced development of the Chrome extension - image 5 shows some early shots of the process, from our first “Hello World”, through to initial integration with the AngularJS controller.</p>
                 <h3>UI Progress</h3>
-                <p class="w3-margin-bottom">This screenshot shows the homepage in mid September (ahead of Stand Up #1) with our cover image and logo in place. Most of the time spent at this stage was on the design, and coding the search bar to accept a variety of inputs (using AngularJS), including a publication title or direct article URL. 
+                <p class="w3-margin-bottom">Image 6 shows the homepage in mid September (ahead of Stand Up #1) with our cover image and logo in place. Most of the time spent at this stage was on the design, and coding the search bar to accept a variety of inputs (using AngularJS), including a publication title or direct article URL. 
 Effort was concentrated on the code for URL parsing as we wanted to ensure we could reliably retrieve the hostname from any URL format submitted.</p>
                 <h3>UX Testing: Round 1</h3>
-                <p class="w3-margin-bottom">Following the first Stand Up, we developed our first search result / trust rating page. To keep the prototype simple, we chose to store results in JSON format within our controller.js rather than implementing a real database at the back end. We created two variants of the trust rating to take to users and test preferences.
+                <p class="w3-margin-bottom">Following the first Stand Up, we developed our first search result/trust rating page. To keep the prototype simple, we chose to store results in JSON format within our controller.js rather than implementing a real database at the back end. We created two variants of the trust rating to take to users and test preferences.
                 </p>
                 
                         <div class="w3-display-container w3-card-4 w3-margin-bottom">
@@ -195,12 +195,12 @@ Effort was concentrated on the code for URL parsing as we wanted to ensure we co
                         <p class="w3-center w3-medium">Image 7 - Search Results for Stand Up #2 / UX Test 1
 </p></div>
 </div>
-                <p class="w3-margin-bottom">With these elements developed, we conducted our first round of UX testing ahead of Stand Up #2. The testing involved semi-structured, one-on-one interviews with participants who were asked to perform a series of tasks. Outcomes from testing / Stand Up #2:</p>
+                <p class="w3-margin-bottom">With these elements developed, we conducted our first round of UX testing ahead of Stand Up #2. The testing involved semi-structured, one-on-one interviews with participants who were asked to perform a series of tasks. Outcomes from testing/Stand Up #2:</p>
                 <ul class="searchResult w3-margin-bottom">
                     <li>The purpose of the site was clear to all users</li>
                     <li>Some users expected the search bar to behave like Google (one user typed the title of the article in) - we added more helper text in so it was clearer what terms could be searched</li>
                     <li>Red colour was described as “alarming”, was suggested we use less or change altogether</li>
-                    <li>We asked users to evaluate designs 1A and 1B for the trust rating (pictured); 1A was preferred</li>
+                    <li>We asked users to evaluate designs 1A and 1B for the trust rating (image 8); 1A was preferred</li>
                 </ul>
                         <!--<div class="w3-display-container w3-card-4 w3-margin-bottom">
                             <div class="w3-row">
