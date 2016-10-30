@@ -49,30 +49,6 @@ ol {
   column-span: all;
 }
 
-.formCenter{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.totalHeight {
-    max-height:100vh;
-    min-height:385px;
-}
-
-.highlight {
-    color: #ff6363;
-}
-
-.margin-top-60{
-    margin-top: 60px;
-}
-
-.margin-top-20-btm-10{
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
 .rzslider .rz-pointer {
     background-color: #cddc39 !important;
 }
@@ -121,19 +97,9 @@ ol {
 .clear {
     clear:both;
 }
-/*body
-{
-	margin-top: 0px;
-	background-color: white;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	min-width:700px;
-}*/
 
 #submit
 {
-	
 	color: #764b8e;
 	font-size: 1em;
 	border-radius: 6px;
@@ -146,16 +112,6 @@ ol {
   width: 25%;
   margin-top: 10px;
   
-}
-
-
-header
-{
-	background-color: #082644;
-	width:100%;
-	/*height: 70px;*/
-	box-shadow: 0px 5px 50px #5E5E5E;
-	padding-bottom: 5px;
 }
 
 .nav img
@@ -183,27 +139,6 @@ header
     height: auto;
 }
 
-.extLogo {
-    float: center;
-    width: 40%;
-    height: auto;
-}
-
-
-
-
-/*main body*/
-
-.main
-{
-	width: 66%;
-	height: 350px;
-	margin: 60px 16.66% 0 16.66%;
-	font-family: verdana;
-	background-color: white;
-	
-
-}
 .headerImage {
     background: url(../IMG/cover_image.jpg) no-repeat center center fixed; 
       -webkit-background-size: cover;
@@ -220,14 +155,6 @@ header
 	background-color: white;
 }
 
-/*input[type=text]
-{
-	background-color: #082644;
-	border: 0;
-	border-radius:10px;
-	font-family: "Century Gothic";
-	color: #FFFFFF;
-}*/
 .sourceIn
 {
 	width: 100%;
