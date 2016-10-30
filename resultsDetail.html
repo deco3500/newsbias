@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>News Bias - Fact Check</title>
+    <title>News Bias - Results</title>
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,12 +16,14 @@
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
-    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/ ></head>
+    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/>
     
     <!-- SHare This http://tools.sharethis.com/get-sharing-tools/# -->
   <script type="text/javascript">var switchTo5x=true;</script>
 <script type="text/javascript" id="st_insights_js" src="https://ws.sharethis.com/button/buttons.js?publisher=32d8982a-2e24-4dfe-a167-ab796bd890f8-10exp-Y"></script>
 <script type="text/javascript">stLight.options({publisher: "32d8982a-2e24-4dfe-a167-ab796bd890f8-10exp-Y", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    
+    </head>
 
 <body ng-app="myApp" ng-controller="newsBias">
     <!-- Navbar -->
@@ -49,9 +51,8 @@
     </nav>
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
-        <ul class="w3-navbar w3-left-align w3-large w3-black">
-           <ul class="w3-navbar w3-left-align w3-large w3-black">
-    <li><a class="w3-padding-large" hre="index.html"Home</a></li>
+        <ul class="w3-navbar w3-left-align w3-large navy">
+    <li><a class="w3-padding-large" href="index.html">Home</a></li>
     <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
       <li><a class="w3-padding-large" href="results.html">View all results</a></li>
       <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
@@ -60,7 +61,6 @@
                                <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
 
     <li><a class="w3-padding-large" href="login.html">Login</a></li>
-  </ul>
         </ul>
     </div>
     <!-- Header -->
@@ -85,12 +85,11 @@
                 <li class="w3-padding-8">How sensational is the tone? Are "loaded" words used?<span class="w3-right w3-xlarge">{{ detail.a4 }}/5</span></li>
             </ul>
                     <h4 class="w3-right w3-padding-8">TOTAl score: {{detail.total}}/{{detail.totalpos}}</h4>
-                    <span class='st_sharethis_large' displayText='ShareThis'></span>
+                    
 <span class='st_facebook_large' displayText='Facebook'></span>
 <span class='st_twitter_large' displayText='Tweet'></span>
 <span class='st_linkedin_large' displayText='LinkedIn'></span>
-<span class='st_pinterest_large' displayText='Pinterest'></span>
-<span class='st_email_large' displayText='Email'></span>
+
                     
                 <!--<button class="w3-btn-floating-large w3-border w3-right {{detail.color}}">{{detail.grade}}</button>-->
                 </div>
@@ -102,8 +101,8 @@
             </div>
         </div>
     </div>
-    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-        <div class="w3-content">
+   <div class="w3-row-padding w3-light-grey w3-padding-24 w3-container">
+        <div class="w3-content text-navy">
             <h2>About the fact checking process</h2>
             <h3>What are the four criteria that will be used?</h3>
             <ul class="searchResult">
@@ -121,20 +120,15 @@
                 <li>F : Less than 54%</li>
             </ul>
             <h3>What categories of news will be checked?</h3>
-            <p>Business, Current Events, Education, Health, Politics, Science / Environment
-</p>
+            <p>Business, Current Events, Education, Health, Politics, Science / Environment </p>
             <h3>What categories won't be assessed?
 </h3>
-            <p>Cars, Entertainment, Lifestyle, Local, Property, Religion / Spirituality, Sports, Technology, Travel, Weather
-</p>
+            <p>Cars, Entertainment, Lifestyle, Local, Property, Religion / Spirituality, Sports, Technology, Travel, Weather </p>
         </div>
     </div>
-    <hr>
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center navy">
-        <div class="w3-xlarge w3-padding-24">
+    <footer class="w3-container w3-padding-32 w3-center navy">
             <p>Copyright 2016 Team News Bias</p>
-        </div>
     </footer>
     <script>
         // Used to toggle the menu on small screens when clicking on the menu button

@@ -1,9 +1,4 @@
-
-@font-face {
-    font-family: "Intro-r";
-    src: url("INTRO.OTF") format("opentype");
-}
-
+/* Intro font from http://www.fontfabric.com/intro-free-font/ */
 @font-face {
     font-family: 'Intro';
     src:url('../fonts/Intro.ttf.woff') format('woff'),
@@ -36,6 +31,22 @@ ol {
 
 .card-height-115{
     min-height: 115px;
+}
+
+.columns {
+  -webkit-columns: 4 150px;
+  -moz-columns: 4 150px;
+  columns: 4 150px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  
+}
+
+.columnHeader {  
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
 }
 
 .formCenter{
@@ -201,38 +212,8 @@ header
       background-size: cover;
 }
 
-/* Image from https://www.flickr.com/photos/esthervargasc/14209650919/ */
+/* Image by Esther Vargas from https://www.flickr.com/photos/esthervargasc/14209650919/ */
 
-.main h1
-{
-    font-family: Intro-r;
-	text-align: center;
-	margin-top: 20px;
-	font-size: 85px;
-}
-
-.main h2
-{
-	font-family:Intro-r;
-	text-align:left;
-	font-size:1.5em;
-}
-
-.main h3
-{
-	font-family:arial;
-	font-weight:bolder;
-    padding-top:10px;
-    margin-top:10px;
-}
-
-.introSub
-{
-	font-family: Intro-r;
-	font-size: 23.5px;
-	margin-bottom: 50px;
-	text-align: center;
-}
 
 #form{
 	text-align: center;
@@ -255,20 +236,3 @@ header
 	text-indent: 10px;
 	
 }
-
-
-
-/*footer*/
-
-/*footer
-{
-	background-color: #082644;
-	height: 40px;
-	text-align: right;
-	font-family: "Times New Roman", Georgia, Serif;
-	color: #FFFFFF;
-	padding-top: 30px;
-	padding-right: 10px;
-	min-height:60px;
-	margin-top:20%;
-}*/

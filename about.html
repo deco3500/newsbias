@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>News Bias</title>
+    <title>News Bias - About</title>
     <!--Stylesheets-->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -16,7 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
-    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/ ></head>
+    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/></head>
 
 <body ng-app="myApp" ng-controller="newsBias">
     <!-- Navbar -->
@@ -44,10 +44,9 @@
     </nav>
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
-        <ul class="w3-navbar w3-left-align w3-large w3-black">
-            <ul class="w3-navbar w3-left-align w3-large w3-black">
+        <ul class="w3-navbar w3-left-align w3-large navy">
                 <li>
-                    <a class="w3-padding-large" hre="index.html" Home</a></li>
+                    <a class="w3-padding-large" href="index.html">Home</a></li>
                 <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
                 <li><a class="w3-padding-large" href="results.html">View all results</a></li>
                 <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
@@ -56,7 +55,6 @@
                                 <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
 
                 <li><a class="w3-padding-large" href="login.html">Login</a></li>
-            </ul>
         </ul>
     </div>
     <!-- Header -->
@@ -70,7 +68,7 @@
         <div class="w3-row">
             <div class="w3-col w3-twothird w3-padding-right"> 
                 <h2>Background</h2>
-        <p>Wn March 2016, the Government tabled changes to media ownership rules set out in the Broadcasting Services Act 1992 (Cth). The changes proposed to repeal the “2/3 cross media ownership” and “75% reach” rules respectively, citing a need for “traditional” platforms (Commercial Television/Radio, most Newspapers), to have greater flexibility to respond to increased pressure from “new” forms of media (i.e. online) (Foreman & Jordan, 2016). </p> Although these changes do not specifically apply to online publications, they reinforce the ever-evolving landscape of media ownership in Australia. Data published by the Australian Communications and Media Authority (ACMA) show that 9 individuals hold the majority of media outlets in Australia (ACMA, 2016). The selection of senior editorial staff is often closely managed (McKnight, 2012), and accusations of bias are not uncommon given the numerous private interests the owners hold (Hobbs, 2016), (AIM Editorial, 2014). </p> While the data provided by the ACMA is useful, it lacks granularity and is only available from a “top-down” perspective. There is no functionality for a user who wants to interrogate a specific publication or website (i.e. search from the “bottom-up”). The fragmented nature of digital publications serves to broaden the gap between the data on media ownership and the articles themselves. </p> Our app will connect the available information directly with the article being read; a consumer can draw their own informed conclusion as to the presence of bias. Presenting the information at the point of delivery will bridge the disconnect between an article and the ownership / editorial structure underpinning it's authorship. </p>. </div>
+        <p>Wn March 2016, the Government tabled changes to media ownership rules set out in the Broadcasting Services Act 1992 (Cth). The changes proposed to repeal the “2/3 cross media ownership” and “75% reach” rules respectively, citing a need for “traditional” platforms (Commercial Television/Radio, most Newspapers), to have greater flexibility to respond to increased pressure from “new” forms of media (i.e. online) (Foreman & Jordan, 2016).  Although these changes do not specifically apply to online publications, they reinforce the ever-evolving landscape of media ownership in Australia. Data published by the Australian Communications and Media Authority (ACMA) show that 9 individuals hold the majority of media outlets in Australia (ACMA, 2016). The selection of senior editorial staff is often closely managed (McKnight, 2012), and accusations of bias are not uncommon given the numerous private interests the owners hold (Hobbs, 2016), (AIM Editorial, 2014).  While the data provided by the ACMA is useful, it lacks granularity and is only available from a “top-down” perspective. There is no functionality for a user who wants to interrogate a specific publication or website (i.e. search from the “bottom-up”). The fragmented nature of digital publications serves to broaden the gap between the data on media ownership and the articles themselves. Our app will connect the available information directly with the article being read; a consumer can draw their own informed conclusion as to the presence of bias. Presenting the information at the point of delivery will bridge the disconnect between an article and the ownership / editorial structure underpinning it's authorship. </p>. </div>
             
             <div class="w3-col w3-third w3-padding w3-border"> 
                 <h2>User Guide</h2>
@@ -129,13 +127,9 @@
         <h4>Apply to be a fact checker:</h4>
         <p>The register form in this page is prepared for those who are willing to be fact checkers, and the user needs to fill up relevant information and click apply button.</p>
         <br> </div>
-    <hr>
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center navy">
-        <div class="w3-xlarge w3-padding-24">
+    <footer class="w3-container w3-padding-32 w3-center navy">
             <p>Copyright 2016 Team News Bias</p>
-        </div>
-        <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
     <script>
         // Used to toggle the menu on small screens when clicking on the menu button
@@ -148,7 +142,7 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
-    </script> !-- jQuery -->
+    </script> <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <!-- AngularJS -->

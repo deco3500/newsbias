@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
-    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/ ></head>
+    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/></head>
 
 <body ng-app="myApp" ng-controller="newsBias">
     <!-- Navbar -->
@@ -44,10 +44,9 @@
     </nav>
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
-        <ul class="w3-navbar w3-left-align w3-large w3-black">
-            <ul class="w3-navbar w3-left-align w3-large w3-black">
+        <ul class="w3-navbar w3-left-align w3-large navy">
                 <li>
-                    <a class="w3-padding-large" hre="index.html" Home</a></li>
+                    <a class="w3-padding-large" href="index.html">Home</a></li>
                 <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
                 <li><a class="w3-padding-large" href="results.html">View all results</a></li>
                 <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
@@ -56,14 +55,13 @@
                                 <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
 
                 <li><a class="w3-padding-large" href="login.html">Login</a></li>
-            </ul>
         </ul>
     </div>
     <!-- Header -->
     <div class="w3-container w3-section white w3-center">
         <h1>Fact Check</h1> 
     </div>
-    <div class="w3-container">
+    <div class="w3-container w3-margin-bottom">
         <div class="w3-row">
             <div class="w3-col w3-twothird w3-padding-right">
                 <div class="w3-container">
@@ -74,19 +72,13 @@
                 </div>
                 <div class="w3-container">
                     <div class="w3-half w3-padding-medium">
-                        <a href="results.html">
-                            <button class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge" name="results">View results</button>
-                        </a>
+                        <a href="results.html" class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge">View results</a>
                     </div>
                     <div class="w3-half w3-padding-medium">
-                        <a href="submit.html">
-                            <button class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge" name="submit">Submit an article</button>
-                        </a>
+                        <a href="submit.html" class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge">Submit an article</a>
                     </div>
                     <div class="w3-half w3-padding-medium">
-                        <a href="apply.html">
-                            <button class="w3-btn-block w3-round w3-cyan w3-padding-24 w3-xlarge" name="apply">Apply to be a fact checker</button>
-                        </a>
+                        <a href="apply.html" class="w3-btn-block w3-round w3-cyan w3-padding-24 w3-xlarge">Apply to be a fact checker</a>
                     </div>
                 </div>
             </div>
@@ -105,16 +97,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="w3-btn-block w3-cyan w3-text-white "><a ng-href="resultsDetail.html"><h5>View detailed results</h5></a></button>
+                            <a class="w3-btn-block w3-cyan w3-text-white" ng-href="resultsDetail.html"><h5>View detailed results</h5></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
-    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-        <div class="w3-content">
+    <div class="w3-row-padding w3-light-grey w3-padding-24 w3-container">
+        <div class="w3-content text-navy">
             <h2>About the fact checking process</h2>
             <h3>What are the four criteria that will be used?</h3>
             <ul class="searchResult">
@@ -139,10 +130,8 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center navy">
-        <div class="w3-xlarge w3-padding-24">
+    <footer class="w3-container w3-padding-32 w3-center navy">
             <p>Copyright 2016 Team News Bias</p>
-        </div>
     </footer>
     <script>
         // Used to toggle the menu on small screens when clicking on the menu button
