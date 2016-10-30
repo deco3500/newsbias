@@ -13,10 +13,10 @@
     <!--Fonts-->
     <!--Google Fonts - Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
-    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/></head>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon' />
+</head>
 
 <body ng-app="myApp" ng-controller="newsBias">
     <!-- Navbar -->
@@ -28,32 +28,25 @@
             </li>
             <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
             <li class="w3-hide-small w3-dropdown-hover"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check <i class="fa fa-caret-down"></i></a>
-                <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="results.html">View all results</a>
-                  <a href="submit.html">Submit an article</a>
-                  <a href="apply.html">Apply to be a fact checker</a>
-                </div></li>
+                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="results.html">View all results</a> <a href="submit.html">Submit an article</a> <a href="apply.html">Apply to be a fact checker</a> </div>
+            </li>
             <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
-             <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
-            <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
-                <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
-                
-                </div></li>
+            <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a> <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a> </div>
+            </li>
         </ul>
     </nav>
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
         <ul class="w3-navbar w3-left-align w3-large navy">
-    <li><a class="w3-padding-large" href="index.html">Home</a></li>
-    <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
-      <li><a class="w3-padding-large" href="results.html">View all results</a></li>
-      <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
-      <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
-    <li><a class="w3-padding-large" href="about.html">About</a></li>
-                               <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
-
-    <li><a class="w3-padding-large" href="login.html">Login</a></li>
+            <li><a class="w3-padding-large" href="index.html">Home</a></li>
+            <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
+            <li><a class="w3-padding-large" href="results.html">View all results</a></li>
+            <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
+            <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
+            <li><a class="w3-padding-large" href="about.html">About</a></li>
+            <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
+            <li><a class="w3-padding-large" href="login.html">Login</a></li>
         </ul>
     </div>
     <!-- Header -->
@@ -63,11 +56,9 @@
         <p class="w3-small w3-padding-bottom">Fact Check > Results</p>
     </div>
     <div class="w3-container">
-       <p class="w3-margin-bottom">Who's News Fact Check allows you to submit an article to be checked and assessed by our team of community leaders.</p>
-      
-       <p class="w3-margin-bottom">Articles will be given a rating based on four weighted criteria which are independantly assessed by three members of the fact-checking team. </p>
-      
-       <p class="w3-margin-bottom">Results will be given a grade (A to F) based on an average of the three fact checker ratings. Find something interesting?  Share the results of a fact check with your friends. </p>
+        <p class="w3-margin-bottom">Who's News Fact Check allows you to submit an article to be checked and assessed by our team of community leaders.</p>
+        <p class="w3-margin-bottom">Articles will be given a rating based on four weighted criteria which are independantly assessed by three members of the fact-checking team. </p>
+        <p class="w3-margin-bottom">Results will be given a grade (A to F) based on an average of the three fact checker ratings. Find something interesting? Share the results of a fact check with your friends. </p>
     </div>
     <div class="w3-container w3-padding-top-32 w3-margin-bottom">
         <div class="w3-third w3-padding-medium" ng-repeat="result in results">
@@ -78,11 +69,9 @@
                     <p>Publication: {{result.publication}}</p>
                     <p>Owner: {{result.owner}}</p>
                     <hr>
-                    <p>Category: {{result.category}}</p> 
-                <button class="w3-btn-floating-large w3-border w3-right {{result.color}}">{{result.score}}</button>
-                </div>
-                <a class="w3-btn-block w3-cyan w3-text-white" ng-href="resultsDetail.html"><h5>View detailed results</h5></a>
-            </div>
+                    <p>Category: {{result.category}}</p>
+                    <button class="w3-btn-floating-large w3-border w3-right {{result.color}}">{{result.score}}</button>
+                </div> <a class="w3-btn-block w3-cyan w3-text-white" ng-href="resultsDetail.html"><h5>View detailed results</h5></a> </div>
         </div>
     </div>
     <div class="w3-row-padding w3-light-grey w3-padding-24 w3-container">
@@ -112,7 +101,7 @@
     </div>
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-center navy">
-            <p>Copyright 2016 Team News Bias</p>
+        <p>Copyright 2016 Team News Bias</p>
     </footer>
     <script>
         // Used to toggle the menu on small screens when clicking on the menu button
@@ -135,8 +124,6 @@
     <script src="js/controller.js"></script>
     <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js"></script>
-    <!--jquery scroll to -->
-    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 </body>
 
 </html>

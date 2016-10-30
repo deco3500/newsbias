@@ -13,10 +13,10 @@
     <!--Fonts-->
     <!--Google Fonts - Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
-    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/></head>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon' />
+</head>
 
 <body ng-app="myApp" ng-controller="newsBias">
     <!-- Navbar -->
@@ -28,39 +28,30 @@
             </li>
             <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
             <li class="w3-hide-small w3-dropdown-hover"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check <i class="fa fa-caret-down"></i></a>
-                <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="results.html">View all results</a>
-                  <a href="submit.html">Submit an article</a>
-                  <a href="apply.html">Apply to be a fact checker</a>
-                </div></li>
+                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="results.html">View all results</a> <a href="submit.html">Submit an article</a> <a href="apply.html">Apply to be a fact checker</a> </div>
+            </li>
             <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
-             <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
-            <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
-                <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
-                
-                </div></li>
+            <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a> <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a> </div>
+            </li>
         </ul>
     </nav>
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
         <ul class="w3-navbar w3-left-align w3-large navy">
-                <li>
-                    <a class="w3-padding-large" href="index.html">Home</a></li>
-                <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
-                <li><a class="w3-padding-large" href="results.html">View all results</a></li>
-                <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
-                <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
-                <li><a class="w3-padding-large" href="about.html">About</a></li>
-                                <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
-
-                <li><a class="w3-padding-large" href="login.html">Login</a></li>
+            <li> <a class="w3-padding-large" href="index.html">Home</a></li>
+            <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
+            <li><a class="w3-padding-large" href="results.html">View all results</a></li>
+            <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
+            <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
+            <li><a class="w3-padding-large" href="about.html">About</a></li>
+            <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
+            <li><a class="w3-padding-large" href="login.html">Login</a></li>
         </ul>
     </div>
     <!-- Header -->
     <div class="w3-container w3-section white w3-center">
-        <h1>Fact Check</h1> 
-    </div>
+        <h1>Fact Check</h1> </div>
     <div class="w3-container w3-margin-bottom">
         <div class="w3-row">
             <div class="w3-col w3-twothird w3-padding-right">
@@ -71,18 +62,11 @@
                     <p class="w3-margin-bottom">Click one of the options below to get started.</p>
                 </div>
                 <div class="w3-container">
-                    <div class="w3-half w3-padding-medium">
-                        <a href="results.html" class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge">View results</a>
-                    </div>
-                    <div class="w3-half w3-padding-medium">
-                        <a href="submit.html" class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge">Submit an article</a>
-                    </div>
-                    <div class="w3-half w3-padding-medium">
-                        <a href="apply.html" class="w3-btn-block w3-round w3-cyan w3-padding-24 w3-xlarge">Apply to be a fact checker</a>
-                    </div>
+                    <div class="w3-half w3-padding-medium"> <a href="results.html" class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge">View results</a> </div>
+                    <div class="w3-half w3-padding-medium"> <a href="submit.html" class="w3-btn-block w3-round w3-lime w3-padding-24 w3-xlarge">Submit an article</a> </div>
+                    <div class="w3-half w3-padding-medium"> <a href="apply.html" class="w3-btn-block w3-round w3-cyan w3-padding-24 w3-xlarge">Apply to be a fact checker</a> </div>
                 </div>
             </div>
-
             <div class="w3-col w3-third w3-padding w3-border">
                 <div class="w3-container w3-margin-bottom">
                     <h2>Latest results</h2>
@@ -96,9 +80,7 @@
                                         <button class="w3-btn-floating-large w3-border w3-right {{result.color}}">{{result.score}}</button>
                                     </div>
                                 </div>
-                            </div>
-                            <a class="w3-btn-block w3-cyan w3-text-white" ng-href="resultsDetail.html"><h5>View detailed results</h5></a>
-                        </div>
+                            </div> <a class="w3-btn-block w3-cyan w3-text-white" ng-href="resultsDetail.html"><h5>View detailed results</h5></a> </div>
                     </div>
                 </div>
             </div>
@@ -131,7 +113,7 @@
     </div>
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-center navy">
-            <p>Copyright 2016 Team News Bias</p>
+        <p>Copyright 2016 Team News Bias</p>
     </footer>
     <script>
         // Used to toggle the menu on small screens when clicking on the menu button
@@ -144,7 +126,8 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
-    </script> !-- jQuery -->
+    </script>
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <!-- AngularJS -->
@@ -153,8 +136,6 @@
     <script src="js/controller.js"></script>
     <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js"></script>
-    <!--jquery scroll to -->
-    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 </body>
 
 </html>

@@ -13,10 +13,10 @@
     <!--Fonts-->
     <!--Google Fonts - Roboto -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- Font AWESOME for icons https://fortawesome.github.io/Font-Awesome/-->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
-    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon'/></head>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel='shortcut icon' href='extension/NewsBias.png' type='image/x-icon' />
+</head>
 
 <body ng-app="myApp" ng-controller="newsBias">
     <!-- Navbar -->
@@ -28,33 +28,26 @@
             </li>
             <li class="w3-hide-small"><a href="index.html" class="w3-padding-large w3-hover-white">Home</a></li>
             <li class="w3-hide-small w3-dropdown-hover"><a href="factcheck.html" class="w3-padding-large w3-hover-white active-tab">Fact Check <i class="fa fa-caret-down"></i></a>
-                <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="results.html">View all results</a>
-                  <a href="submit.html">Submit an article</a>
-                  <a href="apply.html">Apply to be a fact checker</a>
-                </div></li>
+                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="results.html">View all results</a> <a href="submit.html">Submit an article</a> <a href="apply.html">Apply to be a fact checker</a> </div>
+            </li>
             <li class="w3-hide-small"><a href="about.html" class="w3-padding-large w3-hover-white">About</a></li>
-             <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
-            <div class="w3-dropdown-content w3-white w3-card-4">
-                  <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a>
-                <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
-                
-                </div></li>
+            <li class="w3-hide-small w3-right w3-dropdown-hover"><a class="w3-padding-large w3-hover-white" href="dashboard.html">My Dashboard <i class="fa fa-tachometer" aria-hidden="true"></i></a>
+                <div class="w3-dropdown-content w3-white w3-card-4"> <a href="login.html">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a> <a href="index.html">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a> </div>
+            </li>
         </ul>
     </nav>
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
         <ul class="w3-navbar w3-left-align w3-large navy">
-    <li><a class="w3-padding-large" href="index.html">Home</a></li>
-    <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
-      <li><a class="w3-padding-large" href="results.html">View all results</a></li>
-      <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
-      <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
-    <li><a class="w3-padding-large" href="about.html">About</a></li>
-                            <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
-
-    <li><a class="w3-padding-large" href="login.html">Login</a></li>
-  </ul>
+            <li><a class="w3-padding-large" href="index.html">Home</a></li>
+            <li><a class="w3-padding-large" href="factcheck.html">Fact Check</a></li>
+            <li><a class="w3-padding-large" href="results.html">View all results</a></li>
+            <li><a class="w3-padding-large" href="submit.html">Submit an article</a></li>
+            <li><a class="w3-padding-large" href="apply.html">Apply to be a fact checker</a></li>
+            <li><a class="w3-padding-large" href="about.html">About</a></li>
+            <li><a class="w3-padding-large" href="dashboard.html">My Dashboard</a></li>
+            <li><a class="w3-padding-large" href="login.html">Login</a></li>
+        </ul>
     </div>
     <!-- Header -->
     <div class="w3-container w3-section white w3-center">
@@ -64,48 +57,45 @@
     </div>
     <div class="w3-container">
         <p class="w3-margin-bottom">Thank you for your interest in our fact-checking process. Use the form below to get started.</p>
-        <p>NOTE: While we will endeavour to check all submissions, please note that many types of articles are not well-suited to this process. Some types of articles will not be accepted by the submission system.</p></div>
-        <div class="w3-card-4 formCenter">
-            <div class="w3-container w3-cyan">
-                <h2 class="w3-center w3-text-white">Review form</h2> </div>
-            <div class="w3-container w3-margin-top">
-                <div class="w3-row-padding w3-padding-medium">
-                    <label class="w3-label w3-text-cyan">Name/Alias</label>
-                    <input class="w3-input w3-border" type="text" id="name_input" placeHolder="Please enter a name or alias to be published alongside factcheck results">
-                </div>
-                <div class="w3-row-padding w3-padding-medium">
-                    <label class="w3-label w3-text-cyan">Email</label>
-                    <input class="w3-input w3-border" type="email" id="email_input" placeHolder="Please enter an email to receive your results when they are available">>
-                </div>
-                <div class="w3-row-padding w3-padding-medium">
-                    <label class="w3-label w3-text-cyan">Article URL</label>
-                    <input class="w3-input w3-border" type="url" id="url_input" placeHolder="Copy paste the article URL">
-                </div>
-                <div class="w3-row-padding w3-padding-medium">
-                    <label class="w3-label w3-text-cyan">Comment</label>
-                    <textarea class="w3-input w3-border" id="comment_input" placeHolder="Briefly explain why you submitted the article for fact checking"></textarea>
-                </div>
-                <div class="w3-row-padding w3-padding-medium w3-margin-bottom">
-                    <label class="w3-label w3-text-cyan">Article Category</label>
-                    <br><small class="w3-margin-bottom">Please select a category that best suits the article.</small>
-                    <br><small>Categories not eligible include: Cars, Entertainment, Lifestyle, Local, Property, Religion / Spirituality, Sports, Technology, Travel, Weather </small>
-                    <br>
-                    <select class="w3-select" id="job_input">
-                        <option value="Business">Business</option>
-                        <option value="Current Events">Current Events</option>
-                        <option value="Education">Education</option>
-                        <option value="Health">Health</option>
-                        <option value="Politics">Politics</option>
-                        <option value="Science / Environment">Science / Environment</option>
-                    </select>
-                </div>
+        <p>NOTE: While we will endeavour to check all submissions, please note that many types of articles are not well-suited to this process. Some types of articles will not be accepted by the submission system.</p>
+    </div>
+    <div class="w3-card-4 formCenter">
+        <div class="w3-container w3-cyan">
+            <h2 class="w3-center w3-text-white">Review form</h2> </div>
+        <div class="w3-container w3-margin-top">
+            <div class="w3-row-padding w3-padding-medium">
+                <label class="w3-label w3-text-cyan">Name/Alias</label>
+                <input class="w3-input w3-border" type="text" id="name_input" placeHolder="Please enter a name or alias to be published alongside factcheck results"> </div>
+            <div class="w3-row-padding w3-padding-medium">
+                <label class="w3-label w3-text-cyan">Email</label>
+                <input class="w3-input w3-border" type="email" id="email_input" placeHolder="Please enter an email to receive your results when they are available">> </div>
+            <div class="w3-row-padding w3-padding-medium">
+                <label class="w3-label w3-text-cyan">Article URL</label>
+                <input class="w3-input w3-border" type="url" id="url_input" placeHolder="Copy paste the article URL"> </div>
+            <div class="w3-row-padding w3-padding-medium">
+                <label class="w3-label w3-text-cyan">Comment</label>
+                <textarea class="w3-input w3-border" id="comment_input" placeHolder="Briefly explain why you submitted the article for fact checking"></textarea>
             </div>
-            <button class="w3-btn-block w3-lime w3-large w3-padding-xlarge">Submit article</button>
-        
+            <div class="w3-row-padding w3-padding-medium w3-margin-bottom">
+                <label class="w3-label w3-text-cyan">Article Category</label>
+                <br><small class="w3-margin-bottom">Please select a category that best suits the article.</small>
+                <br><small>Categories not eligible include: Cars, Entertainment, Lifestyle, Local, Property, Religion / Spirituality, Sports, Technology, Travel, Weather </small>
+                <br>
+                <select class="w3-select" id="job_input">
+                    <option value="Business">Business</option>
+                    <option value="Current Events">Current Events</option>
+                    <option value="Education">Education</option>
+                    <option value="Health">Health</option>
+                    <option value="Politics">Politics</option>
+                    <option value="Science / Environment">Science / Environment</option>
+                </select>
+            </div>
+        </div>
+        <button class="w3-btn-block w3-lime w3-large w3-padding-xlarge">Submit article</button>
     </div>
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-center navy">
-            <p>Copyright 2016 Team News Bias</p>
+        <p>Copyright 2016 Team News Bias</p>
     </footer>
     <script>
         // Used to toggle the menu on small screens when clicking on the menu button
@@ -118,7 +108,8 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
-    </script> <!-- jQuery -->
+    </script>
+    <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <!-- AngularJS -->
@@ -127,8 +118,6 @@
     <script src="js/controller.js"></script>
     <!--Angular slider from https://github.com/angular-slider/angularjs-slider-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angularjs-slider/5.4.0/rzslider.min.js"></script>
-    <!--jquery scroll to -->
-    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 </body>
 
 </html>
