@@ -138,7 +138,7 @@
                 </div>
         </div>
     </div>
-    
+    <hr>
      <div class="w3-container">
         <div class="w3-row">
             <div class="w3-col w3-twothird w3-padding-right text-navy">
@@ -152,6 +152,94 @@
                 <h3>Initial UI</h3>
                 <p class="w3-margin-bottom">We liked the colour choices and contrasts in our first UI, but agreed it would benefit from imagery. For inspiration, we gathered a selection of images that reflected themes within the problem space (shown in the grid below). 
 We liked the idea of the media “control room”; silhouetted figures, dark lighting, an underlying theme of control/manipulation, etc. See the top row for examples, as well as the image that was used (under Creative Commons) as the cover for our prototype.</p>
+                <h3>Chrome Extension Development</h3>
+                <p class="w3-margin-bottom">We commenced development of the Chrome extension - below are some early shots of the process, from our first “Hello World”, through to initial integration with the AngularJS controller.</p>
+                <h3>UI Progress</h3>
+                <p class="w3-margin-bottom">This screenshot shows the homepage in mid September (ahead of Stand Up #1) with our cover image and logo in place. Most of the time spent at this stage was on the design, and coding the search bar to accept a variety of inputs (using AngularJS), including a publication title or direct article URL. 
+Effort was concentrated on the code for URL parsing as we wanted to ensure we could reliably retrieve the hostname from any URL format submitted.</p>
+                <h3>UX Testing: Round 1</h3>
+                <p class="w3-margin-bottom">Following the first Stand Up, we developed our first search result / trust rating page. To keep the prototype simple, we chose to store results in JSON format within our controller.js rather than implementing a real database at the back end. We created two variants of the trust rating to take to users and test preferences.
+                </p>
+                
+                        <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/07_trustratingAB.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 7 - Search Results for Stand Up #2 / UX Test 1
+</p></div>
+</div>
+                <p class="w3-margin-bottom">With these elements developed, we conducted our first round of UX testing ahead of Stand Up #2. The testing involved semi-structured, one-on-one interviews with participants who were asked to perform a series of tasks. Outcomes from testing / Stand Up #2:</p>
+                <ul class="searchResult w3-margin-bottom">
+                    <li>The purpose of the site was clear to all users</li>
+                    <li>Some users expected the search bar to behave like Google (one user typed the title of the article in) - we added more helper text in so it was clearer what terms could be searched</li>
+                    <li>Red colour was described as “alarming”, was suggested we use less or change altogether</li>
+                    <li>We asked users to evaluate designs 1A and 1B for the trust rating (pictured); 1A was preferred</li>
+                </ul>
+                        <!--<div class="w3-display-container w3-card-4 w3-margin-bottom">
+                            <div class="w3-row">
+                                <div class="w3-col w3-half w3-padding-right">
+                                    <img src="report/08_TRA.png" class="w3-image w3-border w3-padding">
+                                </div>
+                                <div class="w3-col w3-half">
+                                    <img src="report/08_TRB.png" class="w3-image w3-border w3-padding">
+                                </div>
+                            </div>
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 8 - A/B Trust Rating
+
+</p></div>
+</div>-->
+                <p class="searchResult w3-margin-bottom">We had not intended for the red colour to create a negative visceral response, so we replaced it with a combination of more neutral colours (green and blue) while maintaining the contrast we had originally sought to create.</p>
+
+               <h3>UX Testing: Round 2</h3>
+                <p class="w3-margin-bottom">
+                    Ahead of Stand Up #3, we developed four components for the Fact Checking feature and conducted another round of user tests on each one (homepage, view results, submit an article, apply to be a fact checker).
+                </p>
+                
+                <p class="w3-margin-bottom">Outcomes following the user testing and Stand Up #3 feedback:</p>
+                 <ul class="searchResult w3-margin-bottom">
+                     <li>Incorporated latest results onto the Fact Check homepage. User suggested front loading selection of recent content to give the Fact Check homepage more functionality.</li>
+                     <li>Added more info on Fact Check process to About page</li>
+                     <li>Changed the colour for the ‘C’ grade from grey to a brighter colour to be in keeping with the other grade colours. This was a user suggestion.</li>
+                     <li>Added pop-up confirmation for Submit and Apply forms with follow up email for Apply form.</li>
+</ul>
+                
+                
+                <div class="w3-display-container w3-card-4 w3-margin-bottom">
+                            <div class="w3-row">
+                                <div class="w3-col w3-half w3-padding-right">
+                                    <img src="report/11_FCHomepage_final.png" class="w3-image w3-border w3-padding">
+                                </div>
+                                <div class="w3-col w3-half">
+                                    <img src="report/11_FCResultsFinal.png" class="w3-image w3-border w3-padding">
+                                </div>
+                            </div>
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 11 - Fact Checking Homepage / Results following incorporated changes
+</p></div>
+</div>
+
+                <h3>Login</h3>
+                <p class="w3-margin-bottom">In the final weeks of the project, we built a Fact Checker dashboard (with dummy Login page). This is a back-end area of the site where Fact Checkers can log in and see which articles are available for Fact Checking.
+                </p>
+                <h3>Chrome Extension</h3>
+                <p class="w3-margin-bottom">We also finalised the Chrome Extension, condensing the results down into a more appropriate, condensed format. The icon becomes available when an indexed site is visited, ensuring users won’t try to use the extension on a site missing from the database.
+
+                </p>
+                <h3>Final Changes</h3>
+                <p class="w3-margin-bottom">
+                    We made small tweaks to the design of the search result page, changing heading colours and reformatting the related results. We also worked to make the Search functionality more robust (following a slightly embarrassing test with the tutors).
+                </p>
+                <p class="w3-margin-bottom">
+                    Finally, we made slight changes to the site homepage, adding a list of supported sites (following feedback from the prototype demonstration), instructions for use and some detail around the Fact Check features.
+                </p>
+                <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/15_FinalHomepage.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 15 - Final Home Page.
+
+
+</p></div>
+</div>
             </div>
             
              <div class="w3-col w3-third w3-padding">
@@ -170,11 +258,109 @@ We liked the idea of the media “control room”; silhouetted figures, dark lig
                     <div class="w3-container w3-padding w3-border">
                         <p class="w3-center w3-medium">Image 4 - Collection of images gathered for research</p></div>
 </div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/05_Extension.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 5 - Early development of Chrome Extension</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/06_HomepageSU1.jpg" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 6 - Homepage for Stand Up #1
+</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+                            <div class="w3-row">
+                                <div class="w3-col w3-half w3-padding-right">
+                                    <img src="report/08_TRA.png" class="w3-image w3-border w3-padding">
+                                </div>
+                                <div class="w3-col w3-half">
+                                    <img src="report/08_TRB.png" class="w3-image w3-border w3-padding">
+                                </div>
+                            </div>
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 8 - A/B Trust Rating
+
+</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/09_colour.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 9 - Changing colour palate
+</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/10_Combined.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 10 - Fact Checking prior to UX test #2</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/12_FCLogin.png" class="w3-image w3-border w3-padding">
+                     <img src="report/12_FCDashboard.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 12 - Fact Checker Login / Dashboard
+</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/13_Combined.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 13 - Final evolution of Chrome Extension. Image on right is the final version.
+</p></div>
+</div>
+                 <div class="w3-display-container w3-card-4 w3-margin-bottom">
+   <img src="report/14_FinalSearchResults.png" class="w3-image w3-border w3-padding">
+                    <div class="w3-container w3-padding w3-border">
+                        <p class="w3-center w3-medium">Image 14 - Final search results.
+
+</p></div>
+</div>
+                 
+                 
+                 
+                 
          </div>
     </div>
     </div>
     
     <hr>
+    <div class="w3-container">
+        <div class="w3-row">
+            <div class="w3-col text-navy">
+                <h2>References</h2>
+
+
+<p class="w3-margin-bottom">ACMA. (2016). 'Media Interests' snapshot | ACMA. Acma.gov.au. Retrieved 4 September 2016, from http://acma.gov.au/theACMA/media-interests-snapshot</p>
+
+
+<p class="w3-margin-bottom">AIM Editorial. (2014). Democracy and diversity: media ownership in Australia. The AIM Network. Retrieved from http://theaimn.com/democracy-diversity-media-ownership-australia/</p>
+
+
+<p class="w3-margin-bottom">Alderman, Susan. (2016). Democracy & Diversity: Media Ownership. Retrieved 30 October 2016, from https://susanalderman.wordpress.com/2016/03/30/media-ownership/</p>
+
+
+<p class="w3-margin-bottom">Foreman, A. & Jordan, K. (2016). Government announces media ownership law changes. Claytonutz.com. Retrieved from https://www.claytonutz.com/knowledge/2016/march/government-announces-media-ownership-law-changes</p>
+
+
+<p class="w3-margin-bottom">Hobbs, M. (2016). Kick this mob out: The Murdoch media and the Australian Labor Government (2007 to 2013). Global Media Journal Australian Edition, 10(1). Retrieved from *http://www.hca.westernsydney.edu.au/gmjau/?p=1075</p>
+
+
+<p class="w3-margin-bottom">McKnight, D. (2012). Gina Rinehart and Rupert Murdoch: a study of power in the media. Theconversation.com. Retrieved 5 September 2016, from http://theconversation.com/gina-rinehart-and-rupert-murdoch-a-study-of-power-in-the-media-5394</p>
+
+
+<p class="w3-margin-bottom">MEAA (2006). The Media Muzzled: Australia’s 2006 Press Freedom Report. Sydney: Media Entertainment and Arts Alliance.</p>
+
+
+<p class="w3-margin-bottom">Pang, Lawrence (2016). Who Owns the News? - The Reckoner. Retrieved 25 October 2016, from *http://thereckoner.ca/who-owns-the-news/</p>   
+
+
+<p class="w3-margin-bottom">RSF (2016). World Press Freedom Index, Reporters Without Borders retrieved 05 October, from *https://rsf.org/en/ranking</p> 
+
+
+<p class="w3-margin-bottom">Vadori, David (2014). Democracy and Diversity: Media Ownership in Australia - Wattpad.  Retrieved 26 October 2016, from https://www.wattpad.com/53754253-democracy-and-diversity-media-ownership-in</p>
+
+            </div>
+        </div>
+    </div>
     
    
    
